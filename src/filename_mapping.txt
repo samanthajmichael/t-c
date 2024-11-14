@@ -1,0 +1,847 @@
+0_1_0_0	0	Creating Your myAudi Account	0_0	audi.txt
+0_1_0_1	0	Creating Your myAudi Account	0_1	audi.txt
+0_3_0_0	0	Changes to Terms of Service	0_0	audi.txt
+0_3_0_1	0	Changes to Terms of Service	0_1	audi.txt
+0_5_0_0	0	Registering with Us	0_0	audi.txt
+0_5_0_1	0	Registering with Us	0_1	audi.txt
+0_7_0_0	0	Accessing Your AFS Account Through myAudi	0_0	audi.txt
+0_9_0_0	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_0	audi.txt
+0_9_0_1	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_1	audi.txt
+0_9_0_2	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_2	audi.txt
+0_9_0_3	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_3	audi.txt
+0_9_0_4	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_4	audi.txt
+0_9_0_5	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_5	audi.txt
+0_9_0_6	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_6	audi.txt
+0_9_0_7	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_7	audi.txt
+0_9_0_8	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_8	audi.txt
+0_9_0_9	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_9	audi.txt
+0_9_0_10	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_10	audi.txt
+0_9_0_11	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_11	audi.txt
+0_9_0_12	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_12	audi.txt
+0_9_0_13	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_13	audi.txt
+0_9_0_14	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_14	audi.txt
+0_9_0_15	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_15	audi.txt
+0_9_0_16	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_16	audi.txt
+0_9_0_17	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_17	audi.txt
+0_9_0_18	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_18	audi.txt
+0_9_0_19	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_19	audi.txt
+0_9_0_20	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_20	audi.txt
+0_9_0_21	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_21	audi.txt
+0_9_0_22	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_22	audi.txt
+0_9_0_23	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_23	audi.txt
+0_9_0_24	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_24	audi.txt
+0_9_0_25	0	Paid Service Plans, Related Service Costs, Taxes and Other Charges, and Paid Plan Payment Terms	0_25	audi.txt
+0_11_0_0	0	Termination, Suspension, Reactivation, Change, and Transfer of Service	0_0	audi.txt
+0_11_0_1	0	Termination, Suspension, Reactivation, Change, and Transfer of Service	0_1	audi.txt
+0_11_0_2	0	Termination, Suspension, Reactivation, Change, and Transfer of Service	0_2	audi.txt
+0_11_0_3	0	Termination, Suspension, Reactivation, Change, and Transfer of Service	0_3	audi.txt
+0_13_0_0	0	Authority to Use, Terminate, Change, or Transfer Your Service	0_0	audi.txt
+0_13_0_1	0	Authority to Use, Terminate, Change, or Transfer Your Service	0_1	audi.txt
+0_15_0_0	0	Your Responsibilities	0_0	audi.txt
+0_15_0_1	0	Your Responsibilities	0_1	audi.txt
+0_15_0_2	0	Your Responsibilities	0_2	audi.txt
+0_15_0_3	0	Your Responsibilities	0_3	audi.txt
+0_15_0_4	0	Your Responsibilities	0_4	audi.txt
+0_15_0_5	0	Your Responsibilities	0_5	audi.txt
+0_15_0_6	0	Your Responsibilities	0_6	audi.txt
+0_17_0_0	0	Use of Certain Service Features	0_0	audi.txt
+0_19_0_0	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_0	audi.txt
+0_19_0_1	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_1	audi.txt
+0_19_0_2	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_2	audi.txt
+0_19_0_3	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_3	audi.txt
+0_19_0_4	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_4	audi.txt
+0_19_0_5	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_5	audi.txt
+0_19_0_6	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_6	audi.txt
+0_19_0_7	0	How the Service Works, Our Service Partners, Restrictions, and Limitations	0_7	audi.txt
+0_21_0_0	0	Collection and Use of Your Vehicle and Subscriber Data	0_0	audi.txt
+0_23_0_0	0	Disclaimer of Warranties	0_0	audi.txt
+0_23_0_1	0	Disclaimer of Warranties	0_1	audi.txt
+0_25_0_0	0	Limitation of Liability	0_0	audi.txt
+0_25_0_1	0	Limitation of Liability	0_1	audi.txt
+0_25_0_2	0	Limitation of Liability	0_2	audi.txt
+0_25_0_3	0	Limitation of Liability	0_3	audi.txt
+0_25_0_4	0	Limitation of Liability	0_4	audi.txt
+0_25_0_5	0	Limitation of Liability	0_5	audi.txt
+0_27_0_0	0	Indemnification; Release	0_0	audi.txt
+0_27_0_1	0	Indemnification; Release	0_1	audi.txt
+0_27_0_2	0	Indemnification; Release	0_2	audi.txt
+0_29_0_0	0	Dispute Resolution	0_0	audi.txt
+0_29_0_1	0	Dispute Resolution	0_1	audi.txt
+0_29_0_2	0	Dispute Resolution	0_2	audi.txt
+0_29_0_3	0	Dispute Resolution	0_3	audi.txt
+0_29_0_4	0	Dispute Resolution	0_4	audi.txt
+0_29_0_5	0	Dispute Resolution	0_5	audi.txt
+0_31_0_0	0	Miscellaneous Terms	0_0	audi.txt
+0_31_0_1	0	Miscellaneous Terms	0_1	audi.txt
+0_31_0_2	0	Miscellaneous Terms	0_2	audi.txt
+0_31_0_3	0	Miscellaneous Terms	0_3	audi.txt
+0_31_0_4	0	Miscellaneous Terms	0_4	audi.txt
+0_31_0_5	0	Miscellaneous Terms	0_5	audi.txt
+0_31_0_6	0	Miscellaneous Terms	0_6	audi.txt
+0_31_0_7	0	Miscellaneous Terms	0_7	audi.txt
+0_31_0_8	0	Miscellaneous Terms	0_8	audi.txt
+0_31_0_9	0	Miscellaneous Terms	0_9	audi.txt
+0_31_0_10	0	Miscellaneous Terms	0_10	audi.txt
+0_31_0_11	0	Miscellaneous Terms	0_11	audi.txt
+0_31_0_12	0	Miscellaneous Terms	0_12	audi.txt
+0_31_0_13	0	Miscellaneous Terms	0_13	audi.txt
+0_31_0_14	0	Miscellaneous Terms	0_14	audi.txt
+2_11_0_0	2	E-Gift Card	0_0	tacobell.txt
+2_11_0_1	2	E-Gift Card	0_1	tacobell.txt
+2_11_0_2	2	E-Gift Card	0_2	tacobell.txt
+2_13_0_0	2	MANDATORY BINDING INDIVIDUAL ARBITRATION. Please read this section carefully. It affects legal rights that you may otherwise have and requires individual final and binding arbitration of most disputes instead of resolution in court.	0_0	tacobell.txt
+2_13_0_1	2	MANDATORY BINDING INDIVIDUAL ARBITRATION. Please read this section carefully. It affects legal rights that you may otherwise have and requires individual final and binding arbitration of most disputes instead of resolution in court.	0_1	tacobell.txt
+2_13_0_2	2	MANDATORY BINDING INDIVIDUAL ARBITRATION. Please read this section carefully. It affects legal rights that you may otherwise have and requires individual final and binding arbitration of most disputes instead of resolution in court.	0_2	tacobell.txt
+2_13_0_3	2	MANDATORY BINDING INDIVIDUAL ARBITRATION. Please read this section carefully. It affects legal rights that you may otherwise have and requires individual final and binding arbitration of most disputes instead of resolution in court.	0_3	tacobell.txt
+2_13_0_4	2	MANDATORY BINDING INDIVIDUAL ARBITRATION. Please read this section carefully. It affects legal rights that you may otherwise have and requires individual final and binding arbitration of most disputes instead of resolution in court.	0_4	tacobell.txt
+2_21_0_0	2	Fraud. GCTB, LLC reserves the right to refuse to honor a Card obtained fraudulently.	0_0	tacobell.txt
+3_1_0_0	3	BINDING AGREEMENT	0_0	burgerking.txt
+3_1_0_1	3	BINDING AGREEMENT	0_1	burgerking.txt
+3_1_0_2	3	BINDING AGREEMENT	0_2	burgerking.txt
+3_3_0_0	3	PRIVACY	0_0	burgerking.txt
+3_5_0_0	3	REGISTRATION AND SECURITY	0_0	burgerking.txt
+3_7_0_0	3	PROHIBITED CONTENT AND ACTIVITIES	0_0	burgerking.txt
+3_7_0_1	3	PROHIBITED CONTENT AND ACTIVITIES	0_1	burgerking.txt
+3_7_0_2	3	PROHIBITED CONTENT AND ACTIVITIES	0_2	burgerking.txt
+3_9_0_0	3	INTELLECTUAL PROPERTY	0_0	burgerking.txt
+3_9_0_1	3	INTELLECTUAL PROPERTY	0_1	burgerking.txt
+3_9_0_2	3	INTELLECTUAL PROPERTY	0_2	burgerking.txt
+3_9_0_3	3	INTELLECTUAL PROPERTY	0_3	burgerking.txt
+3_9_0_4	3	INTELLECTUAL PROPERTY	0_4	burgerking.txt
+3_11_0_0	3	SOCIAL MEDIA INTEGRATION	0_0	burgerking.txt
+3_13_0_0	3	USER SUBMISSIONS	0_0	burgerking.txt
+3_13_0_1	3	USER SUBMISSIONS	0_1	burgerking.txt
+3_13_0_2	3	USER SUBMISSIONS	0_2	burgerking.txt
+3_13_0_3	3	USER SUBMISSIONS	0_3	burgerking.txt
+3_13_0_4	3	USER SUBMISSIONS	0_4	burgerking.txt
+3_15_0_0	3	LINKS AND THIRD-PARTY CONTENT	0_0	burgerking.txt
+3_15_0_1	3	LINKS AND THIRD-PARTY CONTENT	0_1	burgerking.txt
+3_15_0_2	3	LINKS AND THIRD-PARTY CONTENT	0_2	burgerking.txt
+3_17_0_0	3	GIFTCARDS	0_0	burgerking.txt
+3_19_0_0	3	MOBILE PAYMENT AND MOBILE ORDERING	0_0	burgerking.txt
+3_19_0_1	3	MOBILE PAYMENT AND MOBILE ORDERING	0_1	burgerking.txt
+3_21_0_0	3	GOVERNING LAW	0_0	burgerking.txt
+3_23_0_0	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_0	burgerking.txt
+3_23_0_1	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_1	burgerking.txt
+3_23_0_2	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_2	burgerking.txt
+3_23_0_3	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_3	burgerking.txt
+3_23_0_4	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_4	burgerking.txt
+3_23_0_5	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_5	burgerking.txt
+3_23_0_6	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_6	burgerking.txt
+3_23_0_7	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_7	burgerking.txt
+3_23_0_8	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_8	burgerking.txt
+3_23_0_9	3	DISPUTE RESOLUTION,ARBITRATION, AND CLASS ACTION WAIVER	0_9	burgerking.txt
+3_25_0_0	3	Arbitration Procedure and Location	0_0	burgerking.txt
+3_25_0_1	3	Arbitration Procedure and Location	0_1	burgerking.txt
+3_25_0_2	3	Arbitration Procedure and Location	0_2	burgerking.txt
+3_25_0_3	3	Arbitration Procedure and Location	0_3	burgerking.txt
+3_27_0_0	3	Notice and Filing	0_0	burgerking.txt
+3_29_0_0	3	Consumer Arbitration Fees	0_0	burgerking.txt
+3_29_0_1	3	Consumer Arbitration Fees	0_1	burgerking.txt
+3_29_0_2	3	Consumer Arbitration Fees	0_2	burgerking.txt
+3_31_0_0	3	Special Procedures for Coordinated Filings	0_0	burgerking.txt
+3_31_0_1	3	Special Procedures for Coordinated Filings	0_1	burgerking.txt
+3_31_0_2	3	Special Procedures for Coordinated Filings	0_2	burgerking.txt
+3_31_0_3	3	Special Procedures for Coordinated Filings	0_3	burgerking.txt
+3_31_0_4	3	Special Procedures for Coordinated Filings	0_4	burgerking.txt
+3_31_0_5	3	Special Procedures for Coordinated Filings	0_5	burgerking.txt
+3_31_0_6	3	Special Procedures for Coordinated Filings	0_6	burgerking.txt
+3_31_0_7	3	Special Procedures for Coordinated Filings	0_7	burgerking.txt
+3_31_0_8	3	Special Procedures for Coordinated Filings	0_8	burgerking.txt
+3_31_0_9	3	Special Procedures for Coordinated Filings	0_9	burgerking.txt
+3_31_0_10	3	Special Procedures for Coordinated Filings	0_10	burgerking.txt
+3_33_0_0	3	DISCLAIMER OF WARRANTIES	0_0	burgerking.txt
+3_33_0_1	3	DISCLAIMER OF WARRANTIES	0_1	burgerking.txt
+3_33_0_2	3	DISCLAIMER OF WARRANTIES	0_2	burgerking.txt
+3_35_0_0	3	EXCLUSIVE REMEDY AND LIMITATION OF LIABILITY	0_0	burgerking.txt
+3_35_0_1	3	EXCLUSIVE REMEDY AND LIMITATION OF LIABILITY	0_1	burgerking.txt
+3_37_0_0	3	INDEMNIFICATION	0_0	burgerking.txt
+3_37_0_1	3	INDEMNIFICATION	0_1	burgerking.txt
+3_39_0_0	3	INTEGRATION, SEVERABILITY AND WAIVER	0_0	burgerking.txt
+3_41_0_0	3	NOTICE FOR CALIFORNIA CONSUMERS	0_0	burgerking.txt
+3_43_0_0	3	CONTACT INFORMATION	0_0	burgerking.txt
+3_45_0_0	3	OPT-OUT INSTRUCTIONS	0_0	burgerking.txt
+3_45_0_1	3	OPT-OUT INSTRUCTIONS	0_1	burgerking.txt
+3_45_0_2	3	OPT-OUT INSTRUCTIONS	0_2	burgerking.txt
+3_45_0_3	3	OPT-OUT INSTRUCTIONS	0_3	burgerking.txt
+3_45_0_4	3	OPT-OUT INSTRUCTIONS	0_4	burgerking.txt
+3_45_0_5	3	OPT-OUT INSTRUCTIONS	0_5	burgerking.txt
+3_45_0_6	3	OPT-OUT INSTRUCTIONS	0_6	burgerking.txt
+3_45_0_7	3	OPT-OUT INSTRUCTIONS	0_7	burgerking.txt
+3_45_0_8	3	OPT-OUT INSTRUCTIONS	0_8	burgerking.txt
+3_45_0_9	3	OPT-OUT INSTRUCTIONS	0_9	burgerking.txt
+3_45_0_10	3	OPT-OUT INSTRUCTIONS	0_10	burgerking.txt
+3_45_0_11	3	OPT-OUT INSTRUCTIONS	0_11	burgerking.txt
+3_45_0_12	3	OPT-OUT INSTRUCTIONS	0_12	burgerking.txt
+3_45_0_13	3	OPT-OUT INSTRUCTIONS	0_13	burgerking.txt
+3_45_0_14	3	OPT-OUT INSTRUCTIONS	0_14	burgerking.txt
+3_45_0_15	3	OPT-OUT INSTRUCTIONS	0_15	burgerking.txt
+3_45_0_16	3	OPT-OUT INSTRUCTIONS	0_16	burgerking.txt
+3_45_0_17	3	OPT-OUT INSTRUCTIONS	0_17	burgerking.txt
+3_45_0_18	3	OPT-OUT INSTRUCTIONS	0_18	burgerking.txt
+3_45_0_19	3	OPT-OUT INSTRUCTIONS	0_19	burgerking.txt
+3_47_0_0	3	Eligibility: The Million Dollar Whopper® Contest (the “Contest”) is open only to Entrants who are legal residents of the fifty (50) United States and the District of Columbia who are at least the age of majority (at least eighteen (18) years old in most states and at least nineteen (19) years old in Alabama and Nebraska) and have enrolled in BK® Royal Perks at the time of entry.	0_0	burgerking.txt
+3_47_0_1	3	Eligibility: The Million Dollar Whopper® Contest (the “Contest”) is open only to Entrants who are legal residents of the fifty (50) United States and the District of Columbia who are at least the age of majority (at least eighteen (18) years old in most states and at least nineteen (19) years old in Alabama and Nebraska) and have enrolled in BK® Royal Perks at the time of entry.	0_1	burgerking.txt
+3_53_0_0	3	Timing of Contest: The Contest begins on February 5, 2024 at approximately 10:00 a.m. Eastern Time ("ET") and includes a Contest Submission Period and a Public Voting Period, as set forth below:	0_0	burgerking.txt
+3_53_0_1	3	Timing of Contest: The Contest begins on February 5, 2024 at approximately 10:00 a.m. Eastern Time ("ET") and includes a Contest Submission Period and a Public Voting Period, as set forth below:	0_1	burgerking.txt
+3_55_0_0	3	How To Submit A Contest Entry: During the Contest Submission Period, visit BK.com/mdw (“Site”), accept the Contest Official Rules http://www.heya.toyota.comand follow the instructions to create and submit your Contest Entry.	0_0	burgerking.txt
+3_57_0_0	3	Toppings must be edible food items2. Toppings must be written in English and there is a 25 character limitation on the Topping Name3. The Site will not allow Entrants to include:	0_0	burgerking.txt
+3_57_0_1	3	Toppings must be edible food items2. Toppings must be written in English and there is a 25 character limitation on the Topping Name3. The Site will not allow Entrants to include:	0_1	burgerking.txt
+3_57_0_2	3	Toppings must be edible food items2. Toppings must be written in English and there is a 25 character limitation on the Topping Name3. The Site will not allow Entrants to include:	0_2	burgerking.txt
+3_57_0_3	3	Toppings must be edible food items2. Toppings must be written in English and there is a 25 character limitation on the Topping Name3. The Site will not allow Entrants to include:	0_3	burgerking.txt
+3_63_0_0	3	Finalist Determination, Finalist Requirements And Finalist Prize: Finalists will be determined according to the process set forth below.	0_0	burgerking.txt
+3_65_0_0	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_0	burgerking.txt
+3_65_0_1	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_1	burgerking.txt
+3_65_0_2	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_2	burgerking.txt
+3_65_0_3	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_3	burgerking.txt
+3_65_0_4	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_4	burgerking.txt
+3_65_0_5	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_5	burgerking.txt
+3_65_0_6	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_6	burgerking.txt
+3_65_0_7	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_7	burgerking.txt
+3_65_0_8	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_8	burgerking.txt
+3_65_0_9	3	Initial Computerized Sorting of Contest Entries: After the conclusion of the Contest Submission Period, Sponsor will use a computer model to sort all Contest Entries based upon the commonality (high frequency) of the Toppings included and the uniqueness (low frequency) of the Toppings included. The sorting of the Contest Entries will result in an array of Whopper Ideas where the Toppings range from the most common Toppings to the most unique Toppings. Within the array, the model will sort the Whopper Ideas into three “Groups” as follows:1. Whopper Ideas with most common Toppings,‍2. Whopper Ideas with the most unique Toppings, and3. Whopper Ideas with a relatively equal combination of common and unique Toppings.2. Judging Panel Review: A panel of qualified judges with subject matter expertise, determined by Sponsor in its sole discretion, will review the Groups of Whopper Ideas, and utilize the following criteria to select one Whopper Idea from each Group, each a MDW Contender:1. Feasibility: The Feasibility score will be based on the operational ease and practicality of incorporating the Toppings contained in the Whopper Idea. Evaluation criteria includes ingredient availability, sourcing, cost, and operational ease (i.e., preparation time, food storage requirements, compatibility with existing equipment and compliance with food safety/public health regulations and standards). The Feasibility Score is worth 40% 2. Innovation: The Innovation score of the Whopper Idea is based on its culinary creativity (i.e., how well it captures authentic flavors and highlights specific culinary traditions with a new twist, or combines Toppings in unexpected ways), its inventive taste profile, and visual appeal. The Innovation Score is worth 30%.3. Popularity: The Popularity score is based on the expected appeal of the Whopper Idea to most Burger King customers. The Popularity Score is worth 30%. 4. Sponsor will not disclose any judging scores.3. Random Drawing To Select Finalists: Sponsor expects that there will be multiple Entrants who submitted Contest Entries that are the same or substantially similar to the three MDW Contenders selected by the Judges. If so, Sponsor will aggregate all Contest Entries that match or are substantially similar (as determined by the Sponsor in its sole discretion) to each MDW Contender. Prize Administrator will conduct random drawings including all Contest Entries that are the same or substantially similar to the applicable MDW Contender in order to select a potential Finalist to represent each MDW Contender Odds of being selected as a potential Finalist depend upon the number of Entrants who submitted the same or substantially similar Contest Entry for each respective MDW Contender. If there is only one single Entrant who has submitted a Contest Entry for a particular MDW Contender, then this Entrant will be deemed a potential Finalist.	0_9	burgerking.txt
+3_69_0_0	3	Public Voting: Starting in sometime in November 2024, Sponsor will offer the three (3) LTO Whopper® sandwiches inspired by and based on the Finalist’s Whopper Ideas in participating Burger King restaurants. During this same time period (dates to be announced on BK.com), the three (3) Finalist’s LTO Whopper® sandwiches will be posted in an online gallery at BK.com/MDW. Persons who meet the eligibility as set forth in Section 1 will be able to log into their BK® Royal Perks account and vote for the Finalist LTO Whopper® sandwich that they like best. Limit: Each person may vote one (1) time during the Voting Period. Multiple votes received from any person in excess of the stated number will be void. Any attempt by any Finalist or voter to obtain votes by any fraudulent or inappropriate means, including without limitation, utilizing paid advertising, authorizing or permitting third parties to advertise or solicit votes, offering prizes or other inducements to members of the public as determined by Sponsor in its sole discretion, by using any automated program, by creating or inducing others to create multiple BK® Royal Perks accounts, or any other methods that influence or undermine a fair voting process, will void those votes and Finalist may be disqualified as determined by Sponsor in its sole discretion. Subject to all Finalists’ compliance with these Official Rules, the Finalist whose Whopper® sandwich receives the highest number of valid votes during the Voting Period will be deemed the Grand Prize winner; the Finalist whose Whopper sandwich receives the next highest number of valid votes during the Voting Period will receive the Second Prize and the Finalist whose Whopper sandwich receives the fewest number of valid votes during the Voting Period will receive the Third Prize. Sponsor reserves the right, in its sole discretion, to select an alternate Grand Prize Winner, based on reassessment of the votes after removal of suspicious votes (determined in its discretion), should the voting appear to have been tampered with or manipulated in any way. Sponsor reserves the right to not award all prizes if it finds that any Finalist has violated these Official Rules.2. One (1) Grand Prize: Grand Prize winner will receive $1,000,000 by ACH transfer to winner’s bank. 3. One (1) Second Prize: Second Prize winner will receive $200,000 by ACH transfer to winner’s bank. 4. One (1) Third Prize: Third Prize winner will receive $100,000 by ACH transfer to winner’s bank.	0_0	burgerking.txt
+5_1_0_0	5	Definitions.	0_0	starbucks.txt
+5_1_0_1	5	Definitions.	0_1	starbucks.txt
+5_1_0_2	5	Definitions.	0_2	starbucks.txt
+5_1_0_3	5	Definitions.	0_3	starbucks.txt
+5_1_0_4	5	Definitions.	0_4	starbucks.txt
+5_3_0_0	5	Starbucks Offer to Purchase.	0_0	starbucks.txt
+5_5_0_0	5	Seller’s Acceptance.	0_0	starbucks.txt
+5_7_0_0	5	Price	0_0	starbucks.txt
+5_9_0_0	5	Quantity	0_0	starbucks.txt
+5_11_0_0	5	Invoices	0_0	starbucks.txt
+5_13_0_0	5	Payment Terms	0_0	starbucks.txt
+5_15_0_0	5	Authorized Buyers	0_0	starbucks.txt
+5_15_0_1	5	Authorized Buyers	0_1	starbucks.txt
+5_17_0_0	5	Acceptance; Nonconforming and Late Deliveries.	0_0	starbucks.txt
+5_17_0_1	5	Acceptance; Nonconforming and Late Deliveries.	0_1	starbucks.txt
+5_17_0_2	5	Acceptance; Nonconforming and Late Deliveries.	0_2	starbucks.txt
+5_17_0_3	5	Acceptance; Nonconforming and Late Deliveries.	0_3	starbucks.txt
+5_19_0_0	5	Shipping and Delivery	0_0	starbucks.txt
+5_21_0_0	5	Termination	0_0	starbucks.txt
+5_23_0_0	5	Obligations upon Termination	0_0	starbucks.txt
+5_23_0_1	5	Obligations upon Termination	0_1	starbucks.txt
+5_25_0_0	5	Recalls	0_0	starbucks.txt
+5_27_0_0	5	Representations and Warranties	0_0	starbucks.txt
+5_27_0_1	5	Representations and Warranties	0_1	starbucks.txt
+5_29_0_0	5	Indemnification	0_0	starbucks.txt
+5_29_0_1	5	Indemnification	0_1	starbucks.txt
+5_31_0_0	5	Starbucks Intellectual Property	0_0	starbucks.txt
+5_33_0_0	5	Works for Hire	0_0	starbucks.txt
+5_33_0_1	5	Works for Hire	0_1	starbucks.txt
+5_33_0_2	5	Works for Hire	0_2	starbucks.txt
+5_33_0_3	5	Works for Hire	0_3	starbucks.txt
+5_35_0_0	5	Confidentiality	0_0	starbucks.txt
+5_35_0_1	5	Confidentiality	0_1	starbucks.txt
+5_37_0_0	5	No Publicity	0_0	starbucks.txt
+5_39_0_0	5	Use of Starbucks Marks	0_0	starbucks.txt
+5_41_0_0	5	Subcontracting	0_0	starbucks.txt
+5_43_0_0	5	Quality Assurance	0_0	starbucks.txt
+5_45_0_0	5	Travel	0_0	starbucks.txt
+5_47_0_0	5	Insurance	0_0	starbucks.txt
+5_49_0_0	5	Ethical Sourcing	0_0	starbucks.txt
+5_51_0_0	5	Audits and Inspections	0_0	starbucks.txt
+5_51_0_1	5	Audits and Inspections	0_1	starbucks.txt
+5_53_0_0	5	U.S. Government Sales	0_0	starbucks.txt
+5_55_0_0	5	Governing Law and Dispute Resolution	0_0	starbucks.txt
+5_55_0_1	5	Governing Law and Dispute Resolution	0_1	starbucks.txt
+5_57_0_0	5	Rights and Remedies	0_0	starbucks.txt
+5_57_0_1	5	Rights and Remedies	0_1	starbucks.txt
+5_59_0_0	5	Waiver	0_0	starbucks.txt
+5_61_0_0	5	Assignment	0_0	starbucks.txt
+5_63_0_0	5	Independent Contractor	0_0	starbucks.txt
+5_65_0_0	5	Notices	0_0	starbucks.txt
+5_65_0_1	5	Notices	0_1	starbucks.txt
+5_67_0_0	5	Survival	0_0	starbucks.txt
+5_69_0_0	5	Amendments	0_0	starbucks.txt
+5_71_0_0	5	Complete Agreement	0_0	starbucks.txt
+5_71_0_1	5	Complete Agreement	0_1	starbucks.txt
+5_71_0_2	5	Complete Agreement	0_2	starbucks.txt
+5_71_0_3	5	Complete Agreement	0_3	starbucks.txt
+5_71_0_4	5	Complete Agreement	0_4	starbucks.txt
+5_71_0_5	5	Complete Agreement	0_5	starbucks.txt
+5_71_0_6	5	Complete Agreement	0_6	starbucks.txt
+5_71_0_7	5	Complete Agreement	0_7	starbucks.txt
+5_71_0_8	5	Complete Agreement	0_8	starbucks.txt
+5_71_0_9	5	Complete Agreement	0_9	starbucks.txt
+5_71_0_10	5	Complete Agreement	0_10	starbucks.txt
+5_71_0_11	5	Complete Agreement	0_11	starbucks.txt
+5_71_0_12	5	Complete Agreement	0_12	starbucks.txt
+5_71_0_13	5	Complete Agreement	0_13	starbucks.txt
+5_71_0_14	5	Complete Agreement	0_14	starbucks.txt
+5_71_0_15	5	Complete Agreement	0_15	starbucks.txt
+5_71_0_16	5	Complete Agreement	0_16	starbucks.txt
+5_71_0_17	5	Complete Agreement	0_17	starbucks.txt
+5_71_0_18	5	Complete Agreement	0_18	starbucks.txt
+5_71_0_19	5	Complete Agreement	0_19	starbucks.txt
+5_71_0_20	5	Complete Agreement	0_20	starbucks.txt
+5_71_0_21	5	Complete Agreement	0_21	starbucks.txt
+5_71_0_22	5	Complete Agreement	0_22	starbucks.txt
+5_71_0_23	5	Complete Agreement	0_23	starbucks.txt
+5_71_0_24	5	Complete Agreement	0_24	starbucks.txt
+5_71_0_25	5	Complete Agreement	0_25	starbucks.txt
+5_71_0_26	5	Complete Agreement	0_26	starbucks.txt
+5_71_0_27	5	Complete Agreement	0_27	starbucks.txt
+5_71_0_28	5	Complete Agreement	0_28	starbucks.txt
+5_71_0_29	5	Complete Agreement	0_29	starbucks.txt
+5_71_0_30	5	Complete Agreement	0_30	starbucks.txt
+5_71_0_31	5	Complete Agreement	0_31	starbucks.txt
+5_71_0_32	5	Complete Agreement	0_32	starbucks.txt
+5_71_0_33	5	Complete Agreement	0_33	starbucks.txt
+5_71_0_34	5	Complete Agreement	0_34	starbucks.txt
+5_71_0_35	5	Complete Agreement	0_35	starbucks.txt
+5_71_0_36	5	Complete Agreement	0_36	starbucks.txt
+5_71_0_37	5	Complete Agreement	0_37	starbucks.txt
+5_71_0_38	5	Complete Agreement	0_38	starbucks.txt
+5_71_0_39	5	Complete Agreement	0_39	starbucks.txt
+5_71_0_40	5	Complete Agreement	0_40	starbucks.txt
+5_71_0_41	5	Complete Agreement	0_41	starbucks.txt
+5_71_0_42	5	Complete Agreement	0_42	starbucks.txt
+5_71_0_43	5	Complete Agreement	0_43	starbucks.txt
+5_71_0_44	5	Complete Agreement	0_44	starbucks.txt
+5_71_0_45	5	Complete Agreement	0_45	starbucks.txt
+5_71_0_46	5	Complete Agreement	0_46	starbucks.txt
+5_71_0_47	5	Complete Agreement	0_47	starbucks.txt
+5_71_0_48	5	Complete Agreement	0_48	starbucks.txt
+5_71_0_49	5	Complete Agreement	0_49	starbucks.txt
+5_71_0_50	5	Complete Agreement	0_50	starbucks.txt
+5_71_0_51	5	Complete Agreement	0_51	starbucks.txt
+5_71_0_52	5	Complete Agreement	0_52	starbucks.txt
+5_71_0_53	5	Complete Agreement	0_53	starbucks.txt
+5_71_0_54	5	Complete Agreement	0_54	starbucks.txt
+5_71_0_55	5	Complete Agreement	0_55	starbucks.txt
+5_71_0_56	5	Complete Agreement	0_56	starbucks.txt
+5_71_0_57	5	Complete Agreement	0_57	starbucks.txt
+5_71_0_58	5	Complete Agreement	0_58	starbucks.txt
+5_71_0_59	5	Complete Agreement	0_59	starbucks.txt
+5_71_0_60	5	Complete Agreement	0_60	starbucks.txt
+5_71_0_61	5	Complete Agreement	0_61	starbucks.txt
+5_71_0_62	5	Complete Agreement	0_62	starbucks.txt
+5_71_0_63	5	Complete Agreement	0_63	starbucks.txt
+5_71_0_64	5	Complete Agreement	0_64	starbucks.txt
+5_71_0_65	5	Complete Agreement	0_65	starbucks.txt
+5_71_0_66	5	Complete Agreement	0_66	starbucks.txt
+5_71_0_67	5	Complete Agreement	0_67	starbucks.txt
+5_71_0_68	5	Complete Agreement	0_68	starbucks.txt
+5_71_0_69	5	Complete Agreement	0_69	starbucks.txt
+5_71_0_70	5	Complete Agreement	0_70	starbucks.txt
+5_71_0_71	5	Complete Agreement	0_71	starbucks.txt
+5_71_0_72	5	Complete Agreement	0_72	starbucks.txt
+5_71_0_73	5	Complete Agreement	0_73	starbucks.txt
+5_71_0_74	5	Complete Agreement	0_74	starbucks.txt
+5_71_0_75	5	Complete Agreement	0_75	starbucks.txt
+5_71_0_76	5	Complete Agreement	0_76	starbucks.txt
+5_71_0_77	5	Complete Agreement	0_77	starbucks.txt
+5_71_0_78	5	Complete Agreement	0_78	starbucks.txt
+5_71_0_79	5	Complete Agreement	0_79	starbucks.txt
+5_71_0_80	5	Complete Agreement	0_80	starbucks.txt
+5_71_0_81	5	Complete Agreement	0_81	starbucks.txt
+5_71_0_82	5	Complete Agreement	0_82	starbucks.txt
+5_71_0_83	5	Complete Agreement	0_83	starbucks.txt
+5_71_0_84	5	Complete Agreement	0_84	starbucks.txt
+5_71_0_85	5	Complete Agreement	0_85	starbucks.txt
+5_71_0_86	5	Complete Agreement	0_86	starbucks.txt
+5_71_0_87	5	Complete Agreement	0_87	starbucks.txt
+5_71_0_88	5	Complete Agreement	0_88	starbucks.txt
+5_71_0_89	5	Complete Agreement	0_89	starbucks.txt
+5_71_0_90	5	Complete Agreement	0_90	starbucks.txt
+5_71_0_91	5	Complete Agreement	0_91	starbucks.txt
+5_71_0_92	5	Complete Agreement	0_92	starbucks.txt
+5_71_0_93	5	Complete Agreement	0_93	starbucks.txt
+5_71_0_94	5	Complete Agreement	0_94	starbucks.txt
+5_71_0_95	5	Complete Agreement	0_95	starbucks.txt
+5_71_0_96	5	Complete Agreement	0_96	starbucks.txt
+5_71_0_97	5	Complete Agreement	0_97	starbucks.txt
+5_71_0_98	5	Complete Agreement	0_98	starbucks.txt
+5_71_0_99	5	Complete Agreement	0_99	starbucks.txt
+5_71_0_100	5	Complete Agreement	0_100	starbucks.txt
+5_71_0_101	5	Complete Agreement	0_101	starbucks.txt
+5_71_0_102	5	Complete Agreement	0_102	starbucks.txt
+5_71_0_103	5	Complete Agreement	0_103	starbucks.txt
+5_71_0_104	5	Complete Agreement	0_104	starbucks.txt
+5_71_0_105	5	Complete Agreement	0_105	starbucks.txt
+5_71_0_106	5	Complete Agreement	0_106	starbucks.txt
+5_71_0_107	5	Complete Agreement	0_107	starbucks.txt
+5_71_0_108	5	Complete Agreement	0_108	starbucks.txt
+5_71_0_109	5	Complete Agreement	0_109	starbucks.txt
+5_71_0_110	5	Complete Agreement	0_110	starbucks.txt
+5_71_0_111	5	Complete Agreement	0_111	starbucks.txt
+5_71_0_112	5	Complete Agreement	0_112	starbucks.txt
+5_71_0_113	5	Complete Agreement	0_113	starbucks.txt
+5_71_0_114	5	Complete Agreement	0_114	starbucks.txt
+5_71_0_115	5	Complete Agreement	0_115	starbucks.txt
+5_71_0_116	5	Complete Agreement	0_116	starbucks.txt
+5_71_0_117	5	Complete Agreement	0_117	starbucks.txt
+5_71_0_118	5	Complete Agreement	0_118	starbucks.txt
+5_71_0_119	5	Complete Agreement	0_119	starbucks.txt
+5_71_0_120	5	Complete Agreement	0_120	starbucks.txt
+5_71_0_121	5	Complete Agreement	0_121	starbucks.txt
+5_71_0_122	5	Complete Agreement	0_122	starbucks.txt
+5_71_0_123	5	Complete Agreement	0_123	starbucks.txt
+5_71_0_124	5	Complete Agreement	0_124	starbucks.txt
+5_71_0_125	5	Complete Agreement	0_125	starbucks.txt
+5_71_0_126	5	Complete Agreement	0_126	starbucks.txt
+5_71_0_127	5	Complete Agreement	0_127	starbucks.txt
+5_71_0_128	5	Complete Agreement	0_128	starbucks.txt
+5_71_0_129	5	Complete Agreement	0_129	starbucks.txt
+5_71_0_130	5	Complete Agreement	0_130	starbucks.txt
+5_71_0_131	5	Complete Agreement	0_131	starbucks.txt
+5_71_0_132	5	Complete Agreement	0_132	starbucks.txt
+5_71_0_133	5	Complete Agreement	0_133	starbucks.txt
+5_71_0_134	5	Complete Agreement	0_134	starbucks.txt
+5_71_0_135	5	Complete Agreement	0_135	starbucks.txt
+5_71_0_136	5	Complete Agreement	0_136	starbucks.txt
+5_71_0_137	5	Complete Agreement	0_137	starbucks.txt
+5_71_0_138	5	Complete Agreement	0_138	starbucks.txt
+5_71_0_139	5	Complete Agreement	0_139	starbucks.txt
+5_71_0_140	5	Complete Agreement	0_140	starbucks.txt
+5_71_0_141	5	Complete Agreement	0_141	starbucks.txt
+5_71_0_142	5	Complete Agreement	0_142	starbucks.txt
+5_71_0_143	5	Complete Agreement	0_143	starbucks.txt
+5_71_0_144	5	Complete Agreement	0_144	starbucks.txt
+5_71_0_145	5	Complete Agreement	0_145	starbucks.txt
+5_71_0_146	5	Complete Agreement	0_146	starbucks.txt
+5_71_0_147	5	Complete Agreement	0_147	starbucks.txt
+5_71_0_148	5	Complete Agreement	0_148	starbucks.txt
+5_71_0_149	5	Complete Agreement	0_149	starbucks.txt
+5_71_0_150	5	Complete Agreement	0_150	starbucks.txt
+5_71_0_151	5	Complete Agreement	0_151	starbucks.txt
+5_71_0_152	5	Complete Agreement	0_152	starbucks.txt
+5_71_0_153	5	Complete Agreement	0_153	starbucks.txt
+5_71_0_154	5	Complete Agreement	0_154	starbucks.txt
+5_71_0_155	5	Complete Agreement	0_155	starbucks.txt
+5_71_0_156	5	Complete Agreement	0_156	starbucks.txt
+5_71_0_157	5	Complete Agreement	0_157	starbucks.txt
+5_71_0_158	5	Complete Agreement	0_158	starbucks.txt
+5_71_0_159	5	Complete Agreement	0_159	starbucks.txt
+5_71_0_160	5	Complete Agreement	0_160	starbucks.txt
+5_71_0_161	5	Complete Agreement	0_161	starbucks.txt
+5_71_0_162	5	Complete Agreement	0_162	starbucks.txt
+5_71_0_163	5	Complete Agreement	0_163	starbucks.txt
+5_71_0_164	5	Complete Agreement	0_164	starbucks.txt
+5_71_0_165	5	Complete Agreement	0_165	starbucks.txt
+5_71_0_166	5	Complete Agreement	0_166	starbucks.txt
+5_71_0_167	5	Complete Agreement	0_167	starbucks.txt
+5_71_0_168	5	Complete Agreement	0_168	starbucks.txt
+5_71_0_169	5	Complete Agreement	0_169	starbucks.txt
+5_71_0_170	5	Complete Agreement	0_170	starbucks.txt
+6_1_0_0	6	About the online services.	0_0	mcdonald's.txt
+6_1_0_1	6	About the online services.	0_1	mcdonald's.txt
+6_1_0_2	6	About the online services.	0_2	mcdonald's.txt
+6_1_0_3	6	About the online services.	0_3	mcdonald's.txt
+6_1_0_4	6	About the online services.	0_4	mcdonald's.txt
+6_1_0_5	6	About the online services.	0_5	mcdonald's.txt
+6_1_0_6	6	About the online services.	0_6	mcdonald's.txt
+6_3_0_0	6	Our information practices and communications with you.	0_0	mcdonald's.txt
+6_3_0_1	6	Our information practices and communications with you.	0_1	mcdonald's.txt
+6_3_0_2	6	Our information practices and communications with you.	0_2	mcdonald's.txt
+6_3_0_3	6	Our information practices and communications with you.	0_3	mcdonald's.txt
+6_5_0_0	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_0	mcdonald's.txt
+6_5_0_1	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_1	mcdonald's.txt
+6_5_0_2	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_2	mcdonald's.txt
+6_5_0_3	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_3	mcdonald's.txt
+6_5_0_4	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_4	mcdonald's.txt
+6_5_0_5	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_5	mcdonald's.txt
+6_5_0_6	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_6	mcdonald's.txt
+6_5_0_7	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_7	mcdonald's.txt
+6_5_0_8	6	Placing orders for restaurant pick-ups and Mobile Order & Pay (MOP).	0_8	mcdonald's.txt
+6_7_0_0	6	Deals.	0_0	mcdonald's.txt
+6_7_0_1	6	Deals.	0_1	mcdonald's.txt
+6_9_0_0	6	Ownership and Licenses for the online services.	0_0	mcdonald's.txt
+6_9_0_1	6	Ownership and Licenses for the online services.	0_1	mcdonald's.txt
+6_9_0_2	6	Ownership and Licenses for the online services.	0_2	mcdonald's.txt
+6_11_0_0	6	User submissions and unsolicited ideas.	0_0	mcdonald's.txt
+6_11_0_1	6	User submissions and unsolicited ideas.	0_1	mcdonald's.txt
+6_13_0_0	6	Copyright notice.	0_0	mcdonald's.txt
+6_13_0_1	6	Copyright notice.	0_1	mcdonald's.txt
+6_13_0_2	6	Copyright notice.	0_2	mcdonald's.txt
+6_15_0_0	6	Acceptable uses and restrictions for the online services.	0_0	mcdonald's.txt
+6_15_0_1	6	Acceptable uses and restrictions for the online services.	0_1	mcdonald's.txt
+6_15_0_2	6	Acceptable uses and restrictions for the online services.	0_2	mcdonald's.txt
+6_17_0_0	6	Limitations on liability and disclaimers.	0_0	mcdonald's.txt
+6_17_0_1	6	Limitations on liability and disclaimers.	0_1	mcdonald's.txt
+6_17_0_2	6	Limitations on liability and disclaimers.	0_2	mcdonald's.txt
+6_17_0_3	6	Limitations on liability and disclaimers.	0_3	mcdonald's.txt
+6_17_0_4	6	Limitations on liability and disclaimers.	0_4	mcdonald's.txt
+6_17_0_5	6	Limitations on liability and disclaimers.	0_5	mcdonald's.txt
+6_17_0_6	6	Limitations on liability and disclaimers.	0_6	mcdonald's.txt
+6_17_0_7	6	Limitations on liability and disclaimers.	0_7	mcdonald's.txt
+6_17_0_8	6	Limitations on liability and disclaimers.	0_8	mcdonald's.txt
+6_17_0_9	6	Limitations on liability and disclaimers.	0_9	mcdonald's.txt
+6_17_0_10	6	Limitations on liability and disclaimers.	0_10	mcdonald's.txt
+6_17_0_11	6	Limitations on liability and disclaimers.	0_11	mcdonald's.txt
+6_17_0_12	6	Limitations on liability and disclaimers.	0_12	mcdonald's.txt
+6_17_0_13	6	Limitations on liability and disclaimers.	0_13	mcdonald's.txt
+6_17_0_14	6	Limitations on liability and disclaimers.	0_14	mcdonald's.txt
+6_17_0_15	6	Limitations on liability and disclaimers.	0_15	mcdonald's.txt
+6_19_0_0	6	Terms relating to the Mobile Application	0_0	mcdonald's.txt
+6_19_0_1	6	Terms relating to the Mobile Application	0_1	mcdonald's.txt
+6_19_0_2	6	Terms relating to the Mobile Application	0_2	mcdonald's.txt
+6_19_0_3	6	Terms relating to the Mobile Application	0_3	mcdonald's.txt
+6_21_0_0	6	Accessibility	0_0	mcdonald's.txt
+6_23_0_0	6	Miscellaneous.	0_0	mcdonald's.txt
+6_23_0_1	6	Miscellaneous.	0_1	mcdonald's.txt
+6_23_0_2	6	Miscellaneous.	0_2	mcdonald's.txt
+6_23_0_3	6	Miscellaneous.	0_3	mcdonald's.txt
+6_23_0_4	6	Miscellaneous.	0_4	mcdonald's.txt
+6_23_0_5	6	Miscellaneous.	0_5	mcdonald's.txt
+6_23_0_6	6	Miscellaneous.	0_6	mcdonald's.txt
+6_23_0_7	6	Miscellaneous.	0_7	mcdonald's.txt
+6_23_0_8	6	Miscellaneous.	0_8	mcdonald's.txt
+6_23_0_9	6	Miscellaneous.	0_9	mcdonald's.txt
+6_23_0_10	6	Miscellaneous.	0_10	mcdonald's.txt
+6_23_0_11	6	Miscellaneous.	0_11	mcdonald's.txt
+6_23_0_12	6	Miscellaneous.	0_12	mcdonald's.txt
+6_23_0_13	6	Miscellaneous.	0_13	mcdonald's.txt
+6_23_0_14	6	Miscellaneous.	0_14	mcdonald's.txt
+6_23_0_15	6	Miscellaneous.	0_15	mcdonald's.txt
+6_23_0_16	6	Miscellaneous.	0_16	mcdonald's.txt
+6_23_0_17	6	Miscellaneous.	0_17	mcdonald's.txt
+6_23_0_18	6	Miscellaneous.	0_18	mcdonald's.txt
+6_25_0_0	6	Text Messaging Program Terms and Conditions	0_0	mcdonald's.txt
+6_25_0_1	6	Text Messaging Program Terms and Conditions	0_1	mcdonald's.txt
+6_27_0_0	6	How to Use the Text Messaging Service	0_0	mcdonald's.txt
+6_27_0_1	6	How to Use the Text Messaging Service	0_1	mcdonald's.txt
+6_29_0_0	6	Contact Us	0_0	mcdonald's.txt
+6_29_0_1	6	Contact Us	0_1	mcdonald's.txt
+6_29_0_2	6	Contact Us	0_2	mcdonald's.txt
+6_29_0_3	6	Contact Us	0_3	mcdonald's.txt
+6_29_0_4	6	Contact Us	0_4	mcdonald's.txt
+6_29_0_5	6	Contact Us	0_5	mcdonald's.txt
+6_29_0_6	6	Contact Us	0_6	mcdonald's.txt
+6_29_0_7	6	Contact Us	0_7	mcdonald's.txt
+6_29_0_8	6	Contact Us	0_8	mcdonald's.txt
+6_29_0_9	6	Contact Us	0_9	mcdonald's.txt
+6_29_0_10	6	Contact Us	0_10	mcdonald's.txt
+6_29_0_11	6	Contact Us	0_11	mcdonald's.txt
+6_29_0_12	6	Contact Us	0_12	mcdonald's.txt
+6_29_0_13	6	Contact Us	0_13	mcdonald's.txt
+6_29_0_14	6	Contact Us	0_14	mcdonald's.txt
+6_29_0_15	6	Contact Us	0_15	mcdonald's.txt
+6_29_0_16	6	Contact Us	0_16	mcdonald's.txt
+6_29_0_17	6	Contact Us	0_17	mcdonald's.txt
+6_29_0_18	6	Contact Us	0_18	mcdonald's.txt
+6_29_0_19	6	Contact Us	0_19	mcdonald's.txt
+6_29_0_20	6	Contact Us	0_20	mcdonald's.txt
+6_29_0_21	6	Contact Us	0_21	mcdonald's.txt
+6_29_0_22	6	Contact Us	0_22	mcdonald's.txt
+6_29_0_23	6	Contact Us	0_23	mcdonald's.txt
+6_29_0_24	6	Contact Us	0_24	mcdonald's.txt
+6_29_0_25	6	Contact Us	0_25	mcdonald's.txt
+6_29_0_26	6	Contact Us	0_26	mcdonald's.txt
+6_29_0_27	6	Contact Us	0_27	mcdonald's.txt
+6_29_0_28	6	Contact Us	0_28	mcdonald's.txt
+6_29_0_29	6	Contact Us	0_29	mcdonald's.txt
+6_29_0_30	6	Contact Us	0_30	mcdonald's.txt
+6_29_0_31	6	Contact Us	0_31	mcdonald's.txt
+6_29_0_32	6	Contact Us	0_32	mcdonald's.txt
+6_29_0_33	6	Contact Us	0_33	mcdonald's.txt
+6_29_0_34	6	Contact Us	0_34	mcdonald's.txt
+6_29_0_35	6	Contact Us	0_35	mcdonald's.txt
+6_29_0_36	6	Contact Us	0_36	mcdonald's.txt
+6_29_0_37	6	Contact Us	0_37	mcdonald's.txt
+6_29_0_38	6	Contact Us	0_38	mcdonald's.txt
+6_29_0_39	6	Contact Us	0_39	mcdonald's.txt
+6_29_0_40	6	Contact Us	0_40	mcdonald's.txt
+6_29_0_41	6	Contact Us	0_41	mcdonald's.txt
+6_29_0_42	6	Contact Us	0_42	mcdonald's.txt
+6_29_0_43	6	Contact Us	0_43	mcdonald's.txt
+6_29_0_44	6	Contact Us	0_44	mcdonald's.txt
+6_29_0_45	6	Contact Us	0_45	mcdonald's.txt
+6_29_0_46	6	Contact Us	0_46	mcdonald's.txt
+6_29_0_47	6	Contact Us	0_47	mcdonald's.txt
+6_29_0_48	6	Contact Us	0_48	mcdonald's.txt
+6_29_0_49	6	Contact Us	0_49	mcdonald's.txt
+6_29_0_50	6	Contact Us	0_50	mcdonald's.txt
+6_29_0_51	6	Contact Us	0_51	mcdonald's.txt
+6_29_0_52	6	Contact Us	0_52	mcdonald's.txt
+6_29_0_53	6	Contact Us	0_53	mcdonald's.txt
+6_29_0_54	6	Contact Us	0_54	mcdonald's.txt
+6_29_0_55	6	Contact Us	0_55	mcdonald's.txt
+6_29_0_56	6	Contact Us	0_56	mcdonald's.txt
+6_29_0_57	6	Contact Us	0_57	mcdonald's.txt
+6_29_0_58	6	Contact Us	0_58	mcdonald's.txt
+6_29_0_59	6	Contact Us	0_59	mcdonald's.txt
+6_29_0_60	6	Contact Us	0_60	mcdonald's.txt
+6_29_0_61	6	Contact Us	0_61	mcdonald's.txt
+6_29_0_62	6	Contact Us	0_62	mcdonald's.txt
+6_29_0_63	6	Contact Us	0_63	mcdonald's.txt
+9_1_0_0	9	Collection of Information	0_0	subway.txt
+9_1_0_1	9	Collection of Information	0_1	subway.txt
+9_3_0_0	9	Ownership	0_0	subway.txt
+9_3_0_1	9	Ownership	0_1	subway.txt
+9_3_0_2	9	Ownership	0_2	subway.txt
+9_5_0_0	9	Permitted Use of the Site; Use Restrictions	0_0	subway.txt
+9_5_0_1	9	Permitted Use of the Site; Use Restrictions	0_1	subway.txt
+9_5_0_2	9	Permitted Use of the Site; Use Restrictions	0_2	subway.txt
+9_5_0_3	9	Permitted Use of the Site; Use Restrictions	0_3	subway.txt
+9_5_0_4	9	Permitted Use of the Site; Use Restrictions	0_4	subway.txt
+9_5_0_5	9	Permitted Use of the Site; Use Restrictions	0_5	subway.txt
+9_7_0_0	9	Accounts and Payment	0_0	subway.txt
+9_7_0_1	9	Accounts and Payment	0_1	subway.txt
+9_9_0_0	9	Product Information	0_0	subway.txt
+9_9_0_1	9	Product Information	0_1	subway.txt
+9_11_0_0	9	Career Opportunities	0_0	subway.txt
+9_11_0_1	9	Career Opportunities	0_1	subway.txt
+9_13_0_0	9	Franchisees	0_0	subway.txt
+9_15_0_0	9	Content You Provide	0_0	subway.txt
+9_15_0_1	9	Content You Provide	0_1	subway.txt
+9_15_0_2	9	Content You Provide	0_2	subway.txt
+9_15_0_3	9	Content You Provide	0_3	subway.txt
+9_15_0_4	9	Content You Provide	0_4	subway.txt
+9_15_0_5	9	Content You Provide	0_5	subway.txt
+9_17_0_0	9	Copyright Policy	0_0	subway.txt
+9_17_0_1	9	Copyright Policy	0_1	subway.txt
+9_17_0_2	9	Copyright Policy	0_2	subway.txt
+9_17_0_3	9	Copyright Policy	0_3	subway.txt
+9_17_0_4	9	Copyright Policy	0_4	subway.txt
+9_19_0_0	9	Site Changes and Availability	0_0	subway.txt
+9_21_0_0	9	DISCLAIMER OF WARRANTIES	0_0	subway.txt
+9_21_0_1	9	DISCLAIMER OF WARRANTIES	0_1	subway.txt
+9_21_0_2	9	DISCLAIMER OF WARRANTIES	0_2	subway.txt
+9_23_0_0	9	LIMIT ON LIABILITY	0_0	subway.txt
+9_23_0_1	9	LIMIT ON LIABILITY	0_1	subway.txt
+9_23_0_2	9	LIMIT ON LIABILITY	0_2	subway.txt
+9_25_0_0	9	Indemnification	0_0	subway.txt
+9_25_0_1	9	Indemnification	0_1	subway.txt
+9_27_0_0	9	Third-Party Websites and Applications	0_0	subway.txt
+9_27_0_1	9	Third-Party Websites and Applications	0_1	subway.txt
+9_29_0_0	9	Linking to the Site	0_0	subway.txt
+9_29_0_1	9	Linking to the Site	0_1	subway.txt
+9_31_0_0	9	Supplemental Terms for Mobile Apps	0_0	subway.txt
+9_31_0_1	9	Supplemental Terms for Mobile Apps	0_1	subway.txt
+9_31_0_2	9	Supplemental Terms for Mobile Apps	0_2	subway.txt
+9_31_0_3	9	Supplemental Terms for Mobile Apps	0_3	subway.txt
+9_33_0_0	9	Governing Law	0_0	subway.txt
+9_33_0_1	9	Governing Law	0_1	subway.txt
+9_35_0_0	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_0	subway.txt
+9_35_0_1	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_1	subway.txt
+9_35_0_2	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_2	subway.txt
+9_35_0_3	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_3	subway.txt
+9_35_0_4	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_4	subway.txt
+9_35_0_5	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_5	subway.txt
+9_35_0_6	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_6	subway.txt
+9_35_0_7	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_7	subway.txt
+9_35_0_8	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_8	subway.txt
+9_35_0_9	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_9	subway.txt
+9_35_0_10	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_10	subway.txt
+9_35_0_11	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_11	subway.txt
+9_35_0_12	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_12	subway.txt
+9_35_0_13	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_13	subway.txt
+9_35_0_14	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_14	subway.txt
+9_35_0_15	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_15	subway.txt
+9_35_0_16	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_16	subway.txt
+9_35_0_17	9	ARBITRATION AGREEMENT, CLASS WAIVER, AND WAIVER OF TRIAL BY JURY	0_17	subway.txt
+9_37_0_0	9	Entire Agreement; Interpretation	0_0	subway.txt
+9_37_0_1	9	Entire Agreement; Interpretation	0_1	subway.txt
+9_37_0_2	9	Entire Agreement; Interpretation	0_2	subway.txt
+9_37_0_3	9	Entire Agreement; Interpretation	0_3	subway.txt
+9_39_0_0	9	Contact Us	0_0	subway.txt
+9_41_0_0	9	English Language	0_0	subway.txt
+9_43_0_0	9	Text Messaging Terms of Use	0_0	subway.txt
+9_43_0_1	9	Text Messaging Terms of Use	0_1	subway.txt
+9_43_0_2	9	Text Messaging Terms of Use	0_2	subway.txt
+9_43_0_3	9	Text Messaging Terms of Use	0_3	subway.txt
+9_43_0_4	9	Text Messaging Terms of Use	0_4	subway.txt
+9_43_0_5	9	Text Messaging Terms of Use	0_5	subway.txt
+9_45_0_0	9	General Information and Requirements	0_0	subway.txt
+9_45_0_1	9	General Information and Requirements	0_1	subway.txt
+9_47_0_0	9	Payment Methods	0_0	subway.txt
+9_47_0_1	9	Payment Methods	0_1	subway.txt
+9_47_0_2	9	Payment Methods	0_2	subway.txt
+9_49_0_0	9	Product Availability	0_0	subway.txt
+9_49_0_1	9	Product Availability	0_1	subway.txt
+9_51_0_0	9	Order Pick-Up	0_0	subway.txt
+9_53_0_0	9	Order Delivery	0_0	subway.txt
+9_53_0_1	9	Order Delivery	0_1	subway.txt
+9_53_0_2	9	Order Delivery	0_2	subway.txt
+9_53_0_3	9	Order Delivery	0_3	subway.txt
+9_55_0_0	9	Catering Orders	0_0	subway.txt
+9_55_0_1	9	Catering Orders	0_1	subway.txt
+9_55_0_2	9	Catering Orders	0_2	subway.txt
+9_57_0_0	9	Disputes and Refunds	0_0	subway.txt
+9_59_0_0	9	Subway® Account Records	0_0	subway.txt
+9_59_0_1	9	Subway® Account Records	0_1	subway.txt
+9_61_0_0	9	Guest Care	0_0	subway.txt
+9_63_0_0	9	General	0_0	subway.txt
+9_63_0_1	9	General	0_1	subway.txt
+9_65_0_0	9	NO WARRANTIES	0_0	subway.txt
+9_67_0_0	9	LIMITATION OF LIABILITY	0_0	subway.txt
+9_69_0_0	9	Indemnification	0_0	subway.txt
+9_71_0_0	9	Privacy	0_0	subway.txt
+9_71_0_1	9	Privacy	0_1	subway.txt
+9_71_0_2	9	Privacy	0_2	subway.txt
+9_71_0_3	9	Privacy	0_3	subway.txt
+9_71_0_4	9	Privacy	0_4	subway.txt
+9_73_0_0	9	About Your Subway® Card	0_0	subway.txt
+9_73_0_1	9	About Your Subway® Card	0_1	subway.txt
+9_73_0_2	9	About Your Subway® Card	0_2	subway.txt
+9_73_0_3	9	About Your Subway® Card	0_3	subway.txt
+9_73_0_4	9	About Your Subway® Card	0_4	subway.txt
+9_73_0_5	9	About Your Subway® Card	0_5	subway.txt
+9_73_0_6	9	About Your Subway® Card	0_6	subway.txt
+9_73_0_7	9	About Your Subway® Card	0_7	subway.txt
+9_73_0_8	9	About Your Subway® Card	0_8	subway.txt
+9_73_0_9	9	About Your Subway® Card	0_9	subway.txt
+9_73_0_10	9	About Your Subway® Card	0_10	subway.txt
+9_73_0_11	9	About Your Subway® Card	0_11	subway.txt
+9_75_0_0	9	The Subway® MVP Rewards Program	0_0	subway.txt
+9_75_0_1	9	The Subway® MVP Rewards Program	0_1	subway.txt
+9_77_0_0	9	NO WARRANTIES; LIMITATION OF LIABILITY	0_0	subway.txt
+9_77_0_1	9	NO WARRANTIES; LIMITATION OF LIABILITY	0_1	subway.txt
+9_79_0_0	9	Mandatory Binding Individual Arbitration	0_0	subway.txt
+9_79_0_1	9	Mandatory Binding Individual Arbitration	0_1	subway.txt
+9_79_0_2	9	Mandatory Binding Individual Arbitration	0_2	subway.txt
+9_79_0_3	9	Mandatory Binding Individual Arbitration	0_3	subway.txt
+9_79_0_4	9	Mandatory Binding Individual Arbitration	0_4	subway.txt
+9_79_0_5	9	Mandatory Binding Individual Arbitration	0_5	subway.txt
+9_79_0_6	9	Mandatory Binding Individual Arbitration	0_6	subway.txt
+9_79_0_7	9	Mandatory Binding Individual Arbitration	0_7	subway.txt
+9_79_0_8	9	Mandatory Binding Individual Arbitration	0_8	subway.txt
+9_79_0_9	9	Mandatory Binding Individual Arbitration	0_9	subway.txt
+9_79_0_10	9	Mandatory Binding Individual Arbitration	0_10	subway.txt
+9_79_0_11	9	Mandatory Binding Individual Arbitration	0_11	subway.txt
+9_79_0_12	9	Mandatory Binding Individual Arbitration	0_12	subway.txt
+9_79_0_13	9	Mandatory Binding Individual Arbitration	0_13	subway.txt
+9_79_0_14	9	Mandatory Binding Individual Arbitration	0_14	subway.txt
+9_79_0_15	9	Mandatory Binding Individual Arbitration	0_15	subway.txt
+9_79_0_16	9	Mandatory Binding Individual Arbitration	0_16	subway.txt
+9_79_0_17	9	Mandatory Binding Individual Arbitration	0_17	subway.txt
+9_81_0_0	9	General	0_0	subway.txt
+9_81_0_1	9	General	0_1	subway.txt
+9_81_0_2	9	General	0_2	subway.txt
+9_81_0_3	9	General	0_3	subway.txt
+9_83_0_0	9	Privacy	0_0	subway.txt
+9_85_0_0	9	Contact Us	0_0	subway.txt
+9_85_0_1	9	Contact Us	0_1	subway.txt
+9_85_0_2	9	Contact Us	0_2	subway.txt
+9_87_0_0	9	Geographic Scope & General Requirements	0_0	subway.txt
+9_87_0_1	9	Geographic Scope & General Requirements	0_1	subway.txt
+9_87_0_2	9	Geographic Scope & General Requirements	0_2	subway.txt
+9_89_0_0	9	Subway® MVP Rewards Account	0_0	subway.txt
+9_89_0_1	9	Subway® MVP Rewards Account	0_1	subway.txt
+9_91_0_0	9	Availability	0_0	subway.txt
+9_93_0_0	9	How to Enroll & Communications	0_0	subway.txt
+9_93_0_1	9	How to Enroll & Communications	0_1	subway.txt
+9_95_0_0	9	Linking Your Card: Digital and Plastic	0_0	subway.txt
+9_95_0_1	9	Linking Your Card: Digital and Plastic	0_1	subway.txt
+9_97_0_0	9	Earning Points and Rewards; Membership Levels	0_0	subway.txt
+9_97_0_1	9	Earning Points and Rewards; Membership Levels	0_1	subway.txt
+9_97_0_2	9	Earning Points and Rewards; Membership Levels	0_2	subway.txt
+9_97_0_3	9	Earning Points and Rewards; Membership Levels	0_3	subway.txt
+9_97_0_4	9	Earning Points and Rewards; Membership Levels	0_4	subway.txt
+9_97_0_5	9	Earning Points and Rewards; Membership Levels	0_5	subway.txt
+9_97_0_6	9	Earning Points and Rewards; Membership Levels	0_6	subway.txt
+9_99_0_0	9	How to Redeem Subway® Cash and other Rewards	0_0	subway.txt
+9_99_0_1	9	How to Redeem Subway® Cash and other Rewards	0_1	subway.txt
+9_99_0_2	9	How to Redeem Subway® Cash and other Rewards	0_2	subway.txt
+9_99_0_3	9	How to Redeem Subway® Cash and other Rewards	0_3	subway.txt
+9_101_0_0	9	Void Points and Rewards	0_0	subway.txt
+9_103_0_0	9	Suspension & Cancellation	0_0	subway.txt
+9_105_0_0	9	Missing Points	0_0	subway.txt
+9_105_0_1	9	Missing Points	0_1	subway.txt
+9_107_0_0	9	Expiration of Points Subway® Cash and other Rewards; Termination of Account	0_0	subway.txt
+9_107_0_1	9	Expiration of Points Subway® Cash and other Rewards; Termination of Account	0_1	subway.txt
+9_109_0_0	9	Combining Reward Offers	0_0	subway.txt
+9_111_0_0	9	NO WARRANTIES; LIMITATION OF LIABILITY	0_0	subway.txt
+9_111_0_1	9	NO WARRANTIES; LIMITATION OF LIABILITY	0_1	subway.txt
+9_113_0_0	9	Indemnification	0_0	subway.txt
+9_115_0_0	9	Privacy	0_0	subway.txt
+9_117_0_0	9	General	0_0	subway.txt
+9_117_0_1	9	General	0_1	subway.txt
+9_117_0_2	9	General	0_2	subway.txt
+9_119_0_0	9	Contact Us	0_0	subway.txt
+11_1_0_0	11	Additional Terms	0_0	dunkindonuts.txt
+11_3_0_0	11	Changes to Terms	0_0	dunkindonuts.txt
+11_3_0_1	11	Changes to Terms	0_1	dunkindonuts.txt
+11_5_0_0	11	Users and Accounts	0_0	dunkindonuts.txt
+11_5_0_1	11	Users and Accounts	0_1	dunkindonuts.txt
+11_5_0_2	11	Users and Accounts	0_2	dunkindonuts.txt
+11_5_0_3	11	Users and Accounts	0_3	dunkindonuts.txt
+11_7_0_0	11	Personal Use Only	0_0	dunkindonuts.txt
+11_9_0_0	11	Privacy	0_0	dunkindonuts.txt
+11_11_0_0	11	Responsible Use of the DD Online Services	0_0	dunkindonuts.txt
+11_11_0_1	11	Responsible Use of the DD Online Services	0_1	dunkindonuts.txt
+11_13_0_0	11	Provision of the DD Online Services	0_0	dunkindonuts.txt
+11_13_0_1	11	Provision of the DD Online Services	0_1	dunkindonuts.txt
+11_13_0_2	11	Provision of the DD Online Services	0_2	dunkindonuts.txt
+11_13_0_3	11	Provision of the DD Online Services	0_3	dunkindonuts.txt
+11_15_0_0	11	Product Sales and Availability	0_0	dunkindonuts.txt
+11_17_0_0	11	Service-Specific Terms and Conditions	0_0	dunkindonuts.txt
+11_17_0_1	11	Service-Specific Terms and Conditions	0_1	dunkindonuts.txt
+11_17_0_2	11	Service-Specific Terms and Conditions	0_2	dunkindonuts.txt
+11_17_0_3	11	Service-Specific Terms and Conditions	0_3	dunkindonuts.txt
+11_17_0_4	11	Service-Specific Terms and Conditions	0_4	dunkindonuts.txt
+11_17_0_5	11	Service-Specific Terms and Conditions	0_5	dunkindonuts.txt
+11_17_0_6	11	Service-Specific Terms and Conditions	0_6	dunkindonuts.txt
+11_17_0_7	11	Service-Specific Terms and Conditions	0_7	dunkindonuts.txt
+11_17_0_8	11	Service-Specific Terms and Conditions	0_8	dunkindonuts.txt
+11_17_0_9	11	Service-Specific Terms and Conditions	0_9	dunkindonuts.txt
+11_17_0_10	11	Service-Specific Terms and Conditions	0_10	dunkindonuts.txt
+11_19_0_0	11	Dunkin' Cards	0_0	dunkindonuts.txt
+11_19_0_1	11	Dunkin' Cards	0_1	dunkindonuts.txt
+11_19_0_2	11	Dunkin' Cards	0_2	dunkindonuts.txt
+11_19_0_3	11	Dunkin' Cards	0_3	dunkindonuts.txt
+11_19_0_4	11	Dunkin' Cards	0_4	dunkindonuts.txt
+11_19_0_5	11	Dunkin' Cards	0_5	dunkindonuts.txt
+11_21_0_0	11	Dunkin' Disclaimer of Warranty and Limitation of Liability	0_0	dunkindonuts.txt
+11_21_0_1	11	Dunkin' Disclaimer of Warranty and Limitation of Liability	0_1	dunkindonuts.txt
+11_21_0_2	11	Dunkin' Disclaimer of Warranty and Limitation of Liability	0_2	dunkindonuts.txt
+11_23_0_0	11	Copyright and Trademark	0_0	dunkindonuts.txt
+11_25_0_0	11	Digital Millennium Copyright Act (“DMCA”) Policy	0_0	dunkindonuts.txt
+11_25_0_1	11	Digital Millennium Copyright Act (“DMCA”) Policy	0_1	dunkindonuts.txt
+11_25_0_2	11	Digital Millennium Copyright Act (“DMCA”) Policy	0_2	dunkindonuts.txt
+11_25_0_3	11	Digital Millennium Copyright Act (“DMCA”) Policy	0_3	dunkindonuts.txt
+11_25_0_4	11	Digital Millennium Copyright Act (“DMCA”) Policy	0_4	dunkindonuts.txt
+11_25_0_5	11	Digital Millennium Copyright Act (“DMCA”) Policy	0_5	dunkindonuts.txt
+11_25_0_6	11	Digital Millennium Copyright Act (“DMCA”) Policy	0_6	dunkindonuts.txt
+11_27_0_0	11	Links	0_0	dunkindonuts.txt
+11_29_0_0	11	Errors and Inaccuracies.	0_0	dunkindonuts.txt
+11_31_0_0	11	Feedback and Submissions	0_0	dunkindonuts.txt
+11_31_0_1	11	Feedback and Submissions	0_1	dunkindonuts.txt
+11_33_0_0	11	Geographical Scope of the DD Online Services	0_0	dunkindonuts.txt
+11_33_0_1	11	Geographical Scope of the DD Online Services	0_1	dunkindonuts.txt
+11_35_0_0	11	Franchise Prospects	0_0	dunkindonuts.txt
+11_37_0_0	11	Dispute Resolution	0_0	dunkindonuts.txt
+11_37_0_1	11	Dispute Resolution	0_1	dunkindonuts.txt
+11_37_0_2	11	Dispute Resolution	0_2	dunkindonuts.txt
+11_37_0_3	11	Dispute Resolution	0_3	dunkindonuts.txt
+11_37_0_4	11	Dispute Resolution	0_4	dunkindonuts.txt
+11_37_0_5	11	Dispute Resolution	0_5	dunkindonuts.txt
+11_39_0_0	11	Taxes	0_0	dunkindonuts.txt
+11_41_0_0	11	Notice to California Residents	0_0	dunkindonuts.txt
+11_43_0_0	11	California Transparency in Supply Chains	0_0	dunkindonuts.txt
+11_43_0_1	11	California Transparency in Supply Chains	0_1	dunkindonuts.txt
+11_45_0_0	11	General Provisions	0_0	dunkindonuts.txt
+11_45_0_1	11	General Provisions	0_1	dunkindonuts.txt
+11_45_0_2	11	General Provisions	0_2	dunkindonuts.txt
+14_1_0_0	14	Terms and Definitions	0_0	vivo.txt
+14_1_0_1	14	Terms and Definitions	0_1	vivo.txt
+14_3_0_0	14	Categories of personal data we collect	0_0	vivo.txt
+14_3_0_1	14	Categories of personal data we collect	0_1	vivo.txt
+14_3_0_2	14	Categories of personal data we collect	0_2	vivo.txt
+14_5_0_0	14	Purposes of our processing of personal data	0_0	vivo.txt
+14_5_0_1	14	Purposes of our processing of personal data	0_1	vivo.txt
+14_5_0_2	14	Purposes of our processing of personal data	0_2	vivo.txt
+14_5_0_3	14	Purposes of our processing of personal data	0_3	vivo.txt
+14_7_0_0	14	How long we keep your personal data	0_0	vivo.txt
+14_7_0_1	14	How long we keep your personal data	0_1	vivo.txt
+14_9_0_0	14	How we share your personal data	0_0	vivo.txt
+14_9_0_1	14	How we share your personal data	0_1	vivo.txt
+14_11_0_0	14	Your Rights	0_0	vivo.txt
+14_11_0_1	14	Your Rights	0_1	vivo.txt
+14_11_0_2	14	Your Rights	0_2	vivo.txt
+14_11_0_3	14	Your Rights	0_3	vivo.txt
+14_11_0_4	14	Your Rights	0_4	vivo.txt
+14_11_0_5	14	Your Rights	0_5	vivo.txt
+14_11_0_6	14	Your Rights	0_6	vivo.txt
+14_11_0_7	14	Your Rights	0_7	vivo.txt
+14_13_0_0	14	Cookies	0_0	vivo.txt
+14_15_0_0	14	Third party services	0_0	vivo.txt
+14_15_0_1	14	Third party services	0_1	vivo.txt
+14_15_0_2	14	Third party services	0_2	vivo.txt
+14_17_0_0	14	Minors' privacy	0_0	vivo.txt
+14_19_0_0	14	Storage and international transfer	0_0	vivo.txt
+14_19_0_1	14	Storage and international transfer	0_1	vivo.txt
+14_19_0_2	14	Storage and international transfer	0_2	vivo.txt
