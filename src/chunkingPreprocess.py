@@ -6,7 +6,7 @@ import faiss
 import numpy as np
 
 # Define paths
-data_folders = [Path("src/cars"), Path("src/E-commerce"), Path("src/food"), Path("src/electronics")]  # Add paths to your data folders here
+data_folders = [Path("src/cars"), Path("src/E-commerce"), Path("src/food"), Path("src/electronics")]
 index_file = "src/faiss_index.bin"
 mapping_file = "src/filename_mapping.txt"
 embedding_model_name = "all-MiniLM-L6-v2"
@@ -35,6 +35,7 @@ def load_and_chunk_documents(data_folders, chunk_size=120):
     doc_id = 0
 
     for folder in data_folders:
+        folder_name = folder.name  # Get the folder name (e.g., 'cars', 'E-commerce')
         for file_path in folder.glob("*.txt"):
             with open(file_path, "r", encoding="utf-8") as file:
                 content = file.read().strip()
@@ -57,6 +58,7 @@ def load_and_chunk_documents(data_folders, chunk_size=120):
                                     "Document ID": doc_id,
                                     "Section Title": section_title,
                                     "Subsection": f"{j}_{k // chunk_size}",
+                                    "Folder": folder_name,  # Include the folder name in metadata
                                     "File Name": file_path.name,
                                     "Chunk ID": f"{doc_id}_{i}_{j}_{k // chunk_size}"
                                 })
@@ -88,7 +90,7 @@ def embed_and_store(chunks, metadata):
     # Save chunk metadata
     with open(mapping_file, "w", encoding="utf-8") as f:
         for meta in metadata:
-            f.write(f"{meta['Chunk ID']}\t{meta['Document ID']}\t{meta['Section Title']}\t{meta['Subsection']}\t{meta['File Name']}\n")
+            f.write(f"{meta['Chunk ID']}\t{meta['Document ID']}\t{meta['Section Title']}\t{meta['Subsection']}\t{meta['Folder']}\t{meta['File Name']}\n")
     
     print(f"FAISS index created and saved to {index_file}. Metadata saved to {mapping_file}.")
     return index
