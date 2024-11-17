@@ -87,6 +87,7 @@ relevance_metric = ContextualRelevancyMetric(
 )
 
 
+
 def evaluate_rag(chunks_query_retriever, num_questions: int = 10) -> None:
     """
     Evaluate the RAG system using predefined metrics.
@@ -130,4 +131,5 @@ def evaluate_rag(chunks_query_retriever, num_questions: int = 10) -> None:
 
 if __name__ == "__main__":
     # Add any necessary setup or configuration here
+    # Example: evaluate_rag(your_chunks_query_retriever_function)
     pass
