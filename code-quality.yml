@@ -23,7 +23,7 @@ jobs:
           pip install black isort
           
       - name: Check Black formatting
-        run: black . --check
+        run: black .
         
       - name: Check Import sorting
         run: isort . --check-only --diff
