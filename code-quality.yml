@@ -99,3 +99,4 @@ jobs:
           if [ $? -ne 0 ]; then
             echo "isort check failed!"
             exit 1
+            fi
