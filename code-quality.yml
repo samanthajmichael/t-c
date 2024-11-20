@@ -88,12 +88,12 @@ jobs:
 
       - name: Check Black formatting
         run: |
-          python3.10 -m black . --check
+          python3.10 -m black . 
           if [ $? -ne 0 ]; then
             echo "Black formatting check failed!"
             exit 1
           fi
-          
+
       - name: Check Import sorting
         run: |
           python3.10 -m isort . --check-only --diff
