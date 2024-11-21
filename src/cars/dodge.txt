@@ -1,0 +1,267 @@
+FCA WEBSITE TERMS OF USE
+Last Updated: April 6, 2021
+
+These FCA Website Terms of Use (the “Terms” or the “Agreement”) apply to the use of FCA websites, including www.mopar.com,  https://connect.jeep.com/us/en/login,  www.driveuconnect.com,  www.jeep.com,  www.chrysler.com,  www.fiatusa.com and any other FCA website, webpage or online service (including mobile application) that includes a link to these Terms, as well any information, content, services, Accounts (except as described below) or features FCA makes available to You through these websites (each a “Site” and collectively, the “Sites”).
+
+“FCA,” “We,” “Us,” and “Our,” means FCA US LLC, and refers to FCA and its employees, directors, officers, contractors, subcontractors, consultants, representatives and agents.
+
+“You” and “Your” refers to the person who is accessing or using the Site.
+PLEASE READ THESE TERMS CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION ABOUT LEGAL RIGHTS, REMEDIES AND OBLIGATIONS. BY ACCEPTING THESE TERMS AND/OR USING ANY OF THE SITES, YOU AGREE TO COMPLY WITH AND BE BOUND BY ALL OF THESE TERMS. IF YOU DO NOT ACCEPT ALL OF THE PROVISIONS OF THESE TERMS, YOU ARE NOT AUTHORIZED TO USE (AND MUST REFRAIN FROM USING) THE SITE.
+
+NOTE: THESE TERMS CONTAIN A DISPUTE RESOLUTION AND ARBITRATION PROVISION (SECTION 13), INCLUDING CLASS ACTION WAIVER THAT AFFECTS YOUR RIGHTS UNDER THESE TERMS AND WITH RESPECT TO DISPUTES YOU MAY HAVE WITH FCA. YOU MAY OPT OUT OF THE BINDING INDIVIDUAL ARBITRATION AND CLASS ACTION WAIVER AS PROVIDED BELOW.
+
+YOUR LEGAL CAPACITY TO ACCEPT THIS AGREEMENT
+
+You must be at least 18 years old or the age of majority as determined by the laws of Your state or province of residency, to assume the obligations set forth in this Agreement and You hereby represent to Us that You meet that requirement and have the legal capacity to do so.
+If You are under 18 years of age but are at least 15 years old (a “Minor”), You represent, acknowledge and agree that You are assuming the obligations set forth in this Agreement with Your parent’s or legal guardian’s permission.
+If You are a parent or legal guardian of a Minor, You hereby agree to bind the Minor to this Agreement and to fully indemnify and hold Us harmless if the Minor fails to comply with this Agreement.
+FCA RESERVES THE RIGHT TO MODIFY THE SITES OR THE TERMS AT ANY TIME IN OUR SOLE DISCRETION.
+
+Depending upon the nature of the modifications, We will provide notice of such changes on the applicable Site(s) and/or by notifying You electronically using the contact information We have for You.
+If You continue to use the Site(s) after the effective date of the change or otherwise agree to the change, the change will become part of the Terms as of the effective date of the change.
+If You do not agree with such changes You must stop using the Site(s) immediately.
+If You do not stop using the Site(s) within thirty (30) days of the date of the notice of changes to the Site(s) or the Terms, then You agree to the change and it will automatically become part of the Terms.
+You should frequently review the Terms (including the effective date) and applicable policies and other documents from time to time to understand the terms that apply to Your use of the Sites.
+If You do not agree with any modifications, Your sole and exclusive remedy is to not use the Sites.
+To obtain a copy of the Terms, You may call FCA at 800-800-2813.
+1. SCOPE OF THESE TERMS
+
+These Terms govern Your access and use of the Sites.  Your access to and use of certain services provided or made available by FCA through the Sites or otherwise (“Services”), including certain Services that may be accessible to You via one of the Sites, may require a separate registration and Your acceptance of separate terms and conditions (“Service Terms”). For example, Your access to and use of Connected Services requires that You register a Connected Services account and is subject to the FCA Connected Services Terms of Service (available at Terms of Service). If You make a purchase, submit an order, or request an estimate through one of the Sites, additional Service Terms may apply to Your purchase, order or request. If there is a conflict between these Terms and the applicable Service Terms, the separate Service Terms will govern Your access and use of the Services. If You have not subscribed to the relevant Services or accepted the relevant Service Terms, You may not be able to access and use certain of the Sites or certain features of the Sites. 
+
+2. ACCOUNT
+
+To access and use certain Services, You may be required to register for and receive an account (an “Account”). If the Services are governed by separate Service Terms, then those Services and any corresponding Account are governed by those Service Terms. If there are no separate Service Terms that apply to the applicable Services or Account, then You acknowledge and agree to the following:
+
+You may be given or required to create a user ID and a unique password in connection with Your use of certain Sites or Services;
+Once You have submitted Your Account registration information, We have the right to approve or reject the requested registration, in Our sole discretion;
+By creating an Account, You agree that We may send You notifications pertaining to Your vehicle and the Services that FCA provides to You, which notifications may be sent through Your Account or using other contact information You have provided to Us;
+You will provide Us with accurate and complete information about You when You register for any Account and keep that information current at all times;
+You may be required to provide Your password to authenticate Your Account and to allow Your Account or the Site or Service to interact, or share information, with services or features, content or applications that are provided on the Sites or through the Services;
+Anyone who has access to Your password may be able to access Your Account, including through the Sites or Services;
+We are not obligated to inquire about the authority of anyone using Your password or other information that can be used to identify Your Account to access or use the Sites;
+You are fully responsible for (i) maintaining the confidentiality of Your Account credentials and password, (ii) all activities that occur using Your Account and password, and (iii) complying with any terms and conditions applicable to the use of any Services or Your Account;
+You will not share, let anyone else access or do anything else that might jeopardize the security of Your password or Account; and
+You will notify Us if Your Account credentials or password are lost, stolen or disclosed to an unauthorized third party, if there is any unauthorized use of Your Account or password, or if You learn of any other breach of security in relation to Us, Your Account or the Services.
+3. LICENSE GRANT
+
+Subject to Your compliance with these Terms, We grant You a limited, non-exclusive, revocable, personal, non-assignable and non-transferrable license to access and use the Sites for Your personal, non-commercial use only.
+To use the Sites, You must have Internet access through Your computer or mobile device.
+We do not warrant that the Sites will be compatible with Your computer or mobile device.
+The foregoing license grant is not a sale of the Sites or any copy thereof, and We and Our third-party licensors or suppliers retain all right, title, and interest in and to the Sites (and any copy of the Sites).
+Access to the Sites is permitted at Our discretion. To the extent permitted by law, We may revoke, restrict or suspend this license at any time without notice to You.
+This license will automatically expire upon the termination of these Terms.
+Except as expressly granted in these Terms, there are no other licenses granted to You, express, implied or by way of estoppel. All rights not granted in these Terms are reserved by FCA.
+4. USE RESTRICTIONS
+
+You shall not use the Sites for any purpose other than those authorized by these Terms.  You agree that You will not do, or attempt to do, any of the following:
+
+Use the Sites to engage in any activity or conduct that violates the law or the legal rights of a third party, or is deceptive, abusive, dangerous, harassing, defamatory, tortious, obscene, or invasive of another person's privacy; 
+Use the Sites to engage in or facilitate any fraudulent activity, perpetrate a hoax or engage in phishing schemes, forgery or other similar falsification or manipulation of data;
+Use the Sites to send or store data that violates the rights of any individual or entity established in any jurisdiction;
+Damage, disable, overburden, or impair the Sites or any software or services accessible through the Sites;
+Engage in any activity that could interfere with, disrupt, negatively affect, or inhibit other users from fully using the Sites, or that could damage, disable, overburden, impair or otherwise negatively affect the functionality of the Sites or FCA's or third party’s network or computer systems;
+Circumvent, disable, interrupt, limit or otherwise impair the security, access controls or copyright protections of the Sites or any FCA or third-party network or computer systems;
+Permit any other person to use Your login credentials or account on the Sites, or share Your credentials, passwords or other access information for the Sites;
+Misrepresent Your identity or impersonate any person when accessing or using the Sites;
+Use the Sites to publish, post, share, copy, store or distribute malware, including viruses, Trojan horses, worms, or any other similar applications that may damage the operation of the Sites or any other person's device, networks or computer system;
+Decompile, reverse engineer, or disassemble the Sites except to the extent that such restriction is expressly prohibited by law;
+Copy, modify, or create derivative works of the Sites;
+Remove, obscure or alter any proprietary notices affixed to or contained within or accessed in conjunction with or through the Sites or any Content;
+Loan, rent, lease, resell, sublicense, distribute, transfer or otherwise provide the Sites to any third party;
+Export, re-export, transfer or disclose the Sites to or for any prohibited or restricted destination, end user or end-use, except in accordance with all applicable export control laws and regulations;
+Use any robot, spider, scraper or other automated system, software or other means to extract data from or through the Sites; or
+Engage in any activity that violates, or encourage or promote any activity that violates, these Terms, including the applicable Service Terms.
+Without limiting the generality of any other terms herein, if FCA believes, in its sole discretion, that You have violated these Terms, FCA may terminate or suspend Your access to the Sites.
+
+5. FCA'S INTELLECTUAL PROPERTY
+
+You acknowledge that any and all information, content, data, photographs, images, sound files, animation files, videos, databases, graphics, interfaces, web pages, text, files, software, product names, company names, trademarks, logos and trade names contained in or made available through the Sites (the “Content”), including the manner in which the Content is presented or appears and all information relating thereto, is the property of FCA or its licensees, or the respective owner as indicated.  All Content is protected by U.S., Canadian, and worldwide copyright, trademark and other intellectual property laws and treaty provisions.  FCA and/or its licensors grant You a limited, non-exclusive, revocable, personal, non-assignable and non-transferable license to use and display on Your computer or device the Content for Your own personal, private and non-commercial use only.
+
+All Content is and will remain the property of FCA, its licensors or its respective owner, whether or not specifically recognized or perfected under applicable law.  All trademarks, service marks, trade names, logos or other words or symbols identifying the Sites or FCA's business, products and services (the “Marks”) are and will remain the exclusive property of FCA or its licensors, whether or not specifically recognized or perfected under applicable law. 
+
+You will not acquire any right, title, or interest in or to the Sites, Content or Marks, except for the limited rights specified in these Terms.  FCA or its licensors, as applicable, will own all rights in any copy, translation, modification, adaptation or derivation of the Sites, including any improvement or development thereof.  Any redistribution or reproduction of part or all of the Contents in any form for commercial use is prohibited.
+
+USE OF THE SITES IN ANY MANNER OTHER THAN AS PROVIDED IN THESE TERMS IS STRICTLY PROHIBITED AND MAY INFRINGE OR MISAPPROPRIATE THE INTELLECTUAL PROPERTY RIGHTS OF FCA AND/OR ITS LICENSOR(S), SUBJECTING YOU TO CIVIL AND CRIMINAL PENALTIES, INCLUDING WITHOUT LIMITATION MONETARY DAMAGES AND IMPRISONMENT FOR COPYRIGHT INFRINGEMENT.
+
+6. PAYMENTS; ORDERS; PRICING and ESTIMATES
+
+You may be able to purchase products and services, submit orders or receive estimates on certain of the Sites. As noted above, additional Service Terms may apply to such purchases, orders and estimates, and will control in the event of any conflicts with these Terms including this Section 6.
+
+Product Information. FCA may change any product and service specifications, availability, or prices at any time and without notice. Further, while FCA strives to ensure that product descriptions, images and prices (“Product Information”) are accurate, We do not guarantee or warrant that such Product Information is accurate, complete, reliable, current, or error-free. If the Product Information for a product or service We you have ordered or purchased through the Sites is inaccurate, Your sole remedy is to return the product in unused condition, in accordance with the applicable return policy. We do not warrant or guarantee availability of any of the products and services, and reserve the right to refuse or otherwise cancel Your order or any portion of Your order (e.g., by removing certain items) at any time before Your order is shipped or otherwise completed; in the event We cancel all or a portion of Your order, You will not be charged for the canceled order or items.
+
+Pricing. The list prices displayed for products and services represent the retail price for such product or service, excluding taxes and applicable fees. Prices are subject to change at any time without notice. Despite Our best efforts, list prices may be incorrect. If a product or service's actual price is higher than Our stated price, We will, at Our sole discretion, either contact You for instructions before shipping or cancel Your order and notify You of such cancellation.
+
+Parts and Accessories Purchases. Parts and accessories (collectively defined as "Parts") purchased through the Sites are intended solely for use in or affixing to the motor vehicles for which such Parts are designed by their manufacturer, in accordance with the instructions and directions of the relevant motor vehicle's owners' and repair manuals. If You purchase any Part through the Services to use for any other purpose or to misuse such Part in any way, We assume no responsibility and You agree to indemnify Us as stated in the Disclaimer of Warranties and Limitations of Liability and Indemnification in Sections 10-12 below.
+
+Vehicle Pricing. Vehicle pricing is an estimate for reference purposes only, and is not an offer to sell FCA vehicles. "MSRP" excludes destination, taxes, title, and registration fees. "Starting at" price refers to the base vehicle model, optional equipment not included. Optional equipment is not included in vehicle pricing unless specifically indicated. A more expensive vehicle model may be shown in images next to prices on the Services. Dealers set the actual transaction price. To obtain full pricing details, see Your dealer. Pricing, discounts, incentives, and offers may change at any time without notification.
+
+Subscriptions. Please note that Your subscription for the Connected Services is subject to the Connected Services Terms of Service, and not the terms of this paragraph. For other Services, You may be able to subscribe to certain Services through the Sites. Additional terms and conditions may apply and subscription fees may be due in advance and change at any time. You Us Your We Your When You sign up for a subscription, You agree to pay the applicable subscription fees, plus any applicable taxes and fees. AUTOMATIC RENEWALS: IF YOU SIGN UP FOR A SUBSCRIPTION THAT INCLUDES AUTOMATIC RENEWALS, THEN YOUR SUBSCRIPTION WILL AUTOMATICALLY RENEW AT THE END OF EACH SUBSCRIPTION PERIOD, AS DESCRIBED ON THE RELEVANT SUBSCRIPTION OR ORDER PAGE. YOUR SUBSCRIPTION ACCOUNT WILL BE BILLED, AND YOUR PAYMENT INFORMATION ON FILE WILL AUTOMATICALLY BE CHARGED AT THE SUBSCRIPTION RATE IN EFFECT AT THE TIME OF RENEWAL, PLUS TAXES AND OTHER APPLICABLE CHARGES, UNLESS YOUR SUBSCRIPTION IS CANCELLED BY YOU OR BY US AS ALLOWED BY THIS AGREEMENT.  WE WILL CONTINUE TO CHARGE YOUR PAYMENT METHOD ON FILE, IN ACCORDANCE WITH THE APPLICABLE SUBSCRIPTION TERMS, UNTIL YOUR SUBSCRIPTION IS CANCELLED.
+
+Your Payment Information. By providing Your credit card information to Us (or to the extent We permit other means of payment, Your other payment account information) (“Payment Information”), You represent to Us that You have the right to provide such Payment Information to Us and that We have the right to use that Payment Information for the fees and charges due to Us under this Agreement. You also authorize Us to receive automatic updates of Your Payment Information from the financial institutions for Your applicable account so that such information remains current; however, We have no obligation to do so and You ultimately are responsible for keeping Your Payment Information current with Us. You may update Your Payment Information via Your Account or by contacting Us and requesting that We update Your payment information on file.
+
+Accepting an Order. We (through Our vendors or suppliers) may limit the acceptance of orders to particular jurisdictions and as permitted by applicable law. While We try to confirm orders by email, Your receipt of an email order confirmation does not constitute Our acceptance of an order or Our confirmation of an offer to sell a product or service. The shipment of the products shall be the sole evidence of Our acceptance of Your order. We reserve the right, without prior notice, to limit the order quantity of any product or service and to refuse service to You. We also may verify information before We accept or ship any order.
+
+Shipping. When You place an order through the Sites, the products will be shipped to the address You designated. Risk of loss and title for products purchased from the Services pass to You upon delivery of the products to the carrier. You are responsible for filing any claims with carriers for damaged or lost shipments. You will be charged for shipping and handling fees as noted on your order.
+
+Return Policy. The return policy may differ depending on the type of product or service You purchase and the source of Your purchase. Please refer to the return policy posted on the relevant order page or available as part of Your purchase. Unless otherwise stated, You are responsible for all costs and fees associated with any return shipping.
+
+Your Payment Obligations to Us.  Payments due to Us must be made in U.S. Dollars and are due in advance of Your receiving any product or service for which a fee is due. If You have subscribed to a Service, payment will be due in advance of the applicable subscription period, in accordance with the applicable subscription terms. Your outstanding balance is due in full for each subscription period. We do not accept debit cards or gift cards for recurring payment plans.  All applicable charges must be paid by the due date to avoid a late fee and/or possible cancelation or suspension of Your subscription and/or Your access to the relevant service(s).   We use third parties to process payments, their processing of your payment and transaction information is also subject to their terms and conditions of use.
+
+Taxes and Other Fees. You promise to pay all taxes, fees, and surcharges charged to You by Us. We may charge additional fees related to Our costs (or the costs of Our third party providers, including payment processors). These can include items such as shipping and handling costs; administrative charges; gross receipts charges and certain other taxes imposed upon FCA, or charges for the costs that We incur and pass along to You, and other charges related to governmental costs. Such charges are subject to change and You may not receive advance notice of any changes.
+
+7. FEEDBACK
+
+If You provide FCA with any comments, suggestions, recommendations, feedback or other information with respect to the Sites (“Feedback”), including, without limitation, Feedback relating to modifications, enhancements and improvements to the Sites, You agree that You have the right to provide such Feedback to FCA and hereby grant FCA an irrevocable, worldwide, perpetual, royalty-free license to use the Feedback for any purpose to the fullest extent permitted by applicable law.
+
+8. INTELLECTUAL PROPERTY INFRINGEMENT
+
+FCA respects the intellectual property rights of others, and We ask You to do the same. FCA may, in appropriate circumstances and at Our discretion, terminate Your access to the Sites, if You infringe the intellectual property rights of others. If You believe that Your work is the subject of copyright infringement and/or trademark infringement and appears on or within the Sites (or other FCA websites or online services), please provide FCA’s designated agent (set forth below) the following information:
+
+A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+
+Identification of the copyrighted and/or trademarked work claimed to have been infringed or, if multiple works at a single online site are covered by a single notification, a representative list of such works at that site.
+
+Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled from the Sites, and information reasonably sufficient to permit FCA to locate the material.
+
+Information reasonably sufficient to permit FCA to contact You as the complaining party, such as an address, telephone number, and, if available, an electronic mail address at which You may be contacted.
+
+A statement that You have a good faith belief that use of the material in the manner complained of is not authorized by the copyright and/or trademark owner, its agent, or the law.
+
+A statement that the information in the notification is accurate, and under penalty of perjury, that You are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+
+FCA’s agent for notice of claims of copyright or trademark infringement can be reached as follows:
+
+FCA US LLC
+
+Office of the General Counsel
+
+Copyright Department
+
+1000 Chrysler Drive
+
+CIMS 485-13-32
+
+Auburn Hills, MI 48326
+
+copyrights@fcagroup.com
+
+Please also note that for copyright infringements under Section 512(f) of the Copyright Act, any person who knowingly materially misrepresents that material or activity is infringing may be subject to liability.
+
+Submitting a DMCA Counter-Notification. We will notify You that We have removed or disabled access to copyright-protected material that You provided, if such removal is pursuant to a valid DMCA take-down notice that We have received. If You receive such notice from Us, You may provide FCA with a counter-notification in writing to FCA’s designated agent that includes all of the following information:
+
+Your physical or electronic signature;
+Identification of the material that has been removed or to which access has been disabled, and the location at which the material appeared before it was removed or access to it was disabled;
+A statement from You under the penalty of perjury, that You have a good faith belief that the material was removed or disabled as a result of a mistake or misidentification of the material to be removed or disabled; and
+Your name, physical address and telephone number, and a statement that You consent to the jurisdiction of a court for the judicial district in which Your physical address is located, or if Your physical address is outside of the United States, for any judicial district in which FCA may be located, and that You will accept service of process from the person who provided notification of allegedly infringing material or an agent of such person.
+9. COLLECTION AND USE OF PERSONAL DATA; APPLICABLE PRIVACY POLICY
+
+Your personal information may be collected, used, disclosed, and shared in accordance with the applicable FCA privacy policies, which are incorporated into these Terms by this reference: the FCA US Online Privacy Policy (available at www.chrysler.com/crossbrand_us/privacy) and the Connected Services Privacy Notice (available at https://www.driveuconnect.com/connectedservices/privacy.html ).
+
+10. DISCLAIMERS
+
+FCA PROVIDES EACH OF THE SITES “AS IS” AND “AS AVAILABLE”.  TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, FCA DISCLAIMS ALL REPRESENTATIONS, WARRANTIES AND CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES AND CONDITIONS OF MERCHANTABILITY SUITABILITY, NON-INFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE, PERFORMANCE, CONTENT, QUALITY, TIMELINESS, COMPLETENESS, CORRECTNESS, ACCURACY, RELIABILITY FCA DOES NOT REPRESENT OR WARRANT THAT THE SITES ARE ERROR-FREE OR FREE FROM INFRINGEMENT, OR THAT THE SITES OR ANY OF THEIR FEATURES WILL ALWAYS BE SECURE, RELIABLE, AVAILABLE, TIMELY, COMPLETE OR ERROR-FREE.  YOUR RELIANCE ON ANY FEATURE OF THE SITES IS AT YOUR OWN RISK AND YOU AGREE TO ACCEPT RESPONSIBILITY FOR ALL OF YOUR ACTIVITIES IN CONNECTION WITH THE SITES.
+
+Some jurisdictions do not allow limitations of implied warranties, so certain limitations stated above may not apply to You, in which case such warranties shall be limited to the extent required by applicable law.
+
+11. LIMITATION OF LIABILITY
+
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, FCA AND ITS AFFILIATES, AND EACH OF THEIR DIRECTORS, OFFICERS, EMPLOYEES, REPRESENTATIVES, AND AGENTS (COLLECTIVELY, THE “THIRD PARTY BENEFICIARIES”) WILL NOT BE LIABLE TO YOU FOR ANY DIRECT, CONSEQUENTIAL, INDIRECT, SPECIAL, INCIDENTAL, OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OR INABILITY TO USE THE SITES OR ANY ASSOCIATED FEATURES, SERVICES, DOCUMENTATION OR INFORMATION, OR YOUR RELIANCE OR INABILITY TO RELY ON THE SITES OR ANY ASSOCIATED FEATURES, SERVICES, DOCUMENTATION OR INFORMATION, INCLUDING, WITHOUT LIMITATION, DAMAGES OR COSTS RELATING TO THE LOSS OF PROFITS, BUSINESS, GOODWILL, DATA OR COMPUTER PROGRAMS, BUSINESS INTERRUPTIONS, OR TO OTHER PECUNIARY LOSS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+IF, NOTWITHSTANDING THE EXCLUSIONS SET FORTH IN THIS SECTION, FCA OR A THIRD PARTY BENEFICIARY IS FOUND TO BE LIABLE, THE MAXIMUM AGGREGATE LIABILITY OF FCA AND THE THIRD PARTY BENEFICIARIES TO YOU UNDER ANY THEORY (INCLUDING BUT NOT LIMITED TO FRAUD, MISREPRESENTATION, BREACH OF CONTRACT, PERSONAL INJURY, OR PRODUCTS LIABILITY) IS LIMITED TO THE GREATER OF (i) $500 AND (ii) THE TOTAL AMOUNT PAID BY YOU TO FCA FOR YOUR USE OF THE RELEVANT SITE DURING THE SIX (6) MONTHS PRECEDING THE DATE YOUR CLAIM AROSE.  THIS AMOUNT DOES NOT INCLUDE AMOUNTS YOU MAY PAY IN CONNECTION WITH A SERVICE AND IS THE SOLE AND EXCLUSIVE LIABILITY TO YOU OF FCA AND THE OTHER INDEMNIFIED PARTIES, AND IS PAYABLE AS LIQUIDATED DAMAGES AND NOT AS A PENALTY.
+
+THESE LIMITATIONS APPLY TO ALL CLAIMS, INCLUDING, WITHOUT LIMITATION, CLAIMS IN CONTRACT AND TORT (SUCH AS NEGLIGENCE, PRODUCT LIABILITY AND STRICT LIABILITY).
+
+12. INDEMNITY
+
+Notwithstanding any provision in these Terms to the contrary, You agree to indemnify, defend with the counsel of FCA's choice, and hold harmless FCA, Third Party Beneficiaries and its and their respective officers, directors, members, managers, employees, agents, contractors, representatives, licensors, attorneys, predecessors, successors, and assigns (the “Indemnified Parties”) from and against any and all claims, demands, losses, obligations, liabilities, damages, injuries, causes of action, recoveries, deficiencies, expenses, and costs, including without limitation fees of attorneys and experts (collectively, “Claims”), whether brought by You or any third parties against any of the Indemnified Parties and arising out of or relating to any of the following:
+
+Your use of the Sites;
+Your failure to comply with these Terms;
+The gross negligence, willful misconduct, or fraud of You or of any other person accessing or using the Sites;
+FCA's use, non-use or publication of Your Feedback;
+Your violation of any third-party right, including without limitation, any intellectual property right, publicity, confidentiality, property or privacy right;
+Your violation of any laws, rules, regulations, codes, statutes, ordinances or orders of any governmental and quasi-governmental authorities, including, without limitation, all regulatory, administrative and legislative authorities; or
+Any misrepresentation made by You.
+Notwithstanding the foregoing, We reserve the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by You, in which event You will cooperate with Us in asserting any available defenses. You will not settle any claims without the prior written consent of an officer of FCA. This provision shall remain in full force and effect notwithstanding any termination of Your use of the Sites. 
+
+13. TERMINATION
+
+FCA may terminate these Terms with You, or Your access to and use of the Sites, at any time and for any reason, at its sole discretion.  No notice is required for FCA to terminate these Terms.  This means that FCA may suspend or terminate Your use of the Sites, including any portion thereof, at any time and for any reason, without incurring liability of any kind.  If, in FCA's determination, the suspension might be indefinite or FCA has elected to terminate Your access to the Sites, FCA may use reasonable efforts to notify You.
+
+Sections 3 through 14 and any provision of these Terms that contemplates performance or application subsequent to any termination of these Terms will survive any termination or expiration of these Terms and continue in full force and effect.
+
+14. DISPUTES; BINDING ARBITRATION; CLASS ACTION AND JURY TRIAL WAIVER
+
+Please read the following (this “Provision”) carefully as it affects Your rights. Most concerns can be resolved quickly by contacting Us at 800-800-2813. This Provision facilitates the prompt and efficient resolution of any disputes that may arise between You and FCA regarding the Sites and Your access to and use of the Sites.
+
+This Provision provides that all Disputes between You and FCA shall be resolved by binding arbitration. Arbitration is a form of private dispute resolution in which persons with a dispute waive their rights to file a lawsuit, to proceed in court and to a jury trial, and instead submit their disputes to a neutral third person (or arbitrator) for a binding decision. You have the right to opt-out of this Provision (as explained below), which means You would retain Your right to litigate Your Disputes in a court, either before a judge or jury.
+
+Arbitration replaces the right to go to court. In the absence of this arbitration Provision, You may otherwise have a right or opportunity to bring claims in a court, before a judge or jury, and/or to participate in or be represented in a case filed in court by others (including, but not limited to, class actions). Except as otherwise provided, entering into these Terms constitutes a waiver of Your right to litigate claims and all opportunity to be heard by a judge or jury. There is no judge or jury in arbitration, and court review of an arbitration award is limited. The arbitrator must follow these Terms and can award the same damages and relief as a court (including attorney’s fees).
+
+For the purpose of this Provision, “FCA” means FCA and its parents, subsidiary and affiliate companies, and each of their respective officers, directors, members, managers, employees, and agents. The term “Dispute” means any dispute, claim, or controversy between You and FCA regarding, arising out of or relating to any aspect of Your relationship with FCA, whether based in contract, statute, regulation, ordinance, tort (including, but not limited to, fraud, misrepresentation, fraudulent inducement, or negligence), or any other legal or equitable cause of action or claim for relief, and includes the validity, enforceability or scope of this Provision (with the exception of the enforceability of the Class Action Waiver clause below). “Dispute” is to be given the broadest possible meaning that will be enforced, and shall include any claims against other parties in connection with the Sites or these Terms, whenever You also assert claims against Us in the same proceeding.
+
+WE EACH AGREE THAT, EXCEPT AS PROVIDED BELOW, ANY AND ALL DISPUTES, AS DEFINED ABOVE, WHETHER PRESENTLY IN EXISTENCE OR BASED ON ACTS OR OMISSIONS IN THE PAST OR IN THE FUTURE, WILL BE RESOLVED EXCLUSIVELY AND FINALLY BY BINDING ARBITRATION RATHER THAN IN COURT IN ACCORDANCE WITH THIS PROVISION.
+
+Pre-Arbitration Claim Resolution; Written Notification of Dispute. For all Disputes, whether pursued in court or arbitration, You must first give FCA an opportunity to resolve the Dispute by providing written notification to FCA.
+
+If You are in the United States, You must send Your written notification to FCA US LLC, 1000 Chrysler Drive, Attention: Office of General Counsel, Auburn Hills, Michigan 48326-2766.
+The written notification to FCA of Your Dispute must include (1) Your name, (2) Your address, (3) a written description of Your claim, and (4) a description of the specific relief You seek. If FCA does not resolve the Dispute within 45 days after it receives Your written notification, You may pursue Your Dispute in arbitration. You may pursue Your Dispute in a court only under the circumstances described below.
+
+Exclusions from Arbitration/Right to Opt Out. Notwithstanding the above, You or FCA may choose to pursue a Dispute in court and not by arbitration if (a) the Dispute qualifies, it may be initiated in small claims court; or (b) YOU OPT-OUT OF THESE ARBITRATION PROCEDURES WITHIN 30 DAYS FROM THE DATE THAT YOU FIRST CONSENT TO THESE TERMS (the “Opt-Out Deadline”). You may opt out of this Provision by mailing written notification to FCA:
+
+If You are in the United States, You must send Your written notification to FCA US LLC, 1000 Chrysler Drive, Attention: Office of General Counsel, Auburn Hills, Michigan 48326-2766.
+Your written notification that You choose to opt out of these arbitration procedures must include (1) Your name, (2) Your address, and (3) a clear statement that You do not wish to resolve disputes with FCA through arbitration. Your decision to opt-out of this Arbitration Provision will have no adverse effect on Your relationship with FCA. Any opt-out request received after the Opt-Out Deadline will not be valid and You must pursue Your Dispute in arbitration or small claims court.
+
+Arbitration Procedures. If this Provision applies and the Dispute is not resolved as provided above (Pre-Arbitration Claim Resolution) either You or FCA may initiate arbitration proceedings. The American Arbitration Association (“AAA”), www.adr.org, or JAMS, www.jamsadr.com, will arbitrate all Disputes, and the arbitration will be conducted before a single arbitrator. The arbitration shall be commenced as an individual arbitration only, and shall in no event be commenced as a class arbitration or a consolidated or representative action or arbitration. All issues shall be for the arbitrator to decide, including the scope of this Provision.
+
+For arbitration before AAA, for Disputes of less than $75,000, the AAA’s Supplementary Procedures for Consumer-Related Disputes will apply; for Disputes involving $75,000 or more, the AAA’s Commercial Arbitration Rules will apply. In either instance, the AAA’s Optional Rules For Emergency Measures Of Protection shall apply. The AAA rules are available at www.adr.org or by calling 1-800-778-7879. For arbitration before JAMS, the JAMS Comprehensive Arbitration Rules & Procedures and the JAMS Recommended Arbitration Discovery Protocols For Domestic, Commercial Cases will apply. The JAMS rules are available at www.jamsadr.com or by calling 1-800-352-5267. This Provision governs in the event it conflicts with the applicable arbitration rules. Under no circumstances will class action or representative action procedures or rules apply to the arbitration.
+
+If You are in the United States, the Federal Arbitration Act (“FAA”) governs the arbitrability of all Disputes. However, the arbitrator will apply applicable substantive law consistent with the FAA and the applicable statute of limitations or condition precedent to suit.
+
+Arbitration Award. The arbitrator may award on an individual basis any relief that would be available pursuant to applicable law and will not have the power to award relief to, against or for the benefit of any person who is not a party to the proceeding. The arbitrator will make any award in writing but need not provide a statement of reasons unless requested by a Party or if required by applicable law. Such award will be final and binding on the Parties, except for any right of appeal provided by the FAA or other applicable law, and may be entered in any court having jurisdiction over the Parties for purposes of enforcement.
+
+Location of Arbitration.
+
+If You are in the United States, You or FCA may initiate arbitration in either Your U.S. location or the federal judicial district that includes Your billing address.
+
+Payment of Arbitration Fees and Costs. FCA will pay all arbitration filing fees and AAA or JAMS hearing fees and any arbitrator's hearing fees, costs and expenses upon Your written request to the arbitrator given at or before the first evidentiary hearing in the arbitration. You are responsible for all additional fees and costs that You incur in the arbitration, including, but not limited to, attorneys or expert witnesses. Fees and costs may be awarded as provided pursuant to applicable law. In addition to any rights to recover fees and costs under applicable law, if You provide notice and negotiate in good faith with FCA as provided in “Pre-Arbitration Claim Resolution” above and the arbitrator concludes that You are the prevailing party in the arbitration, You will be entitled to recover reasonable attorney’s fees and costs as determined by the arbitrator.
+
+Class Action Waiver. Except as otherwise provided in this Provision, the arbitrator may not consolidate more than one person’s claims, and may not otherwise preside over any form of a class or representative proceeding or claims (such as a class action, consolidated action, representative action, or private attorney general action) unless both You and FCA specifically agree to do so in writing following initiation of the arbitration. If You choose to pursue Your Dispute in court by opting out of the Arbitration Provision, as specified above, this Class Action Waiver will not apply to You. Neither You, nor any other user of the Subscription Platform can be a class representative, class member, or otherwise participate in a class, consolidated, or representative proceeding without having complied with the opt-out requirements above.
+
+Jury Waiver. You understand and agree that, by entering into these Terms, You and FCA are each waiving the right to a jury trial. In the absence of this Provision, You and might otherwise have had a right or opportunity to bring Disputes in a court, before a judge or jury, and/or to participate or be represented in a case filed in court by others (including class actions). Except as otherwise provided below, those rights are waived. Other rights that You would have if You went to court, such as the right to appeal and to certain types of discovery, may be more limited or may also be waived.
+
+Survival. This Provision shall survive the expiration or termination of Your Subscription or these Terms for any reason.
+
+15. MISCELLANEOUS
+
+Assignment. You may not assign Your rights under these Terms; however, FCA reserves the right to assign these Terms. The rights granted to You under these Terms are not assignable or transferable, in whole or in part. Any attempt to transfer these Terms without the written consent of FCA shall be void and of no force and effect. FCA has the right, at its own discretion, to transfer or assign these Terms and all related rights to an affiliate of FCA or to a third party. These Terms are binding upon, and shall inure to the benefit of, You and Your heirs and successors, and Us and Our successors and assigns.
+
+Waiver. Any waiver of FCA’s rights or Your obligations must be in writing from FCA. No delay or omission by FCA to exercise any right or power occurring upon any noncompliance or default by You with respect to any of the terms of these Terms shall impair any such right or power or be construed to be a waiver thereof. Any waiver by FCA of any covenant, condition, term, provision or agreement to be performed by You only shall be in a written communication from FCA and shall not be deemed to be a waiver of any prior or subsequent breach of the same, or of any other covenant, condition, term, provision or agreement hereunder.
+
+Validity. If the law or a court invalidates a part of these Terms (other than the ‘Class Action Waiver’ Provision), the remainder of these Terms will continue. If any provision of these Terms (other than the ‘Class Action Waiver’ Provision above) shall be held invalid, illegal, or unenforceable, in whole or in part, the validity, legality, and enforceability of the remaining part of such provision and the other provisions hereof, shall not be affected thereby unless it renders ineffective the purpose of these Terms. Any provision of these Terms that is held invalid, illegal, or unenforceable in any jurisdiction shall not thereby be deemed invalid, illegal, or unenforceable in any other jurisdiction. If the Class Action Waiver Provision is found to be invalid, illegal, or unenforceable, the entire Provision (i.e., Section 13) will be unenforceable and the Dispute will be decided by a court of competent jurisdiction.
+
+Governing Law. These Terms are governed by the laws of the state of Michigan without regard to any laws or principles governing application of laws of another jurisdiction.
+
+Jurisdiction; Venue.
+
+If You are in the United States, these Terms shall be deemed to have been executed and delivered at Auburn Hills, Michigan. If any legal action is commenced concerning these Terms, jurisdiction shall be in a court of proper jurisdiction in the State of Michigan located in Oakland County and/or the United States District Court for the Eastern District of Michigan, and the Parties irrevocably consent and agree to the exclusive jurisdiction and venue of such courts.
+Time Limits.  EXCEPT WHERE PROHIBITED BY LAW, YOU ARE NOT ALLOWED TO BRING ANY CLAIM AGAINST FCA OR THIRD PARTY BENEFICIARIES MORE THAN TWO YEARS AFTER THE CLAIM ARISES.
+
+Notice. If You need to notify FCA or FCA needs to notify You, We will do so as described in this Section. Any notices or communication required or permitted to be given to You shall be in writing and shall be considered given if delivered by email or mailed to You at the email or postage address provided to FCA in Your completed application or as updated by You and on file with FCA. Any notices or communication required or permitted to be given to FCA by You shall be in writing and shall be sufficiently given if delivered by registered post to the following address:
+
+If You are in the United States, You should send any written notification to FCA US LLC, 1000 Chrysler Drive, Attention: Office of General Counsel, Auburn Hills, Michigan 48326-2766.
+Any notice delivered via email shall be deemed to have been received on the first business day after which it was sent, unless the sending party is notified that the email address is invalid. Any notice sent by letter shall be deemed to have been received on the fourth business day after it was posted.
+
+Our Relationship. Nothing in these Terms create any agency or fiduciary relationships between You and Us, nor any relationship of principal and agent, partnership, or employer and employee.
+
+Third Party Beneficiaries. These Terms are entered into solely between You and Us and shall not be deemed to create any rights in any third parties nor create any obligations of either You or Us to any third parties. The rights of the parties to rescind or vary these Terms are not subject to the consent of any other person. You are not a third-party beneficiary of any agreement between Us and any of Our partners or third-party providers. None of Our partners or third-party providers have any legal, equitable, or other liability of any kind to You under these Terms. You expressly waive any and all claims or demands for such liability.
+
+Export. You agree to comply with all applicable trade regulations and export control laws both domestic and foreign and to allow any information You provide to be used for the purpose of ensuring export compliance. The Sites, and any underlying information accessed or transferred by You using the may be subject to U.S. export controls, including the Export Administration Act (50 U.S.C. § 2401, et seq.) and the Export Administration Regulations (50 C.F.R. § 730-774), as well as the import regulations of other countries. You agree not to export or re-export any such equipment, software or information to any foreign country. Any information transferred by You using the Sites to any foreign country, entity, or person must comply with the U.S. Export Administration Act and the Export Administration Regulations.
+
+Entire Agreement. These Terms contains the full and complete understanding between You and Us with respect to the subject matter hereof and supersedes all representations and understandings, agreements, warranties, statements and undertakings whether oral or written given or made before the effective date of these Terms by, or on behalf of, the parties and relating to its subject matter, notwithstanding the terms of any such former agreement or arrangement expressed to survive termination. You confirm that You have not relied upon, and with the exception of fraud or fraudulent misrepresentation (for which liability and remedies are not restricted or excluded), shall have no remedy in respect of, any agreement, warranty, statement, representation, understanding or undertaking made by Us unless that warranty, statement, representation, understanding or undertaking is expressly set out in these Terms. With the exception of fraud or fraudulent misrepresentation, You shall not be entitled to the remedies of rescission or damages for misrepresentation arising out of, or in connection with, any agreement, warranty, statement, representation, understanding or undertaking whether or not it is set out in these Terms.
+
+Interpretation. These Terms will not be presumptively construed for or against any party.  Section titles used in these Terms are for convenience only. These Terms may not be construed more strictly against one party than the other. These Terms have been drawn up in the English language at the express request of the parties. 
+
+16.   CALIFORNIA CONSUMER NOTICE
+
+Under California Civil Code Section 1789.3, California users are entitled to the following consumer rights notice: This Sites are provided by FCA US LLC, 1000 Chrysler Drive, Auburn Hills, Michigan 48326-2766. If You have purchased anything from one of the Sites, including without limitation any products, a description of what You have purchased and relevant pricing information are posted as part of the ordering process for that Site (please consult Your individual order confirmation for the charges You incurred). If You have a question or complaint regarding any Site or any products or services, please contact Customer Service at 1 (800) 334-9200 or send an email through the Contact Us function for that Site. You may also contact Us by writing to FCA at 1000 Chrysler Drive, Auburn Hills, Michigan 48326-2766. California residents may reach the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs by post at 1625 North Market Blvd., Sacramento, CA 95834 or by telephone at (916) 445-1254 or (800) 952-5210 or Hearing Impaired at TDD (800) 326-2297 or TDD (916) 322-1700.
