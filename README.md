@@ -49,7 +49,7 @@ This project offers a complete workflow for creating a question-answering system
 3. **🤖 RAG Evaluation (evaluate_rag.py):**  Provides a thorough evaluation of the RAG system using the deepeval library. Metrics include:
     * Correctness (GEval)
     * Faithfulness
-    * Contextual Relevancy
+    * Answer Relevancy
 
 ## 💪 Technical Details
 
