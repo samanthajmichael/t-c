@@ -1,0 +1,104 @@
+======================================================================
+
+Metrics Summary
+
+  - ✅ Correctness (GEval) (score: 0.7354659052252472, threshold: 0.5, strict: False, evaluation model: gpt-4o, reason: The actual output includes device-specific permissions such as location and camera access, aligning with the expected output. Additional permissions like contacts and storage access are mentioned, which are not covered by the expected output., error: None)
+  - ✅ Faithfulness (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4, reason: None, error: None)
+  - ❌ Contextual Relevancy (score: 0.5, threshold: 1.0, strict: False, evaluation model: gpt-4, reason: The score is 0.50 because the context is mainly focused on changing device permissions and settings on Amazon and non-Amazon devices, and information for sellers, rather than directly addressing permissions related to Amazon-created apps., error: None)
+
+For test case:
+
+  - input: What permissions might you grant when using Amazon-created apps?
+  - actual output: When using Amazon-created apps, you might grant the following permissions:
+
+- Access to your device's location to provide location-based services or recommendations.
+- Permission to access your contacts, which may be used for sharing or connecting with friends.
+- Access to your camera or microphone for features like scanning barcodes or voice commands.
+- Permission to access your device's storage to save app data or download content.
+- Access to your device's network information to maintain internet connectivity for app functionality.
+  - expected output: Device-specific permissions like location or camera access.
+  - context: None
+  - retrieval context: ['We generally do not charge your credit card until after your order has entered the shipping process or, for digital products, until we make the digital product available to you.\n\nAPP PERMISSIONS\nWhen you use apps created by Amazon, such as the Amazon App or Kindle App, you may grant certain permissions to us for your device. Most mobile devices provide you with information about these permissions. To learn more about these permissions, click here.\n\nSANCTIONS AND EXPORT POLICY\nYou may not use any Amazon Service if you are the subject of U.S. sanctions or of sanctions consistent with U.S. law imposed by the governments of the country where you are using Amazon Services. You must comply with all U.S. or other export and re-export restrictions that may apply to goods, software (including Amazon Software), technology, and services.', 'You will also be able to opt out of certain other types of data usage by updating your settings on the applicable Amazon website (e.g., in "Manage Your Content and Devices"), device, or application. For more information click here. Most non-Amazon devices also provide users with the ability to change device permissions (e.g., disable/access location services, contacts). For most devices, these controls are located in the device\'s settings menu. If you have questions about how to change your device permissions on devices manufactured by third parties, we recommend you contact your mobile service carrier or your device manufacturer.\nIf you are a seller, you can add or update certain information in Seller Central, update your account information by accessing your Seller Account Information, and adjust your email or other communications you receive from us by updating your Notification Preferences.']
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Correctness (GEval) (score: 0.7911933497180037, threshold: 0.5, strict: False, evaluation model: gpt-4o, reason: The actual output includes all key terms from the expected output, such as nonexclusive, royalty-free, perpetual, irrevocable, and sublicensable rights. However, it adds additional details not required by the expected output., error: None)
+  - ✅ Faithfulness (score: 0.8, threshold: 0.7, strict: False, evaluation model: gpt-4, reason: None, error: None)
+  - ❌ Contextual Relevancy (score: 0.5, threshold: 1.0, strict: False, evaluation model: gpt-4, reason: The score is 0.50 because the context only describes the conditions for posting content on Amazon, but does not specify what rights users grant to Amazon when they post reviews or comments., error: None)
+
+For test case:
+
+  - input: What rights do users grant Amazon when posting reviews or comments?
+  - actual output: Users grant Amazon the following rights when posting reviews or comments:
+
+- A nonexclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, perform, translate, create derivative works from, distribute, and display the content worldwide in any media.
+- The right for Amazon and its sublicensees to use the name submitted with the content.
+- Users represent and warrant that they own or control all rights to the content and that it is accurate and non-infringing.
+- Users agree to indemnify Amazon for any claims resulting from the content they supply.
+  - expected output: Nonexclusive, royalty-free, perpetual, irrevocable, and sublicensable rights.
+  - context: None
+  - retrieval context: ['If you do post content or submit material, and unless we indicate otherwise, you grant Amazon a nonexclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, perform, translate, create derivative works from, distribute, and display such content throughout the world in any media. You grant Amazon and sublicensees the right to use the name that you submit in connection with such content, if they choose. You represent and warrant that you own or otherwise control all of the rights to the content that you post; that the content is accurate; that use of the content you supply does not violate this policy and will not cause injury to any person or entity; and that you will indemnify Amazon for all claims resulting from content you supply. Amazon has the right but not the obligation to monitor and edit or remove any activity or content. Amazon takes no responsibility and assumes no liability for any content posted by you or any', 'REVIEWS, COMMENTS, COMMUNICATIONS, AND OTHER CONTENT\nYou may post reviews, comments, photos, videos, and other content; send e-cards and other communications; and submit suggestions, ideas, comments, questions, or other information, so long as the content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights (including publicity rights), or otherwise injurious to third parties or objectionable, and does not consist of or contain software viruses, political campaigning, commercial solicitation, chain letters, mass mailings, or any form of "spam" or unsolicited commercial electronic messages. You may not use a false e-mail address, impersonate any person or entity, or otherwise mislead as to the origin of a card or other content. Amazon reserves the right (but not the obligation) to remove or edit such content, but does not regularly review posted content.']
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Correctness (GEval) (score: 0.7866536610758642, threshold: 0.5, strict: False, evaluation model: gpt-4o, reason: Actual output correctly states that Costco can remove infringing content and mentions legal actions, but adds additional details on user responsibility and indemnification not present in expected output., error: None)
+  - ✅ Faithfulness (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4, reason: None, error: None)
+  - ✅ Contextual Relevancy (score: 1.0, threshold: 1.0, strict: False, evaluation model: gpt-4, reason: The score is 1.00 because the retrieval context perfectly matches the input query, with no irrelevant context found., error: None)
+
+For test case:
+
+  - input: What is Costco policy on handling user-generated content that may violate copyright or trademark laws?
+  - actual output: Costco has the right to take actions it deems appropriate, such as issuing warnings, suspending or terminating access to its sites, and removing or editing content that it believes may violate applicable laws, including copyright or trademark laws. This decision is made at Costco's sole discretion. Users are responsible for the content they post, and Costco does not assume liability for any user-generated content, including potential copyright or trademark infringements. Users must indemnify Costco against any claims arising from their content or conduct on the site.
+  - expected output: Costco may remove infringing content and take legal action against users who violate copyright laws.
+  - context: None
+  - retrieval context: ["obligation, to take any action we deem appropriate, including but not limited to action to issue a warning, suspend or terminate your access and use of the Sites and related services at any time, and block, remove or edit any communication and materials that Costco believes in its sole discretion may violate applicable law, the Site Terms or a third party's rights. Costco takes no responsibility and assumes no liability for any Content posted or uploaded by you or any third party, or for any mistakes, defamation, slander, libel, omissions, falsehoods, obscenity, pornography or profanity you may encounter.", "6. Responsibility for Your Conduct\nYou represent and warrant that you have and will retain all rights necessary to grant the licenses to Costco under these Terms. You remain solely liable for the Content or other information you upload or transmit to the discussion forums or interactive areas of the Sites, including the Photo Services. You agree to indemnify and hold harmless Costco and its parents, employees, agents and representatives from any third-party claim, action, demand, loss, or damages (including attorneys' fees) arising out of or relating to your conduct, your actual or attempted violation of these Site Terms or any applicable law, your Submissions (including Content and Photo Content), your violation of any rights of a third party, or the acts or omissions of a third party who has authority to access or use the Sites on your behalf or arising out of your violation of these Site Terms."]
+
+======================================================================
+
+Metrics Summary
+
+  - ✅ Correctness (GEval) (score: 0.9914900947207259, threshold: 0.5, strict: False, evaluation model: gpt-4o, reason: The actual output accurately reflects the expected output by stating Apple does not link user/device data with third-party data or share data with brokers., error: None)
+  - ✅ Faithfulness (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4, reason: None, error: None)
+  - ✅ Contextual Relevancy (score: 1.0, threshold: 1.0, strict: False, evaluation model: gpt-4, reason: The score is 1.00 because the retrieval context perfectly matches the input query with no reasons for irrelevancy., error: None)
+
+For test case:
+
+  - input: How does Apple’s advertising platform differ from others regarding user tracking?
+  - actual output: - Apple's advertising platform does not track users by linking data from its apps with data from third parties for targeted advertising.
+- It does not share user or device data with data brokers, ensuring a higher level of privacy.
+- Users have the option to disable Personalized Ads, which stops Apple from delivering ads targeted to their interests.
+- Even with Personalized Ads disabled, users may still receive ads based on contextual information like search queries or content being viewed.
+- Apple's approach contrasts with other platforms that may use cross-app and cross-website tracking to target ads more precisely.
+  - expected output: It does not link user/device data with third-party data or share data with brokers.
+  - context: None
+  - retrieval context: ['Apple generally treats data we collect using these cookies and similar technologies as non-personal data. However, to the extent that Internet Protocol (IP) addresses or similar identifiers are considered personal data by local law, we also treat these identifiers as personal data in those regions. In addition, Apple sometimes combines non-personal data collected from these technologies with other personal data Apple holds. When we combine data in this way, we treat the combined data as personal data for purposes of this Privacy Policy.\n\nAds that are delivered by Apple’s advertising platform may appear on the App Store, Apple News, Stocks, and Apple TV app depending on your location. Apple’s advertising platform does not track you, meaning that it does not link user or device data collected from our apps with user or device data collected from third parties for targeted advertising or advertising measurement purposes, and does not share user or device data with data brokers.', "If you do not want to receive ads targeted to your interests from Apple's advertising platform in those apps, you can choose to disable Personalized Ads, which will opt your Apple Account out of receiving such ads regardless of what device you are using. On your iOS, iPadOS, or visionOS device, you can disable Personalized Ads by going to Settings > Privacy & Security > Apple Advertising and tapping to turn off Personalized Ads. On your Mac, you can disable Personalized Ads by going to System Settings > Privacy & Security > Privacy > Advertising, then deselecting Personalized Ads. You may still see ads in the App Store, Apple News, or Stocks based on context like your search query or the channel you are reading. If you disable Allow Apps to Request to Track, third-party apps cannot request to use the Advertising Identifier, a non-personal identifier served by the operating system on your device, to track you across apps and websites owned by other companies."]
+
+======================================================================
+
+Metrics Summary
+
+  - ❌ Correctness (GEval) (score: 0.06474789967689126, threshold: 0.5, strict: False, evaluation model: gpt-4o, reason: Actual Output does not address the restriction on accepting rewards at licensed or non-traditional locations as stated in Expected Output., error: None)
+  - ✅ Faithfulness (score: 1.0, threshold: 0.7, strict: False, evaluation model: gpt-4, reason: None, error: None)
+  - ❌ Contextual Relevancy (score: 0.5, threshold: 1.0, strict: False, evaluation model: gpt-4, reason: The score is 0.50 because the context does not provide any information on whether Chick-fil-A rewards can be used at all locations., error: None)
+
+For test case:
+
+  - input: Can I use Chick-fil-A rewards at all locations?
+  - actual output: Rewards cannot be redeemed through any third-party platforms. Rewards provided to Members have set terms and will expire in accordance with the terms stated for that Reward. Determinations regarding redemption of Points are subject to Chick-fil-A’s discretion. qualifying purchases and preferences. In certain events, Member Benefits may require that you have location settings enabled for them to be distributed to your App. Please note that Chick-fil-A and participating Chick-fil-A restaurants may be unable to send these Member Benefits to you if you have turned off your notifications or location settings in the App; if you have elected not to receive email or other communications from Chick-fil-A; or if you have poor network connectivity. Member Benefits may have certain restrictions including expiration dates and short, time-limited redemption periods. Member Benefits are personal to you and cannot be shared, copied or transferred, except as the Program may allow in certain limited instances. You may be required to present your Chick-fil-A One account information at the participating Chick-fil-A restaurant in order to redeem Member Benefits. Read each offer carefully for specific details, limitations and restrictions.
+  - expected output: No, rewards may not be accepted at licensed or non-traditional locations like airports or colleges.
+  - context: None
+  - retrieval context: ['the App or online at www.chick-fil-a.com/MyProfile/AddRewards or https://order.chick-fil-a.com while logged into your Chick-fil-A One Account. Rewards cannot be redeemed through any third-party platforms. Rewards provided to Members have set terms and will expire in accordance with the terms stated for that Reward. Determinations regarding redemption of Points are subject to Chick-fil-A’s discretion.', 'qualifying purchases and preferences. In certain events, Member Benefits may require that you have location settings enabled for them to be distributed to your App. Please note that Chick-fil-A and participating Chick-fil-A restaurants may be unable to send these Member Benefits to you if you have turned off your notifications or location settings in the App; if you have elected not to receive email or other communications from Chick-fil-A; or if you have poor network connectivity. Member Benefits may have certain restrictions including expiration dates and short, time-limited redemption periods. Member Benefits are personal to you and cannot be shared, copied or transferred, except as the Program may allow in certain limited instances. You may be required to present your Chick-fil-A One account information at the participating Chick-fil-A restaurant in order to redeem Member Benefits. Read each offer carefully for specific details, limitations and restrictions.']
+
+======================================================================
+
+Overall Metric Pass Rates
+
+Correctness (GEval): 80.00% pass rate
+Faithfulness: 100.00% pass rate
+Contextual Relevancy: 30.00% pass rate
+
+======================================================================
