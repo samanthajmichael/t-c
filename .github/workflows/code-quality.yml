@@ -36,3 +36,10 @@ jobs:
             echo "::error::❌ Import sorting check failed! Please run 'isort .' locally to fix import ordering."
             exit 1
           fi
+
+      - name: Run Bandit security checks
+        run: |
+          if ! bandit -r . -c pyproject.toml; then
+            echo "::error::❌ Bandit security checks failed! Please review the security issues reported above."
+            exit 1
+          fi
