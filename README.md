@@ -83,7 +83,7 @@ Before running the code, ensure you have the necessary libraries installed. You 
 ```bash
 pip install openai langchain faiss-cpu deepeval python-dotenv
 ```
-Markdown
+
 You will also need an OpenAI API key. Create a .env file in the root directory and add your key:
 
 ```bash
