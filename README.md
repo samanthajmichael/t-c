@@ -35,23 +35,24 @@ This repository contains a comprehensive system for building and evaluating Retr
 
 This project offers a complete workflow for creating a question-answering system that leverages external documents. The key components are:
 
-1. **📄 Document Processing (helper_functions.py):**  Handles the ingestion and processing of PDF documents and text files. This includes:
+* **📄 Document Processing (helper_functions.py):**  Handles the ingestion and processing of PDF documents and text files. This includes:
     * PDF/Text Encoding: Processes both PDFs and text strings.
     * Chunking: Splits text into overlapping chunks for efficient embedding.
     * Embedding: Generates OpenAI embeddings for each chunk.
     * Vector Store: Stores embeddings in a FAISS vector database for fast similarity search.  This allows for efficient retrieval of relevant information.
 
-2. **⚙️ RAG Pipeline (simple_rag.ipynb):**  Implements the core RAG pipeline using Langchain and OpenAI:
+* **⚙️ RAG Pipeline (simple_rag.ipynb):**  Implements the core RAG pipeline using Langchain and OpenAI:
     * Document Loading: Loads documents from specified folders and creates a FAISS index.
     * Retrieval: Uses FAISS for efficient retrieval of relevant document chunks.  Includes a fallback BM25 method.
     * Answer Generation: Uses an OpenAI LLM (specified in the notebook) to generate answers based on the retrieved context.
 
-3. **🤖 RAG Evaluation (evaluate_rag.py):**  Provides a thorough evaluation of the RAG system using the deepeval library. Metrics include:
-    * Correctness (GEval)
-    * Faithfulness
-    * Answer Relevancy
+* **🤖 RAG Evaluation (evaluate_rag.py):**  Provides a thorough evaluation of the RAG system using the deepeval library. Metrics include:
+    * Correctness (GEval): How factually accurate are the answers?
+    * Faithfulness: How well do answers align with the information in the source document?
+    * Answer Relevancy: How well do the answers address the specific question and its context within the source document?
 
 ## 💪 Technical Details
+[![Python 3.10.12](https://img.shields.io/badge/python-3.10.12-blue.svg)](https://www.python.org/downloads/release/python-31012/)
 
 This project uses:
 
@@ -60,9 +61,12 @@ This project uses:
 * **OpenAI API:**  Currently used for LLM processing (initially planned to use a local LLaMA 3 model via Modal, but encountering challenges).
 * **FAISS:** For efficient vector search within the document store.
 * **Deepeval:** For evaluating model performance (using Correctness, Faithfulness, and Contextual Relevancy metrics).
-
+* Dependencies listed in requirements.txt
 
 ## 🛠️ Code Quality Tools
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![Security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 
 We utilize:
 
@@ -77,7 +81,7 @@ We utilize:
 Before running the code, ensure you have the necessary libraries installed. You can install them using pip:
 
 ```bash
-pip install openai langchain faiss deepeval python-dotenv
+pip install openai langchain faiss-cpu deepeval python-dotenv
 ```
 Markdown
 You will also need an OpenAI API key. Create a .env file in the root directory and add your key:
