@@ -100,9 +100,13 @@ if "retriever" not in st.session_state:
         init_message.empty()
     except Exception as e:
         init_message.error(
-            f"Failed to initialize RAG system. Please try refreshing the page."
+            f"Failed to initialize RAG system. Error: {str(e)}\nContinuing without RAG functionality."
         )
-        st.stop()
+        print(
+            f"RAG initialization error: {str(e)}", file=sys.stderr
+        )  # Detailed logging
+        # Don't stop the app, just continue without RAG
+        st.session_state.retriever = None
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4"
@@ -124,7 +128,13 @@ if st.sidebar.button("Reset Chat"):
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+        if message["role"] == "assistant":
+            formatted_content = (
+                message["content"].replace("\n*", "\n\n*").replace("\n-", "\n\n-")
+            )
+            st.markdown(formatted_content)
+        else:
+            st.markdown(message["content"])
 
 # System prompt
 system_prompt = """You are a legal assistant explaining terms and conditions in plain English. 
@@ -146,7 +156,7 @@ if prompt := st.chat_input("What would you like to know?"):
 
     # Get relevant context from RAG if available
     context = ""
-    if "retriever" in st.session_state:
+    if "retriever" in st.session_state and st.session_state.retriever is not None:
         try:
             context = retrieve_context_per_question(prompt, st.session_state.retriever)
         except Exception as e:
