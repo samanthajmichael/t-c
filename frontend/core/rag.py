@@ -66,7 +66,7 @@ def create_retriever(vector_store, k=2):
 
 
 @st.cache_resource
-def initialize_rag(data_path="data/", chunk_size=1000, chunk_overlap=200, k=2):
+def initialize_rag(data_path="frontend/data/", chunk_size=1000, chunk_overlap=200, k=2):
     """Initialize the RAG system"""
     if not setup_environment():
         raise ValueError("Failed to load API key")
@@ -140,7 +140,7 @@ def create_retriever(vector_store, k=2):
 
 
 @st.cache_resource
-def initialize_rag(data_path="data/", chunk_size=1000, chunk_overlap=200, k=2):
+def initialize_rag(data_path="frontend/data/", chunk_size=1000, chunk_overlap=200, k=2):
     """Initialize the RAG system"""
     if not setup_environment():
         raise ValueError("Failed to load API key")
