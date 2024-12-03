@@ -1,7 +1,7 @@
 import os
+import sys
 import time
 from pathlib import Path
-import sys
 
 import streamlit as st
 import toml
@@ -18,7 +18,7 @@ config = toml.load(config_path)
 
 run_on_save = config["server"]["runOnSave"]
 theme_base = config["theme"]["base"]
-primary_color = config["theme"]["primaryColor"] 
+primary_color = config["theme"]["primaryColor"]
 
 # Import functions directly from core module
 from core import (
@@ -76,9 +76,9 @@ st.sidebar.title("OpenAI API Configuration")
 
 # Try to get API key from environment first, then allow user input
 api_key = os.getenv("OPENAI_API_KEY") or st.sidebar.text_input(
-    "OpenAI API Key", 
+    "OpenAI API Key",
     type="password",
-    help="Enter your OpenAI API key. This will not be stored permanently."
+    help="Enter your OpenAI API key. This will not be stored permanently.",
 )
 
 # Initialize the OpenAI client only once
@@ -112,18 +112,15 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # System prompt
-system_prompt = (
-    "System Prompt",
-    """You are a legal assistant explaining terms and conditions in plain English. 
-    Only use information from the provided context when responding. 
-    Provide a brief (less than 50 word) summary followed by 3-5 key bullet points that users should know, using everyday language. 
-    Explain any complex terms simply. 
-    Do not provide legal advice or information beyond what's in the context
-    Break down complex topics
-    Provide clear explanations
-    Use relevant examples
-    Maintain a conversational tone:""",
-)
+system_prompt = """You are a legal assistant explaining terms and conditions in plain English. 
+Only use information from the provided context when responding. 
+Provide a brief (less than 50 word) summary followed by 3-5 key bullet points that users should know, using everyday language. 
+Explain any complex terms simply. 
+Do not provide legal advice or information beyond what's in the context
+Break down complex topics
+Provide clear explanations
+Use relevant examples
+Maintain a conversational tone:"""
 
 # Accept user input
 if prompt := st.chat_input("What would you like to know?"):
@@ -136,9 +133,7 @@ if prompt := st.chat_input("What would you like to know?"):
     context = ""
     if "retriever" in st.session_state:
         try:
-            context = retrieve_context_per_question(
-                prompt, st.session_state.retriever
-            )
+            context = retrieve_context_per_question(prompt, st.session_state.retriever)
         except Exception as e:
             st.warning(f"RAG retrieval error: {str(e)}")
 
@@ -161,9 +156,7 @@ if prompt := st.chat_input("What would you like to know?"):
                 )
 
             # Create messages with proper formatting
-            messages = [
-                {"role": "system", "content": str(system_prompt_with_context)}
-            ]
+            messages = [{"role": "system", "content": str(system_prompt_with_context)}]
             messages.extend(
                 [
                     {"role": str(m["role"]), "content": str(m["content"])}
@@ -189,8 +182,8 @@ if prompt := st.chat_input("What would you like to know?"):
 
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
-            full_response = "I apologize, but I encountered an error while processing your request."
+            full_response = (
+                "I apologize, but I encountered an error while processing your request."
+            )
 
-    st.session_state.messages.append(
-        {"role": "assistant", "content": full_response}
-    )
+    st.session_state.messages.append({"role": "assistant", "content": full_response})
