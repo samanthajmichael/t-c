@@ -17,7 +17,7 @@ config = toml.load(config_path)
 
 run_on_save = config["server"]["runOnSave"]
 theme_base = config["theme"]["base"]
-primary_color = config["theme"]["primaryColor"]
+primary_color = config["theme"]["primaryColor"] 
 
 # Import functions directly from core module
 from core import (
