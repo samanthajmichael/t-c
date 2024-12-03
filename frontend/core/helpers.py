@@ -3,7 +3,6 @@ import random
 import textwrap
 from typing import List
 
-import fitz
 import numpy as np
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
