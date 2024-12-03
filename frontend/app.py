@@ -79,6 +79,13 @@ if not api_key:
     st.warning("Please enter your OpenAI API key in the sidebar to continue.")
     st.stop()  # Stop execution until API key is provided
 
+# Store API key in session state if it's new or different
+if "api_key" not in st.session_state or st.session_state.api_key != api_key:
+    st.session_state.api_key = api_key
+    # Clear the retriever if API key changes
+    if "retriever" in st.session_state:
+        del st.session_state.retriever
+
 client = OpenAI(api_key=api_key)
 st.sidebar.success("API key provided successfully!")
 
@@ -86,13 +93,15 @@ st.sidebar.success("API key provided successfully!")
 if "retriever" not in st.session_state:
     init_message = st.empty()
     try:
+        os.environ["OPENAI_API_KEY"] = api_key  # Set API key for RAG system
         st.session_state.retriever = initialize_rag()
         init_message.success("RAG system initialized successfully!")
-        # Clear the message after 3 seconds
         time.sleep(3)
         init_message.empty()
     except Exception as e:
-        st.error(f"Failed to initialize RAG system: {str(e)}")
+        init_message.error(
+            f"Failed to initialize RAG system. Please try refreshing the page."
+        )
         st.stop()
 
 if "openai_model" not in st.session_state:
