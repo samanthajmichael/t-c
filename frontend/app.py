@@ -64,13 +64,6 @@ with col2:
 
 st.title("Baymax T&C")
 
-if "retriever" not in st.session_state:
-    try:
-        st.session_state.retriever = initialize_rag()
-        st.success("RAG system initialized successfully!")
-    except Exception as e:
-        st.error(f"Failed to initialize RAG system: {str(e)}")
-
 # Consolidated API key handling
 st.sidebar.title("OpenAI API Configuration")
 
@@ -82,12 +75,25 @@ api_key = os.getenv("OPENAI_API_KEY") or st.sidebar.text_input(
 )
 
 # Initialize the OpenAI client only once
-if api_key:
-    client = OpenAI(api_key=api_key)
-    st.sidebar.success("API key provided successfully!")
-else:
+if not api_key:
     st.warning("Please enter your OpenAI API key in the sidebar to continue.")
     st.stop()  # Stop execution until API key is provided
+
+client = OpenAI(api_key=api_key)
+st.sidebar.success("API key provided successfully!")
+
+# Initialize RAG system after API key verification
+if "retriever" not in st.session_state:
+    init_message = st.empty()
+    try:
+        st.session_state.retriever = initialize_rag()
+        init_message.success("RAG system initialized successfully!")
+        # Clear the message after 3 seconds
+        time.sleep(3)
+        init_message.empty()
+    except Exception as e:
+        st.error(f"Failed to initialize RAG system: {str(e)}")
+        st.stop()
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4"
@@ -156,7 +162,7 @@ if prompt := st.chat_input("What would you like to know?"):
                 )
 
             # Create messages with proper formatting
-            messages = [{"role": "system", "content": str(system_prompt_with_context)}]
+            messages = [{"role": "system", "content": system_prompt_with_context}]
             messages.extend(
                 [
                     {"role": str(m["role"]), "content": str(m["content"])}
@@ -174,11 +180,22 @@ if prompt := st.chat_input("What would you like to know?"):
                 presence_penalty=presence_penalty,
                 frequency_penalty=frequency_penalty,
             )
+
+            # Updated streaming section with proper formatting
+            full_response = ""
             for chunk in stream:
                 if chunk.choices[0].delta.content is not None:
                     full_response += chunk.choices[0].delta.content
-                    message_placeholder.markdown(full_response + "▌")
-            message_placeholder.markdown(full_response)
+                    # Format response while streaming
+                    formatted_response = full_response.replace("\n*", "\n\n*").replace(
+                        "\n-", "\n\n-"
+                    )
+                    message_placeholder.markdown(formatted_response + "▌")
+            # Format final response
+            formatted_response = full_response.replace("\n*", "\n\n*").replace(
+                "\n-", "\n\n-"
+            )
+            message_placeholder.markdown(formatted_response)
 
         except Exception as e:
             st.error(f"An error occurred: {str(e)}")
