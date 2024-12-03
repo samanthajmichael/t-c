@@ -52,13 +52,13 @@ This project offers a complete workflow for creating a question-answering system
     * Answer Relevancy: How well do the answers address the specific question and its context within the source document?
 
 ## 💪 Technical Details
-[![Python 3.10.12](https://img.shields.io/badge/python-3.10.12-blue.svg)](https://www.python.org/downloads/release/python-31012/)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-311/)
 
 This project uses:
 
-* **Python 3.10.12:** Our runtime environment.
+* **Python 3.11:** Our runtime environment.
 * **Langchain:** For building the RAG pipeline.
-* **OpenAI API:**  Currently used for LLM processing (initially planned to use a local LLaMA 3 model via Modal, but encountering challenges).
+* **OpenAI API:**  Currently used for LLM processing.
 * **FAISS:** For efficient vector search within the document store.
 * **Deepeval:** For evaluating model performance (using Correctness, Faithfulness, and Contextual Relevancy metrics).
 * Dependencies listed in requirements.txt
