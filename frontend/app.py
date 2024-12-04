@@ -112,7 +112,7 @@ st.sidebar.success("API key provided successfully!")
 metadata = load_metadata()
 if metadata:
     titles = ["Browse companies"] + [meta['title'] for meta in metadata]  # Extract only the titles
-    selected_tc = st.sidebar.selectbox("Available Terms and Conditions", titles)
+    selected_tc = st.sidebar.selectbox("Available Terms and Conditions", titles, index=0, key="browse_only")
     # st.markdown(f"### Selected: **{selected_tc}**")
 else:
     st.sidebar.warning("No terms and conditions available.")
