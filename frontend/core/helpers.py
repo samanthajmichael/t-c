@@ -139,15 +139,15 @@ def retrieve_context_per_question(question, retriever):
         List of metadata (e.g., titles) if the query is about available terms,
         or the relevant context otherwise.
     """
-    # Normalize the question to lowercase for case-insensitive matching
-    question = question.lower()
-
-    # Flexible matching for metadata queries
-    if "terms and conditions" in question or "available" in question or "what terms" in question:
-        # Retrieve metadata titles
-        return [doc.metadata["title"] for doc in retriever.store]
+    # Check for metadata query
+    if "terms and conditions" in question.lower() or "available" in question.lower() or "what terms" in question.lower():
+        # Access metadata from the retriever's parent store
+        if hasattr(retriever, 'vectorstore') and hasattr(retriever.vectorstore, 'documents'):
+            return [doc.metadata["title"] for doc in retriever.vectorstore.documents if "title" in doc.metadata]
+        else:
+            raise ValueError("The retriever or its vectorstore does not contain metadata.")
     
-    # Otherwise, retrieve regular context
+    # For non-metadata queries, retrieve relevant context
     results = retriever.get_relevant_documents(question)
     return [doc.page_content for doc in results]
 
