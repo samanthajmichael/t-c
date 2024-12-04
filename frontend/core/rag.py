@@ -25,9 +25,17 @@ def create_retriever(vector_store, k=2):
     """Create a retriever from the vector store"""
     return vector_store.as_retriever(search_kwargs={"k": k})
 
-def load_metadata(metadata_path):
-    """Load metadata from a JSON file."""
-    with open(metadata_path, "r") as f:
+def load_metadata(metadata_file):
+    """
+    Load metadata from a JSON file.
+
+    Args:
+        metadata_file (str): Path to the metadata.json file.
+
+    Returns:
+        list: A list of metadata dictionaries.
+    """
+    with open(metadata_file, "r") as f:
         return json.load(f)
 
 
@@ -63,7 +71,7 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
     return documents
 
 
-# In core/rag.py
+@st.cache_resource
 def initialize_vectorstore_with_metadata(metadata_file, data_folder):
     """
     Initialize the vector store with metadata and content.
@@ -75,30 +83,26 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder):
     Returns:
         FAISS: A vector store initialized with documents and embeddings.
     """
-    metadata = load_metadata(metadata_file)
-    documents = create_documents_with_metadata(metadata, data_folder)
+    metadata_list = load_metadata(metadata_file)
+    documents = create_documents_with_metadata(metadata_list, data_folder)
     embeddings = OpenAIEmbeddings()
     return FAISS.from_documents(documents, embeddings)
 
 
 
 @st.cache_resource
-def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
+def initialize_rag(metadata_file="data/metadata.json", data_folder="data/", k=2):
     """
     Initialize the RAG system with metadata.
 
     Args:
-        metadata_file (str): Path to the metadata file.
+        metadata_file (str): Path to the metadata.json file.
         data_folder (str): Path to the data directory containing text files.
         k: Number of documents to retrieve.
 
     Returns:
         A retriever initialized with the vector store and metadata.
     """
-    if not setup_environment():
-        raise ValueError("Failed to load API key")
-
-    # Initialize the vector store with metadata
     vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
     return vectorstore.as_retriever(search_kwargs={"k": k})
 
