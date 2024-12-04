@@ -139,13 +139,14 @@ def retrieve_context_per_question(question, retriever):
         List of metadata (e.g., titles) if the query is about available terms,
         or the relevant context otherwise.
     """
-    if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms", "companies"]):
-        # Access metadata from the retriever's parent store
-        if hasattr(retriever, "vectorstore") and hasattr(retriever.vectorstore, "documents"):
-            return [doc.metadata.get("title", "Unknown") for doc in retriever.vectorstore.documents]
-        raise ValueError("The retriever or its vectorstore does not contain metadata.")
+    if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms"]):
+        # Access metadata from the retriever's vectorstore
+        if hasattr(retriever.vectorstore, "documents"):
+            return [doc.metadata["title"] for doc in retriever.vectorstore.documents if "title" in doc.metadata]
+        else:
+            raise ValueError("Retriever's vectorstore does not contain metadata.")
     
-    # Handle general context queries
+    # For other queries, retrieve context
     results = retriever.get_relevant_documents(question)
     return [doc.page_content for doc in results]
 

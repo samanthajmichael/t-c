@@ -71,7 +71,6 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
     return documents
 
 
-@st.cache_resource
 def initialize_vectorstore_with_metadata(metadata_file, data_folder):
     """
     Initialize the vector store with metadata and content.
@@ -83,10 +82,16 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder):
     Returns:
         FAISS: A vector store initialized with documents and embeddings.
     """
-    metadata_list = load_metadata(metadata_file)
-    documents = create_documents_with_metadata(metadata_list, data_folder)
+    metadata = load_metadata(metadata_file)
+    documents = create_documents_with_metadata(metadata, data_folder)
     embeddings = OpenAIEmbeddings()
-    return FAISS.from_documents(documents, embeddings)
+    vectorstore = FAISS.from_documents(documents, embeddings)
+
+    # Log metadata for debugging
+    for doc in documents:
+        print(f"Document Metadata: {doc.metadata}")
+
+    return vectorstore
 
 
 
