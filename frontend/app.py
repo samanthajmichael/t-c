@@ -93,20 +93,6 @@ api_key = os.getenv("OPENAI_API_KEY") or st.sidebar.text_input(
     help="Enter your OpenAI API key. This will not be stored permanently.",
 )
 
-# Sidebar button to display available T&Cs
-if st.sidebar.button("Show Available T&Cs"):
-    # Load metadata
-    metadata = load_metadata()
-
-    # Display metadata if available
-    if metadata:
-        st.markdown("### Available Terms and Conditions")
-        for meta in metadata:
-            st.markdown(f"- **{meta['title']}**")
-    else:
-        st.warning("No terms and conditions available.")
-
-
 # Initialize the OpenAI client only once
 if not api_key:
     st.warning("Please enter your OpenAI API key in the sidebar to continue.")
@@ -121,6 +107,19 @@ if "api_key" not in st.session_state or st.session_state.api_key != api_key:
 
 client = OpenAI(api_key=api_key)
 st.sidebar.success("API key provided successfully!")
+
+# Sidebar button to display available T&Cs
+if st.sidebar.button("Show Available T&Cs"):
+    # Load metadata
+    metadata = load_metadata()
+
+    # Display metadata if available
+    if metadata:
+        st.markdown("### Available Terms and Conditions")
+        for meta in metadata:
+            st.markdown(f"- **{meta['title']}**")
+    else:
+        st.warning("No terms and conditions available.")
 
 # Initialize RAG system after API key verification
 if "retriever" not in st.session_state:
