@@ -2,6 +2,7 @@ import os
 import sys
 import time
 from pathlib import Path
+import json
 
 import streamlit as st
 import toml
@@ -42,6 +43,24 @@ current_dir = Path(__file__).parent
 image_path = current_dir / "assets" / "images" / "logo.jpg"
 
 
+def load_metadata(metadata_path="frontend/data/metadata.json"):
+    """
+    Loads metadata from the specified JSON file.
+
+    Args:
+        metadata_path (str): Path to the metadata JSON file.
+
+    Returns:
+        list: A list of dictionaries containing metadata information.
+    """
+    try:
+        with open(metadata_path, "r") as f:
+            metadata = json.load(f)
+        return metadata
+    except Exception as e:
+        st.error(f"Failed to load metadata: {str(e)}")
+        return []
+
 def get_base64_image(image_path):
     import base64
 
@@ -73,6 +92,23 @@ api_key = os.getenv("OPENAI_API_KEY") or st.sidebar.text_input(
     type="password",
     help="Enter your OpenAI API key. This will not be stored permanently.",
 )
+
+# Sidebar button to display available T&Cs
+if st.sidebar.button("Show Available T&Cs"):
+    # Load metadata
+    metadata = load_metadata()
+
+    # Display metadata if available
+    if metadata:
+        st.markdown("### Available Terms and Conditions")
+        for meta in metadata:
+            st.markdown(
+                f"- **{meta['title']}**\n  - **Filename**: `{meta['filename']}`\n"
+                f"  - **Category**: {meta.get('category', 'Not specified')}"
+            )
+    else:
+        st.warning("No terms and conditions available.")
+
 
 # Initialize the OpenAI client only once
 if not api_key:
