@@ -165,13 +165,16 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # System prompt
-system_prompt = """You are a helpful assistant with expertise in explaining terms and conditions in plain English. 
-When relevant context is provided, prioritize using it to answer the query.
-If no context is available or the question is unrelated to the context, use your general knowledge to respond appropriately.
-Provide clear, concise, and accurate answers. 
-Explain any complex terms simply and use everyday language. 
-Do not provide legal advice or authoritative information unless it is directly available in the provided context. 
-Maintain a conversational and approachable tone."""
+system_prompt = """You are a helpful assistant with expertise in answering questions and providing insights. 
+When relevant context is provided, prioritize using it to answer the query. 
+If the question is unrelated to the context or no context is provided, respond based on your general knowledge.
+
+You can:
+- Answer questions using the provided context.
+- Summarize information from context or general knowledge.
+- Assist with general queries unrelated to the context.
+
+Maintain a conversational and approachable tone. Always aim to provide clear, concise, and accurate answers."""
 
 # Accept user input
 if prompt := st.chat_input("What would you like to know?"):
