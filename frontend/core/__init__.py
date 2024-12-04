@@ -55,6 +55,9 @@ __all__ = [
     "create_retriever",
     "encode_documents",
     "setup_environment",
+    "initialize_vectorstore_with_metadata",
+    "create_documents_with_metadata",
+    "load_metadata",
     # Helper functions
     "text_wrap",
     "show_context",
