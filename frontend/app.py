@@ -165,15 +165,13 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # System prompt
-system_prompt = """You are a legal assistant explaining terms and conditions in plain English. 
-Only use information from the provided context when responding. 
-Provide a brief (less than 50 word) summary followed by 3-5 key bullet points that users should know, using everyday language. 
-Explain any complex terms simply. 
-Do not provide legal advice or information beyond what's in the context
-Break down complex topics
-Provide clear explanations
-Use relevant examples
-Maintain a conversational tone:"""
+system_prompt = """You are a helpful assistant with expertise in explaining terms and conditions in plain English. 
+When relevant context is provided, prioritize using it to answer the query.
+If no context is available or the question is unrelated to the context, use your general knowledge to respond appropriately.
+Provide clear, concise, and accurate answers. 
+Explain any complex terms simply and use everyday language. 
+Do not provide legal advice or authoritative information unless it is directly available in the provided context. 
+Maintain a conversational and approachable tone."""
 
 # Accept user input
 if prompt := st.chat_input("What would you like to know?"):
@@ -182,72 +180,91 @@ if prompt := st.chat_input("What would you like to know?"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # Get relevant context from RAG if available
+    # Get relevant context or metadata from RAG if available
     context = ""
+    is_metadata_query = False
     if "retriever" in st.session_state and st.session_state.retriever is not None:
         try:
-            context = retrieve_context_per_question(prompt, st.session_state.retriever)
+            # Check if it's a metadata query
+            if any(keyword in prompt.lower() for keyword in ["terms and conditions", "available", "what terms"]):
+                is_metadata_query = True
+                context = retrieve_context_per_question(prompt, st.session_state.retriever)
+                
+                # Display the metadata in the chat
+                with st.chat_message("assistant"):
+                    if context:
+                        st.write("### Available Terms and Conditions:")
+                        for title in context:
+                            st.write(f"- {title}")
+                    else:
+                        st.write("No terms and conditions available.")
+
+            # If not a metadata query, handle it as a normal query
+            if not is_metadata_query:
+                context = retrieve_context_per_question(prompt, st.session_state.retriever)
         except Exception as e:
             st.warning(f"RAG retrieval error: {str(e)}")
 
-    start_time = time.time()
-    # Display assistant response
-    with st.chat_message("assistant"):
-        message_placeholder = st.empty()
-        full_response = ""
-        try:
-            # Include context in the prompt if available
-            system_prompt_with_context = system_prompt
-            if context:
-                if isinstance(context, list):
-                    # Join list items with newlines if context is a list
-                    context_str = "\n\n".join(str(item) for item in context)
-                else:
-                    context_str = str(context)
-                system_prompt_with_context = (
-                    f"{system_prompt}\n\nRelevant context:\n{context_str}"
+    # Continue to process the query for non-metadata scenarios
+    if not is_metadata_query or "retriever" in st.session_state:
+        start_time = time.time()
+        # Display assistant response for non-metadata queries
+        with st.chat_message("assistant"):
+            message_placeholder = st.empty()
+            full_response = ""
+            try:
+                # Include context in the prompt if available
+                system_prompt_with_context = system_prompt
+                if context:
+                    if isinstance(context, list):
+                        # Join list items with newlines if context is a list
+                        context_str = "\n\n".join(str(item) for item in context)
+                    else:
+                        context_str = str(context)
+                    system_prompt_with_context = (
+                        f"{system_prompt}\n\nRelevant context:\n{context_str}"
+                    )
+
+                # Create messages with proper formatting
+                messages = [{"role": "system", "content": system_prompt_with_context}]
+                messages.extend(
+                    [
+                        {"role": str(m["role"]), "content": str(m["content"])}
+                        for m in st.session_state.messages
+                    ]
                 )
 
-            # Create messages with proper formatting
-            messages = [{"role": "system", "content": system_prompt_with_context}]
-            messages.extend(
-                [
-                    {"role": str(m["role"]), "content": str(m["content"])}
-                    for m in st.session_state.messages
-                ]
-            )
+                stream = client.chat.completions.create(
+                    model=st.session_state["openai_model"],
+                    messages=messages,
+                    stream=True,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    top_p=top_p,
+                    presence_penalty=presence_penalty,
+                    frequency_penalty=frequency_penalty,
+                )
 
-            stream = client.chat.completions.create(
-                model=st.session_state["openai_model"],
-                messages=messages,
-                stream=True,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                top_p=top_p,
-                presence_penalty=presence_penalty,
-                frequency_penalty=frequency_penalty,
-            )
+                # Updated streaming section with proper formatting
+                full_response = ""
+                for chunk in stream:
+                    if chunk.choices[0].delta.content is not None:
+                        full_response += chunk.choices[0].delta.content
+                        # Format response while streaming
+                        formatted_response = full_response.replace("\n*", "\n\n*").replace(
+                            "\n-", "\n\n-"
+                        )
+                        message_placeholder.markdown(formatted_response + "▌")
+                # Format final response
+                formatted_response = full_response.replace("\n*", "\n\n*").replace(
+                    "\n-", "\n\n-"
+                )
+                message_placeholder.markdown(formatted_response)
 
-            # Updated streaming section with proper formatting
-            full_response = ""
-            for chunk in stream:
-                if chunk.choices[0].delta.content is not None:
-                    full_response += chunk.choices[0].delta.content
-                    # Format response while streaming
-                    formatted_response = full_response.replace("\n*", "\n\n*").replace(
-                        "\n-", "\n\n-"
-                    )
-                    message_placeholder.markdown(formatted_response + "▌")
-            # Format final response
-            formatted_response = full_response.replace("\n*", "\n\n*").replace(
-                "\n-", "\n\n-"
-            )
-            message_placeholder.markdown(formatted_response)
+            except Exception as e:
+                st.error(f"An error occurred: {str(e)}")
+                full_response = (
+                    "I apologize, but I encountered an error while processing your request."
+                )
 
-        except Exception as e:
-            st.error(f"An error occurred: {str(e)}")
-            full_response = (
-                "I apologize, but I encountered an error while processing your request."
-            )
-
-    st.session_state.messages.append({"role": "assistant", "content": full_response})
+        st.session_state.messages.append({"role": "assistant", "content": full_response})

@@ -129,21 +129,27 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
 
 def retrieve_context_per_question(question, retriever):
     """
-    Retrieves relevant context and associated metadata for a given question.
+    Retrieves relevant context or metadata based on the question.
 
     Args:
-        question: The question for which to retrieve context.
+        question: The user's query.
+        retriever: The retriever object with metadata and context.
 
     Returns:
-        A list of tuples with the text content and its associated metadata.
+        List of metadata (e.g., titles) if the query is about available terms,
+        or the relevant context otherwise.
     """
-    # Retrieve relevant documents
-    docs = retriever.get_relevant_documents(question)
+    # Normalize the question to lowercase for case-insensitive matching
+    question = question.lower()
 
-    # Combine content and metadata
-    results = [{"content": doc.page_content, "metadata": doc.metadata} for doc in docs]
-
-    return results
+    # Flexible matching for metadata queries
+    if "terms and conditions" in question or "available" in question or "what terms" in question:
+        # Retrieve metadata titles
+        return [doc.metadata["title"] for doc in retriever.store]
+    
+    # Otherwise, retrieve regular context
+    results = retriever.get_relevant_documents(question)
+    return [doc.page_content for doc in results]
 
 
 class QuestionAnswerFromContext(BaseModel):
