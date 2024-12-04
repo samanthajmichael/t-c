@@ -42,15 +42,6 @@ def load_metadata(metadata_file):
 def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, chunk_overlap=200):
     """
     Create documents with metadata and content chunks.
-
-    Args:
-        metadata_list (list): List of metadata dictionaries.
-        data_folder (str): Path to the folder containing text files.
-        chunk_size (int): The size of each text chunk.
-        chunk_overlap (int): Overlap between text chunks.
-
-    Returns:
-        list: A list of documents with metadata.
     """
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
@@ -67,31 +58,27 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
                     chunk.metadata = meta  # Attach metadata
                 documents.extend(chunks)
         else:
-            print(f"Warning: File {file_path} does not exist.")
+            print(f"Error: File {file_path} does not exist for metadata: {meta}")
+            raise FileNotFoundError(f"File {file_path} not found.")
     return documents
 
 
 def initialize_vectorstore_with_metadata(metadata_file, data_folder):
     """
     Initialize the vector store with metadata and content.
-
-    Args:
-        metadata_file (str): Path to the metadata.json file.
-        data_folder (str): Path to the folder containing the text files.
-
-    Returns:
-        FAISS: A vector store initialized with documents and embeddings.
     """
-    metadata = load_metadata(metadata_file)
-    documents = create_documents_with_metadata(metadata, data_folder)
+    metadata_list = load_metadata(metadata_file)
+    if not metadata_list:
+        raise ValueError("Metadata file is empty or could not be loaded.")
+
+    documents = create_documents_with_metadata(metadata_list, data_folder)
     embeddings = OpenAIEmbeddings()
-    vectorstore = FAISS.from_documents(documents, embeddings)
 
     # Log metadata for debugging
     for doc in documents:
         print(f"Document Metadata: {doc.metadata}")
 
-    return vectorstore
+    return FAISS.from_documents(documents, embeddings)
 
 
 
