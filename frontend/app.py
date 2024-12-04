@@ -111,7 +111,7 @@ st.sidebar.success("API key provided successfully!")
 # Dropdown to display available T&Cs
 metadata = load_metadata()
 if metadata:
-    titles = [meta['title'] for meta in metadata]  # Extract only the titles
+    titles = ["Browse companies"] + [meta['title'] for meta in metadata]  # Extract only the titles
     selected_tc = st.sidebar.selectbox("Available Terms and Conditions", titles)
     # st.markdown(f"### Selected: **{selected_tc}**")
 else:
