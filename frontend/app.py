@@ -28,6 +28,7 @@ from core import (
     retrieve_context_per_question,
     show_context,
     text_wrap,
+    initialize_vectorstore_with_metadata
 )
 
 temperature = 0.4
@@ -183,17 +184,19 @@ if prompt := st.chat_input("What would you like to know?"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # Get relevant context or metadata from RAG if available
+    # Initialize variables
     context = ""
     is_metadata_query = False
+
+    # Check if retriever exists
     if "retriever" in st.session_state and st.session_state.retriever is not None:
         try:
             # Check if it's a metadata query
-            if any(keyword in prompt.lower() for keyword in ["terms and conditions", "available", "what terms"]):
+            if any(keyword in prompt.lower() for keyword in ["terms and conditions", "available", "what terms", "companies"]):
                 is_metadata_query = True
                 context = retrieve_context_per_question(prompt, st.session_state.retriever)
-                
-                # Display the metadata in the chat
+
+                # Display metadata titles in the chat
                 with st.chat_message("assistant"):
                     if context:
                         st.write("### Available Terms and Conditions:")
@@ -201,40 +204,34 @@ if prompt := st.chat_input("What would you like to know?"):
                             st.write(f"- {title}")
                     else:
                         st.write("No terms and conditions available.")
-
-            # If not a metadata query, handle it as a normal query
+            
+            # Retrieve context for general queries
             if not is_metadata_query:
                 context = retrieve_context_per_question(prompt, st.session_state.retriever)
+
         except Exception as e:
             st.warning(f"RAG retrieval error: {str(e)}")
 
-    # Continue to process the query for non-metadata scenarios
-    if not is_metadata_query or "retriever" in st.session_state:
-        start_time = time.time()
-        # Display assistant response for non-metadata queries
+    # Handle general queries or continue if context exists
+    if not is_metadata_query:
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
             full_response = ""
+
             try:
                 # Include context in the prompt if available
                 system_prompt_with_context = system_prompt
                 if context:
                     if isinstance(context, list):
-                        # Join list items with newlines if context is a list
-                        context_str = "\n\n".join(str(item) for item in context)
+                        context_str = "\n\n".join(context)
                     else:
-                        context_str = str(context)
-                    system_prompt_with_context = (
-                        f"{system_prompt}\n\nRelevant context:\n{context_str}"
-                    )
+                        context_str = context
+                    system_prompt_with_context = f"{system_prompt}\n\nRelevant context:\n{context_str}"
 
-                # Create messages with proper formatting
+                # Generate assistant response
                 messages = [{"role": "system", "content": system_prompt_with_context}]
                 messages.extend(
-                    [
-                        {"role": str(m["role"]), "content": str(m["content"])}
-                        for m in st.session_state.messages
-                    ]
+                    [{"role": str(m["role"]), "content": str(m["content"])} for m in st.session_state.messages]
                 )
 
                 stream = client.chat.completions.create(
@@ -248,26 +245,16 @@ if prompt := st.chat_input("What would you like to know?"):
                     frequency_penalty=frequency_penalty,
                 )
 
-                # Updated streaming section with proper formatting
-                full_response = ""
                 for chunk in stream:
                     if chunk.choices[0].delta.content is not None:
                         full_response += chunk.choices[0].delta.content
-                        # Format response while streaming
-                        formatted_response = full_response.replace("\n*", "\n\n*").replace(
-                            "\n-", "\n\n-"
-                        )
-                        message_placeholder.markdown(formatted_response + "▌")
-                # Format final response
-                formatted_response = full_response.replace("\n*", "\n\n*").replace(
-                    "\n-", "\n\n-"
-                )
-                message_placeholder.markdown(formatted_response)
+                        message_placeholder.markdown(full_response + "▌")
 
+                # Format final response
+                message_placeholder.markdown(full_response)
             except Exception as e:
                 st.error(f"An error occurred: {str(e)}")
-                full_response = (
-                    "I apologize, but I encountered an error while processing your request."
-                )
+                full_response = "I apologize, but I encountered an error while processing your request."
 
-        st.session_state.messages.append({"role": "assistant", "content": full_response})
+            # Save assistant response to chat history
+            st.session_state.messages.append({"role": "assistant", "content": full_response})
