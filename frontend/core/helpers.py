@@ -8,7 +8,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain_openai import OpenAIEmbeddings
 from openai import RateLimitError
 from rank_bm25 import BM25Okapi
@@ -127,27 +127,23 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
     return vectorstore
 
 
-def retrieve_context_per_question(question, chunks_query_retriever):
+def retrieve_context_per_question(question, retriever):
     """
-    Retrieves relevant context and unique URLs for a given question using the chunks query retriever.
+    Retrieves relevant context and associated metadata for a given question.
 
     Args:
-        question: The question for which to retrieve context and URLs.
+        question: The question for which to retrieve context.
 
     Returns:
-        A tuple containing:
-        - A string with the concatenated content of relevant documents.
-        - A list of unique URLs from the metadata of the relevant documents.
+        A list of tuples with the text content and its associated metadata.
     """
+    # Retrieve relevant documents
+    docs = retriever.get_relevant_documents(question)
 
-    # Retrieve relevant documents for the given question
-    docs = chunks_query_retriever.get_relevant_documents(question)
+    # Combine content and metadata
+    results = [{"content": doc.page_content, "metadata": doc.metadata} for doc in docs]
 
-    # Concatenate document content
-    # context = " ".join(doc.page_content for doc in docs)
-    context = [doc.page_content for doc in docs]
-
-    return context
+    return results
 
 
 class QuestionAnswerFromContext(BaseModel):
