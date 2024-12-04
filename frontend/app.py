@@ -108,18 +108,14 @@ if "api_key" not in st.session_state or st.session_state.api_key != api_key:
 client = OpenAI(api_key=api_key)
 st.sidebar.success("API key provided successfully!")
 
-# Sidebar button to display available T&Cs
-if st.sidebar.button("Show Available T&Cs"):
-    # Load metadata
-    metadata = load_metadata()
-
-    # Display metadata if available
-    if metadata:
-        st.markdown("### Available Terms and Conditions")
-        for meta in metadata:
-            st.markdown(f"- **{meta['title']}**")
-    else:
-        st.warning("No terms and conditions available.")
+# Dropdown to display available T&Cs
+metadata = load_metadata()
+if metadata:
+    titles = [meta['title'] for meta in metadata]  # Extract only the titles
+    selected_tc = st.sidebar.selectbox("Available Terms and Conditions", titles)
+    # st.markdown(f"### Selected: **{selected_tc}**")
+else:
+    st.sidebar.warning("No terms and conditions available.")
 
 # Initialize RAG system after API key verification
 if "retriever" not in st.session_state:
