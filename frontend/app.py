@@ -102,10 +102,7 @@ if st.sidebar.button("Show Available T&Cs"):
     if metadata:
         st.markdown("### Available Terms and Conditions")
         for meta in metadata:
-            st.markdown(
-                f"- **{meta['title']}**\n  - **Filename**: `{meta['filename']}`\n"
-                f"  - **Category**: {meta.get('category', 'Not specified')}"
-            )
+            st.markdown(f"- **{meta['title']}**")
     else:
         st.warning("No terms and conditions available.")
 
