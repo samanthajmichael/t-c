@@ -63,44 +63,6 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
     return documents
 
 
-@st.cache_resource
-def initialize_vectorstore_with_metadata(metadata_file, data_folder):
-    """
-    Initialize the vector store with metadata and content.
-
-    Args:
-        metadata_file (str): Path to the metadata.json file.
-        data_folder (str): Path to the folder containing the text files.
-
-    Returns:
-        FAISS: A vector store initialized with documents and embeddings.
-    """
-    metadata_list = load_metadata(metadata_file)
-    documents = create_documents_with_metadata(metadata_list, data_folder)
-    embeddings = OpenAIEmbeddings()
-    return FAISS.from_documents(documents, embeddings)
-
-
-@st.cache_resource
-def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
-    """
-    Initialize the RAG system with metadata.
-
-    Args:
-        metadata_file (str): Path to the metadata file.
-        data_folder (str): Path to the data directory containing text files.
-        k: Number of documents to retrieve.
-
-    Returns:
-        A retriever initialized with the vector store and metadata.
-    """
-    if not setup_environment():
-        raise ValueError("Failed to load API key")
-
-    vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
-    return vectorstore.as_retriever(search_kwargs={"k": k})
-
-
 # In core/rag.py
 def initialize_vectorstore_with_metadata(metadata_file, data_folder):
     """
@@ -121,14 +83,13 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder):
 
 
 @st.cache_resource
-def initialize_rag(data_path="frontend/data/", chunk_size=1000, chunk_overlap=200, k=2):
+def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
     """
     Initialize the RAG system with metadata.
 
     Args:
-        data_path: Path to the data directory containing text files and metadata.json.
-        chunk_size: The size of each text chunk.
-        chunk_overlap: The overlap between chunks.
+        metadata_file (str): Path to the metadata file.
+        data_folder (str): Path to the data directory containing text files.
         k: Number of documents to retrieve.
 
     Returns:
@@ -137,15 +98,9 @@ def initialize_rag(data_path="frontend/data/", chunk_size=1000, chunk_overlap=20
     if not setup_environment():
         raise ValueError("Failed to load API key")
 
-    try:
-        # Encode documents with metadata
-        vector_store = encode_documents(data_path, chunk_size, chunk_overlap)
-        
-        # Create retriever from the vector store
-        retriever = vector_store.as_retriever(search_kwargs={"k": k})
-        return retriever
-    except Exception as e:
-        raise ValueError(f"Failed to initialize RAG system: {str(e)}")
+    # Initialize the vector store with metadata
+    vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
+    return vectorstore.as_retriever(search_kwargs={"k": k})
 
 
 @st.cache_resource
