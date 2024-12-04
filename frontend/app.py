@@ -65,19 +65,20 @@ with col2:
 st.title("Baymax T&C")
 
 # Consolidated API key handling
-st.sidebar.title("OpenAI API Configuration")
+st.sidebar.title("Powered by OpenAI")
 
 # Try to get API key from environment first, then allow user input
+# Try environment variable first, then fall back to sidebar input
 api_key = os.getenv("OPENAI_API_KEY") or st.sidebar.text_input(
     "OpenAI API Key",
     type="password",
     help="Enter your OpenAI API key. This will not be stored permanently.",
 )
 
-# Initialize the OpenAI client only once
+# Initialize the OpenAI client only if we have a key
 if not api_key:
-    st.warning("Please enter your OpenAI API key in the sidebar to continue.")
-    st.stop()  # Stop execution until API key is provided
+    st.warning("Please enter your OpenAI API Key in the sidebar to continue.")
+    st.stop()
 
 # Store API key in session state if it's new or different
 if "api_key" not in st.session_state or st.session_state.api_key != api_key:
@@ -86,8 +87,12 @@ if "api_key" not in st.session_state or st.session_state.api_key != api_key:
     if "retriever" in st.session_state:
         del st.session_state.retriever
 
-client = OpenAI(api_key=api_key)
-st.sidebar.success("API key provided successfully!")
+try:
+    client = OpenAI(api_key=api_key)
+    st.sidebar.success("API key provided successfully!")
+except Exception as e:
+    st.error(f"Error initializing OpenAI client: {str(e)}")
+    st.stop()
 
 # Initialize RAG system after API key verification
 if "retriever" not in st.session_state:
