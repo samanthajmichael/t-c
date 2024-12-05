@@ -8,10 +8,10 @@ from typing import List, Tuple
 import docx
 import numpy as np
 import PyPDF2
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 from openai import RateLimitError
 from pydantic import BaseModel, Field

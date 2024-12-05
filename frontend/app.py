@@ -58,6 +58,7 @@ if not metadata_path.exists():
     with open(metadata_path, "w") as f:
         json.dump([], f)
 
+
 def load_metadata(metadata_path=metadata_path):
     """
     Loads metadata from the specified JSON file.

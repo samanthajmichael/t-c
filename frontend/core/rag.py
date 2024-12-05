@@ -1,12 +1,12 @@
 import json
 import os
+from pathlib import Path
 
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
-from pathlib import Path
 
 
 def setup_environment():
@@ -76,15 +76,15 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder):
 
     return FAISS.from_documents(documents, embeddings)
 
-core_dir = Path(__file__).parent    # Gets the core directory
-frontend_dir = core_dir.parent      # Goes up one level to frontend directory
-data_dir = frontend_dir / "data"    # Points to frontend/data
+
+core_dir = Path(__file__).parent  # Gets the core directory
+frontend_dir = core_dir.parent  # Goes up one level to frontend directory
+data_dir = frontend_dir / "data"  # Points to frontend/data
 metadata_path = data_dir / "metadata.json"
 
+
 @st.cache_resource
-def initialize_rag(
-    metadata_file=metadata_path, data_folder=data_dir, k=2
-):
+def initialize_rag(metadata_file=metadata_path, data_folder=data_dir, k=2):
     """
     Initialize the RAG system with metadata.
 
