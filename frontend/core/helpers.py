@@ -127,6 +127,25 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
     return vectorstore
 
 
+def retrieve_all_metadata(vectorstore):
+    """
+    Retrieve all metadata titles from the vector store.
+
+    Args:
+        vectorstore: A FAISS vector store object.
+
+    Returns:
+        list: A list of metadata titles.
+    """
+    try:
+        # Access documents stored in the vector store
+        if hasattr(vectorstore, "documents"):
+            return [doc.metadata.get("title", "Unknown") for doc in vectorstore.documents]
+        raise AttributeError("Vectorstore does not contain documents with metadata.")
+    except Exception as e:
+        raise ValueError(f"Metadata retrieval error: {e}")
+
+
 def retrieve_context_per_question(question, retriever):
     """
     Retrieves metadata or context based on the user's query.
@@ -138,27 +157,19 @@ def retrieve_context_per_question(question, retriever):
     Returns:
         list: A list of metadata titles if the query is about terms, or context otherwise.
     """
-    def retrieve_all_metadata(retriever):
-        """Retrieve all metadata titles directly from the vectorstore."""
-        try:
-            return [doc.metadata.get("title", "Unknown") for doc in retriever.vectorstore._documents]
-        except AttributeError as e:
-            raise ValueError(f"Metadata retrieval error: {e}")
-
-    # Check if the query is about terms and conditions availability
     if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms"]):
         try:
-            titles = retrieve_all_metadata(retriever)
-            return titles if titles else ["No terms and conditions available."]
+            return retrieve_all_metadata(retriever.vectorstore)
         except Exception as e:
             raise ValueError(f"Error retrieving metadata: {e}")
 
-    # Retrieve relevant context for other questions
+    # Retrieve relevant context for general questions
     try:
         results = retriever.get_relevant_documents(question)
         return [doc.page_content for doc in results] if results else ["No relevant context found."]
     except Exception as e:
         raise ValueError(f"Error retrieving context: {e}")
+
 
 
 class QuestionAnswerFromContext(BaseModel):

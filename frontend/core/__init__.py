@@ -11,6 +11,7 @@ from .helpers import (
     retrieve_context_per_question,
     show_context,
     text_wrap,
+    retrieve_all_metadata
 )
 from .rag import create_retriever, encode_documents, initialize_rag, setup_environment, initialize_vectorstore_with_metadata, load_metadata, create_documents_with_metadata
 
@@ -35,4 +36,5 @@ __all__ = [
     "QuestionAnswerFromContext",
     "create_question_answer_from_context_chain",
     "answer_question_from_context",
+    "retrieve_all_metadata"
 ]  
