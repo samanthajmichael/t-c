@@ -82,24 +82,25 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder):
 
 
 
-@st.cache_resource
-def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
+def initialize_rag(metadata_file="data/metadata.json", data_folder="data/", k=2):
     """
     Initialize the RAG system with metadata.
 
     Args:
-        metadata_file (str): Path to the metadata.json file.
+        metadata_file (str): Path to the metadata file.
         data_folder (str): Path to the data directory containing text files.
         k: Number of documents to retrieve.
 
     Returns:
         A retriever initialized with the vector store and metadata.
     """
+    if not setup_environment():
+        raise ValueError("Failed to load API key")
+
     vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
     return vectorstore.as_retriever(search_kwargs={"k": k})
 
 
-@st.cache_resource
 def encode_documents(path, chunk_size=1000, chunk_overlap=200):
     """
     Encodes all text files into a vector store using OpenAI embeddings and includes metadata.
@@ -112,38 +113,37 @@ def encode_documents(path, chunk_size=1000, chunk_overlap=200):
     Returns:
         A FAISS vector store containing the encoded content and metadata of the files.
     """
-    # Load metadata
     metadata_path = os.path.join(path, "metadata.json")
     with open(metadata_path, "r") as meta_file:
         metadata_list = json.load(meta_file)
 
-    # Initialize text splitter and embeddings
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
     )
     embeddings = OpenAIEmbeddings()
 
-    # Store chunks and their metadata
     documents_with_metadata = []
 
     for meta in metadata_list:
         file_path = os.path.join(path, meta["filename"])
 
-        # Load the text from the file
-        with open(file_path, "r", encoding="utf-8") as file:
-            text = file.read()
+        if os.path.exists(file_path):
+            with open(file_path, "r", encoding="utf-8") as file:
+                text = file.read()
 
-        # Split the text into chunks
-        chunks = text_splitter.create_documents([text])
+            # Split the text into chunks
+            chunks = text_splitter.create_documents([text])
 
-        # Add metadata to each chunk
-        for chunk in chunks:
-            chunk.metadata = meta  # Attach metadata to each chunk
-        documents_with_metadata.extend(chunks)
+            # Add metadata to each chunk
+            for chunk in chunks:
+                chunk.metadata = meta  # Attach metadata to each chunk
+            documents_with_metadata.extend(chunks)
+        else:
+            print(f"Error: File {file_path} does not exist for metadata: {meta}")
+            raise FileNotFoundError(f"File {file_path} not found.")
 
-    # Create vector store with embeddings and metadata
-    vectorstore = FAISS.from_documents(documents_with_metadata, embeddings)
-    return vectorstore
+    # Ensure metadata is stored in vectorstore
+    return FAISS.from_documents(documents_with_metadata, embeddings)
 
 
 
