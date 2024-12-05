@@ -138,21 +138,27 @@ def retrieve_context_per_question(question, retriever):
     Returns:
         list: A list of metadata titles if the query is about terms, or context otherwise.
     """
-    # Check if the question is about available terms
-    if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms"]):
-        # Retrieve all documents using retriever
+    def retrieve_all_metadata(retriever):
+        """Retrieve all metadata titles directly from the vectorstore."""
         try:
-            docs = retriever.get_relevant_documents(question)
-            return [doc.metadata.get("title", "Unknown") for doc in docs]
-        except Exception as e:
+            return [doc.metadata.get("title", "Unknown") for doc in retriever.vectorstore._documents]
+        except AttributeError as e:
             raise ValueError(f"Metadata retrieval error: {e}")
+
+    # Check if the query is about terms and conditions availability
+    if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms"]):
+        try:
+            titles = retrieve_all_metadata(retriever)
+            return titles if titles else ["No terms and conditions available."]
+        except Exception as e:
+            raise ValueError(f"Error retrieving metadata: {e}")
 
     # Retrieve relevant context for other questions
     try:
         results = retriever.get_relevant_documents(question)
-        return [doc.page_content for doc in results]
+        return [doc.page_content for doc in results] if results else ["No relevant context found."]
     except Exception as e:
-        raise ValueError(f"Context retrieval error: {e}")
+        raise ValueError(f"Error retrieving context: {e}")
 
 
 class QuestionAnswerFromContext(BaseModel):
