@@ -242,35 +242,50 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
     return vectorstore
 
 
-def retrieve_context_per_question(question, retriever):
+def retrieve_all_metadata(vectorstore):
     """
-    Retrieves relevant context or metadata based on the question.
+    Retrieve all unique metadata titles from the vectorstore.
 
     Args:
-        question: The user's query.
-        retriever: The retriever object with metadata and context.
+        vectorstore: The FAISS vectorstore containing documents and metadata.
 
     Returns:
-        - List of metadata (e.g., titles) if the query is about available terms.
-        - List of relevant content for non-metadata queries.
+        list: A list of unique document titles.
     """
-    if any(
-        keyword in question.lower()
-        for keyword in ["terms and conditions", "available", "what terms", "companies"]
-    ):
-        # Handle metadata queries
-        if hasattr(retriever, "vectorstore") and hasattr(
-            retriever.vectorstore, "documents"
-        ):
-            return [
-                doc.metadata.get("title", "Unknown")
-                for doc in retriever.vectorstore.documents
-            ]
-        raise ValueError("The retriever or its vectorstore does not contain metadata.")
+    try:
+        if hasattr(vectorstore, "docstore") and vectorstore.docstore:
+            documents = vectorstore.docstore._dict.values()  # Access stored documents
+            titles = {doc.metadata.get("title", "Unknown") for doc in documents}
+            return sorted(titles)
+        else:
+            raise ValueError("Vectorstore does not have a valid 'docstore' or metadata.")
+    except Exception as e:
+        raise ValueError(f"Metadata retrieval error: {e}")
 
-    # Handle general context queries
-    results = retriever.get_relevant_documents(question)
-    return [doc.page_content for doc in results]
+
+def retrieve_context_per_question(question, retriever):
+    """
+    Retrieves metadata or context based on the user's query.
+
+    Args:
+        question (str): User's question.
+        retriever: A retriever object.
+
+    Returns:
+        list: A list of metadata titles if the query is about terms, or context otherwise.
+    """
+    if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms"]):
+        try:
+            return retrieve_all_metadata(retriever.vectorstore)
+        except Exception as e:
+            raise ValueError(f"Error retrieving metadata: {e}")
+
+    # Retrieve relevant context for general questions
+    try:
+        results = retriever.get_relevant_documents(question)
+        return [doc.page_content for doc in results] if results else ["No relevant context found."]
+    except Exception as e:
+        raise ValueError(f"Error retrieving context: {e}")
 
 
 class QuestionAnswerFromContext(BaseModel):

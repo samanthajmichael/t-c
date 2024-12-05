@@ -22,7 +22,7 @@ def setup_environment():
     return False
 
 
-def create_retriever(vector_store, k=2):
+def create_retriever(vector_store, k=3):
     """Create a retriever from the vector store"""
     return vector_store.as_retriever(search_kwargs={"k": k})
 
@@ -33,9 +33,7 @@ def load_metadata(metadata_path):
         return json.load(f)
 
 
-def create_documents_with_metadata(
-    metadata_list, data_folder, chunk_size=1000, chunk_overlap=200
-):
+def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, chunk_overlap=200):
     """
     Create documents with metadata and content chunks.
     """
@@ -53,26 +51,21 @@ def create_documents_with_metadata(
                 for chunk in chunks:
                     chunk.metadata = meta  # Attach metadata
                 documents.extend(chunks)
+            print(f"Document '{meta['title']}' split into {len(chunks)} chunks.")
         else:
             print(f"Error: File {file_path} does not exist for metadata: {meta}")
             raise FileNotFoundError(f"File {file_path} not found.")
     return documents
 
 
-def initialize_vectorstore_with_metadata(metadata_file, data_folder):
-    """
-    Initialize the vector store with metadata and content.
-    """
+def initialize_vectorstore_with_metadata(metadata_file, data_folder, chunk_size=1000, chunk_overlap=200):
     metadata_list = load_metadata(metadata_file)
-    if not metadata_list:
-        raise ValueError("Metadata file is empty or could not be loaded.")
-
-    documents = create_documents_with_metadata(metadata_list, data_folder)
+    documents = create_documents_with_metadata(metadata_list, data_folder, chunk_size, chunk_overlap)
     embeddings = OpenAIEmbeddings()
 
-    # Log metadata for debugging
+    # Ensure metadata is being printed for debugging
     for doc in documents:
-        print(f"Document Metadata: {doc.metadata}")
+        print(f"Document Metadata: {doc.metadata}")  # Debugging step
 
     return FAISS.from_documents(documents, embeddings)
 
@@ -86,21 +79,25 @@ metadata_path = data_dir / "metadata.json"
 @st.cache_resource
 def initialize_rag(metadata_file=metadata_path, data_folder=data_dir, k=2):
     """
-    Initialize the RAG system with metadata.
+    Initialize the RAG system with metadata and context.
 
     Args:
         metadata_file (str): Path to the metadata file.
-        data_folder (str): Path to the data directory containing text files.
-        k: Number of documents to retrieve.
+        data_folder (str): Path to the folder containing text files.
+        k (int): Number of documents to retrieve.
 
     Returns:
-        A retriever initialized with the vector store and metadata.
+        retriever: A retriever initialized with metadata and documents.
     """
     if not setup_environment():
         raise ValueError("Failed to load API key")
 
-    vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
-    return vectorstore.as_retriever(search_kwargs={"k": k})
+    try:
+        vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
+        return vectorstore.as_retriever(search_kwargs={"k": k})
+    except Exception as e:
+        raise ValueError(f"Failed to initialize RAG system: {e}")
+
 
 
 def encode_documents(path, chunk_size=1000, chunk_overlap=200):
@@ -136,14 +133,15 @@ def encode_documents(path, chunk_size=1000, chunk_overlap=200):
             # Split the text into chunks
             chunks = text_splitter.create_documents([text])
 
-            # Add metadata to each chunk
+            # Attach metadata to each chunk
             for chunk in chunks:
-                chunk.metadata = meta  # Attach metadata to each chunk
+                chunk.metadata = meta  # Attach metadata
+                print(f"Document Metadata: {chunk.metadata}")  # Debug log
             documents_with_metadata.extend(chunks)
         else:
-            print(f"Error: File {file_path} does not exist for metadata: {meta}")
             raise FileNotFoundError(f"File {file_path} not found.")
 
-    # Create vector store with embeddings and metadata
+    # Create vector store with metadata
     vectorstore = FAISS.from_documents(documents_with_metadata, embeddings)
+    print("Vectorstore successfully created with metadata.")
     return vectorstore

@@ -12,6 +12,7 @@ from .helpers import (
     retrieve_context_per_question,
     show_context,
     text_wrap,
+    retrieve_all_metadata
 )
 from .rag import (
     create_documents_with_metadata,
@@ -44,8 +45,8 @@ __all__ = [
     "QuestionAnswerFromContext",
     "create_question_answer_from_context_chain",
     "answer_question_from_context",
+    "retrieve_all_metadata"
     # Document upload functions
     "read_file_content",
     "generate_document_summary",
     "process_uploaded_tc",
-]
