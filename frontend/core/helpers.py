@@ -137,13 +137,9 @@ def retrieve_all_metadata(vectorstore):
     Returns:
         list: A list of metadata titles.
     """
-    try:
-        # Access documents stored in the vector store
-        if hasattr(vectorstore, "documents"):
-            return [doc.metadata.get("title", "Unknown") for doc in vectorstore.documents]
-        raise AttributeError("Vectorstore does not contain documents with metadata.")
-    except Exception as e:
-        raise ValueError(f"Metadata retrieval error: {e}")
+    if hasattr(vectorstore, "documents"):
+        return [doc.metadata.get("title", "Unknown") for doc in vectorstore.documents]
+    raise AttributeError("Vectorstore does not contain documents with metadata.")
 
 
 def retrieve_context_per_question(question, retriever):
