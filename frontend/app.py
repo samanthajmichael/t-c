@@ -147,6 +147,10 @@ if "api_key" not in st.session_state or st.session_state.api_key != api_key:
     if "retriever" in st.session_state:
         del st.session_state.retriever
 
+# Initialize session state variables
+if "processed_documents" not in st.session_state:
+    st.session_state.processed_documents = {}
+
 try:
     client = OpenAI(api_key=api_key)
     st.sidebar.success("API key provided successfully!")
