@@ -151,6 +151,7 @@ def encode_documents(path, chunk_size=1000, chunk_overlap=200):
     documents_with_metadata = []
 
     for meta in metadata_list:
+        print(f"Processing file: {meta['filename']} with metadata: {meta}")
         file_path = os.path.join(path, meta["filename"])
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as file:
