@@ -166,16 +166,11 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # System prompt
-system_prompt = """You are a helpful assistant with expertise in answering questions and providing insights. 
-When relevant context is provided, prioritize using it to answer the query. 
-If the question is unrelated to the context or no context is provided, respond based on your general knowledge.
+system_prompt = """You are a knowledgeable assistant with access to specific terms and conditions via a Retrieval-Augmented Generation (RAG) system.
+- You can provide answers based on terms and conditions you have access to.
+- If a question is outside your RAG system, you can answer using general knowledge.
 
-You can:
-- Answer questions using the provided context.
-- Summarize information from context or general knowledge.
-- Assist with general queries unrelated to the context.
-
-Maintain a conversational and approachable tone. Always aim to provide clear, concise, and accurate answers."""
+Always prioritize context retrieved via the RAG system to ensure accuracy."""
 
 # Accept user input
 if prompt := st.chat_input("What would you like to know?"):

@@ -4,12 +4,12 @@ import textwrap
 from typing import List
 
 import numpy as np
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import PromptTemplate
 from pydantic import BaseModel, Field
-from langchain_openai import OpenAIEmbeddings
 from openai import RateLimitError
 from rank_bm25 import BM25Okapi
 
@@ -128,25 +128,15 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
 
 
 def retrieve_context_per_question(question, retriever):
-    """
-    Retrieves relevant context or metadata based on the question.
-
-    Args:
-        question: The user's query.
-        retriever: The retriever object with metadata and context.
-
-    Returns:
-        List of metadata (e.g., titles) if the query is about available terms,
-        or the relevant context otherwise.
-    """
+    # Check if the question is about available terms
     if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms"]):
-        # Access metadata from the retriever's vectorstore
-        if hasattr(retriever.vectorstore, "documents"):
+        # Retrieve metadata titles
+        try:
             return [doc.metadata["title"] for doc in retriever.vectorstore.documents if "title" in doc.metadata]
-        else:
-            raise ValueError("Retriever's vectorstore does not contain metadata.")
+        except Exception as e:
+            raise ValueError(f"Metadata retrieval error: {str(e)}")
     
-    # For other queries, retrieve context
+    # Fallback to normal retrieval for other questions
     results = retriever.get_relevant_documents(question)
     return [doc.page_content for doc in results]
 
