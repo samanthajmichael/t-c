@@ -169,7 +169,8 @@ try:
             content = read_file_content(uploaded_file)
 
             # Process content and get summary
-            chunks, summary = process_uploaded_tc(content, client)
+            chunks, summary = process_uploaded_tc(content, client, st.session_state)
+
 
             # Create embeddings and update vector store
             embeddings = OpenAIEmbeddings()

@@ -88,17 +88,29 @@ def generate_document_summary(content: str, client) -> str:
         return f"Error generating summary: {str(e)}"
 
 
-def process_uploaded_tc(content: str, client) -> Tuple[List[str], str]:
+def process_uploaded_tc(content: str, client, session_state) -> Tuple[List[str], str]:
     """
-    Process uploaded T&C content and generate summary
+    Process uploaded T&C content and generate summary, with session state handling
 
     Args:
         content (str): The full text content of the document
         client: OpenAI client instance
+        session_state: Streamlit session state object
+
 
     Returns:
         Tuple[List[str], str]: A tuple containing (chunks of text, document summary)
     """
+    # Check if content is already in session state
+    content_hash = hash(content)  # Create a hash of the content to use as identifier
+    
+    if 'processed_documents' not in session_state:
+        session_state.processed_documents = {}
+    
+    if content_hash in session_state.processed_documents:
+        # Return cached results
+        return session_state.processed_documents[content_hash]
+    
     # Generate summary first
     summary = generate_document_summary(content, client)
 
@@ -110,8 +122,11 @@ def process_uploaded_tc(content: str, client) -> Tuple[List[str], str]:
     )
 
     chunks = text_splitter.split_text(content)
+    
+    # Store results in session state
+    session_state.processed_documents[content_hash] = (chunks, summary)
+    
     return chunks, summary
-
 
 def replace_t_with_space(list_of_documents):
     """
