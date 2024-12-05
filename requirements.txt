@@ -19,6 +19,7 @@ configobj==5.0.9
 configparser==7.1.0
 dataclasses-json==0.6.7
 decorator==5.1.1
+deepeval==1.1.6
 distro==1.9.0
 etelemetry==0.3.1
 executing==2.1.0

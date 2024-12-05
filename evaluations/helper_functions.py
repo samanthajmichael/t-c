@@ -1,116 +1,18 @@
 import asyncio
-import io
 import random
 import textwrap
-from pathlib import Path
-from typing import List, Tuple
+from typing import List
 
-import docx
 import numpy as np
 import PyPDF2
+from langchain import PromptTemplate
+from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain_core.prompts import PromptTemplate
+from langchain.vectorstores import FAISS
+from langchain_core.pydantic_v1 import BaseModel, Field
+from langchain_openai import OpenAIEmbeddings
 from openai import RateLimitError
-from pydantic import BaseModel, Field
 from rank_bm25 import BM25Okapi
-
-
-def read_file_content(uploaded_file) -> str:
-    """
-    Read content from various file formats (PDF, DOCX, TXT)
-
-    Args:
-        uploaded_file: Streamlit uploaded file object
-
-    Returns:
-        str: Extracted text content from the file
-    """
-    content = ""
-    file_extension = Path(uploaded_file.name).suffix.lower()
-
-    if file_extension == ".pdf":
-        pdf_reader = PyPDF2.PdfReader(io.BytesIO(uploaded_file.read()))
-        for page in pdf_reader.pages:
-            content += page.extract_text() + "\n"
-
-    elif file_extension == ".docx":
-        doc = docx.Document(io.BytesIO(uploaded_file.read()))
-        content = "\n".join([paragraph.text for paragraph in doc.paragraphs])
-
-    elif file_extension == ".txt":
-        content = uploaded_file.getvalue().decode()
-
-    else:
-        raise ValueError(f"Unsupported file format: {file_extension}")
-
-    return content
-
-
-def generate_document_summary(content: str, client) -> str:
-    """
-    Generate a summary of the uploaded T&C document using OpenAI.
-
-    Args:
-        content (str): The full text content of the document
-        client: OpenAI client instance
-
-    Returns:
-        str: A structured summary of the document
-    """
-    system_prompt = """You are a legal document analyzer specializing in Terms and Conditions analysis. 
-    Provide a clear, structured summary of the document covering these key aspects:
-    1. Document Overview (2-3 sentences)
-    2. Key Terms and Definitions
-    3. Main User Rights and Obligations
-    4. Important Limitations or Restrictions
-    5. Notable Clauses or Provisions
-    
-    Keep the summary concise but informative. Focus on the most important points that users should be aware of and do not lie."""
-
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {
-                    "role": "user",
-                    "content": f"Please analyze and summarize this Terms and Conditions document:\n\n{content}",
-                },
-            ],
-            temperature=0.5,
-            max_tokens=300,
-        )
-        return response.choices[0].message.content
-    except Exception as e:
-        return f"Error generating summary: {str(e)}"
-
-
-def process_uploaded_tc(content: str, client) -> Tuple[List[str], str]:
-    """
-    Process uploaded T&C content and generate summary
-
-    Args:
-        content (str): The full text content of the document
-        client: OpenAI client instance
-
-    Returns:
-        Tuple[List[str], str]: A tuple containing (chunks of text, document summary)
-    """
-    # Generate summary first
-    summary = generate_document_summary(content, client)
-
-    # Then process chunks for RAG
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
-        length_function=len,
-    )
-
-    chunks = text_splitter.split_text(content)
-    return chunks, summary
 
 
 def replace_t_with_space(list_of_documents):
@@ -226,35 +128,27 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
     return vectorstore
 
 
-def retrieve_context_per_question(question, retriever):
+def retrieve_context_per_question(question, chunks_query_retriever):
     """
-    Retrieves relevant context or metadata based on the question.
+    Retrieves relevant context and unique URLs for a given question using the chunks query retriever.
 
     Args:
-        question: The user's query.
-        retriever: The retriever object with metadata and context.
+        question: The question for which to retrieve context and URLs.
 
     Returns:
-        - List of metadata (e.g., titles) if the query is about available terms.
-        - List of relevant content for non-metadata queries.
+        A tuple containing:
+        - A string with the concatenated content of relevant documents.
+        - A list of unique URLs from the metadata of the relevant documents.
     """
-    if any(
-        keyword in question.lower()
-        for keyword in ["terms and conditions", "available", "what terms", "companies"]
-    ):
-        # Handle metadata queries
-        if hasattr(retriever, "vectorstore") and hasattr(
-            retriever.vectorstore, "documents"
-        ):
-            return [
-                doc.metadata.get("title", "Unknown")
-                for doc in retriever.vectorstore.documents
-            ]
-        raise ValueError("The retriever or its vectorstore does not contain metadata.")
 
-    # Handle general context queries
-    results = retriever.get_relevant_documents(question)
-    return [doc.page_content for doc in results]
+    # Retrieve relevant documents for the given question
+    docs = chunks_query_retriever.get_relevant_documents(question)
+
+    # Concatenate document content
+    # context = " ".join(doc.page_content for doc in docs)
+    context = [doc.page_content for doc in docs]
+
+    return context
 
 
 class QuestionAnswerFromContext(BaseModel):
@@ -433,5 +327,4 @@ async def retry_with_exponential_backoff(coroutine, max_retries=5):
             await exponential_backoff(attempt)
 
     # If max retries are reached without success, raise an exception
-
     raise Exception("Max retries reached")
