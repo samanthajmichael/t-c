@@ -128,17 +128,31 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
 
 
 def retrieve_context_per_question(question, retriever):
+    """
+    Retrieves metadata or context based on the user's query.
+
+    Args:
+        question (str): User's question.
+        retriever: A retriever object.
+
+    Returns:
+        list: A list of metadata titles if the query is about terms, or context otherwise.
+    """
     # Check if the question is about available terms
     if any(keyword in question.lower() for keyword in ["terms and conditions", "available", "what terms"]):
-        # Retrieve metadata titles
+        # Retrieve all documents using retriever
         try:
-            return [doc.metadata["title"] for doc in retriever.vectorstore.documents if "title" in doc.metadata]
+            docs = retriever.get_relevant_documents(question)
+            return [doc.metadata.get("title", "Unknown") for doc in docs]
         except Exception as e:
-            raise ValueError(f"Metadata retrieval error: {str(e)}")
-    
-    # Fallback to normal retrieval for other questions
-    results = retriever.get_relevant_documents(question)
-    return [doc.page_content for doc in results]
+            raise ValueError(f"Metadata retrieval error: {e}")
+
+    # Retrieve relevant context for other questions
+    try:
+        results = retriever.get_relevant_documents(question)
+        return [doc.page_content for doc in results]
+    except Exception as e:
+        raise ValueError(f"Context retrieval error: {e}")
 
 
 class QuestionAnswerFromContext(BaseModel):

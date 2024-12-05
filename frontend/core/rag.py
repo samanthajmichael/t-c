@@ -63,42 +63,68 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
     return documents
 
 
-def initialize_vectorstore_with_metadata(metadata_file, data_folder):
+def initialize_vectorstore_with_metadata(metadata_file, data_folder, chunk_size=1000, chunk_overlap=200):
     """
-    Initialize the vector store with metadata and content.
-    """
-    metadata_list = load_metadata(metadata_file)
-    if not metadata_list:
-        raise ValueError("Metadata file is empty or could not be loaded.")
+    Initialize the FAISS vectorstore with metadata and content chunks.
 
-    documents = create_documents_with_metadata(metadata_list, data_folder)
+    Args:
+        metadata_file (str): Path to the metadata.json file.
+        data_folder (str): Path to the folder containing text files.
+        chunk_size (int): Size of each text chunk.
+        chunk_overlap (int): Overlap between text chunks.
+
+    Returns:
+        FAISS: A FAISS vectorstore object with documents and metadata.
+    """
+    # Load metadata
+    with open(metadata_file, "r") as f:
+        metadata_list = json.load(f)
+
+    # Initialize text splitter and embeddings
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
+    )
     embeddings = OpenAIEmbeddings()
 
-    # Log metadata for debugging
-    for doc in documents:
-        print(f"Document Metadata: {doc.metadata}")
+    # Create chunks with metadata
+    documents = []
+    for meta in metadata_list:
+        file_path = os.path.join(data_folder, meta["filename"])
+        if os.path.exists(file_path):
+            with open(file_path, "r", encoding="utf-8") as file:
+                text = file.read()
+            chunks = text_splitter.create_documents([text])
+            for chunk in chunks:
+                chunk.metadata = meta  # Attach metadata
+            documents.extend(chunks)
 
+    # Create FAISS vectorstore
     return FAISS.from_documents(documents, embeddings)
 
 
 
+@st.cache_resource
 def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
     """
-    Initialize the RAG system with metadata.
+    Initialize the RAG system with metadata and context.
 
     Args:
         metadata_file (str): Path to the metadata file.
-        data_folder (str): Path to the data directory containing text files.
-        k: Number of documents to retrieve.
+        data_folder (str): Path to the folder containing text files.
+        k (int): Number of documents to retrieve.
 
     Returns:
-        A retriever initialized with the vector store and metadata.
+        retriever: A retriever initialized with metadata and documents.
     """
     if not setup_environment():
         raise ValueError("Failed to load API key")
 
-    vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
-    return vectorstore.as_retriever(search_kwargs={"k": k})
+    try:
+        vectorstore = initialize_vectorstore_with_metadata(metadata_file, data_folder)
+        return vectorstore.as_retriever(search_kwargs={"k": k})
+    except Exception as e:
+        raise ValueError(f"Failed to initialize RAG system: {e}")
+
 
 
 def encode_documents(path, chunk_size=1000, chunk_overlap=200):
