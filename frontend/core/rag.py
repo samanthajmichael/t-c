@@ -1,14 +1,15 @@
 import os
-import json
+
 import streamlit as st
+import json
 from dotenv import load_dotenv
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 
 
 def setup_environment():
-    """Setup environment variables and API key."""
+    """Setup environment variables and API key"""
     # Load environment variables
     load_dotenv()
 
@@ -20,6 +21,10 @@ def setup_environment():
     return False
 
 
+def create_retriever(vector_store, k=3):
+    """Create a retriever from the vector store"""
+    return vector_store.as_retriever(search_kwargs={"k": k})
+
 def load_metadata(metadata_file):
     """
     Load metadata from a JSON file.
@@ -30,25 +35,13 @@ def load_metadata(metadata_file):
     Returns:
         list: A list of metadata dictionaries.
     """
-    try:
-        with open(metadata_file, "r") as f:
-            return json.load(f)
-    except Exception as e:
-        raise ValueError(f"Error loading metadata: {e}")
+    with open(metadata_file, "r") as f:
+        return json.load(f)
 
 
 def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, chunk_overlap=200):
     """
     Create documents with metadata and content chunks.
-
-    Args:
-        metadata_list (list): List of metadata dictionaries.
-        data_folder (str): Path to the folder containing text files.
-        chunk_size (int): The size of each text chunk.
-        chunk_overlap (int): Overlap between text chunks.
-
-    Returns:
-        list: A list of documents with metadata.
     """
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
@@ -63,7 +56,6 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
                 chunks = text_splitter.create_documents([text])
                 for chunk in chunks:
                     chunk.metadata = meta  # Attach metadata
-                    print(f"Document Metadata: {chunk.metadata}")  # Debug log
                 documents.extend(chunks)
         else:
             print(f"Error: File {file_path} does not exist for metadata: {meta}")
@@ -84,17 +76,35 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder, chunk_size=
     Returns:
         FAISS: A FAISS vectorstore object with documents and metadata.
     """
-    metadata_list = load_metadata(metadata_file)
-    documents = create_documents_with_metadata(metadata_list, data_folder, chunk_size, chunk_overlap)
+    # Load metadata
+    with open(metadata_file, "r") as f:
+        metadata_list = json.load(f)
+
+    # Initialize text splitter and embeddings
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
+    )
     embeddings = OpenAIEmbeddings()
 
-    vectorstore = FAISS.from_documents(documents, embeddings)
-    print("Vectorstore initialized with metadata.")
-    return vectorstore
+    # Create chunks with metadata
+    documents = []
+    for meta in metadata_list:
+        file_path = os.path.join(data_folder, meta["filename"])
+        if os.path.exists(file_path):
+            with open(file_path, "r", encoding="utf-8") as file:
+                text = file.read()
+            chunks = text_splitter.create_documents([text])
+            for chunk in chunks:
+                chunk.metadata = meta  # Attach metadata
+            documents.extend(chunks)
+
+    # Create FAISS vectorstore
+    return FAISS.from_documents(documents, embeddings)
+
 
 
 @st.cache_resource
-def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=3):
+def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
     """
     Initialize the RAG system with metadata and context.
 
@@ -130,15 +140,35 @@ def encode_documents(path, chunk_size=1000, chunk_overlap=200):
         A FAISS vector store containing the encoded content and metadata of the files.
     """
     metadata_path = os.path.join(path, "metadata.json")
-    metadata_list = load_metadata(metadata_path)
+    with open(metadata_path, "r") as meta_file:
+        metadata_list = json.load(meta_file)
 
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
     )
     embeddings = OpenAIEmbeddings()
 
-    documents_with_metadata = create_documents_with_metadata(metadata_list, path, chunk_size, chunk_overlap)
+    documents_with_metadata = []
 
+    for meta in metadata_list:
+        file_path = os.path.join(path, meta["filename"])
+
+        if os.path.exists(file_path):
+            with open(file_path, "r", encoding="utf-8") as file:
+                text = file.read()
+
+            # Split the text into chunks
+            chunks = text_splitter.create_documents([text])
+
+            # Attach metadata to each chunk
+            for chunk in chunks:
+                chunk.metadata = meta  # Attach metadata
+                print(f"Document Metadata: {chunk.metadata}")  # Debug log
+            documents_with_metadata.extend(chunks)
+        else:
+            raise FileNotFoundError(f"File {file_path} not found.")
+
+    # Create vector store with metadata
     vectorstore = FAISS.from_documents(documents_with_metadata, embeddings)
     print("Vectorstore successfully created with metadata.")
     return vectorstore
