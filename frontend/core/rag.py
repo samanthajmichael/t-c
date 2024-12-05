@@ -82,7 +82,7 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder):
 
 
 
-def initialize_rag(metadata_file="data/metadata.json", data_folder="data/", k=2):
+def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
     """
     Initialize the RAG system with metadata.
 
