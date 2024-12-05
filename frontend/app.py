@@ -100,8 +100,30 @@ with col2:
         unsafe_allow_html=True,
     )
 
-
-st.title("Baymax T&C")
+st.markdown(
+    """
+    <style>
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .subheader {
+            font-size: 1.2rem;
+            color: #424242;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+    </style>
+    
+    <div class="title">Baemax T&C</div>
+    <div class="subheader">
+        An App to help demystify terms and conditions agreements.<br>
+        Please upload a document or ask about the terms we have in our database.
+    </div>
+""",
+    unsafe_allow_html=True,
+)
 
 # Consolidated API key handling
 st.sidebar.title("Powered by OpenAI")
