@@ -21,7 +21,7 @@ def setup_environment():
     return False
 
 
-def create_retriever(vector_store, k=2):
+def create_retriever(vector_store, k=3):
     """Create a retriever from the vector store"""
     return vector_store.as_retriever(search_kwargs={"k": k})
 
