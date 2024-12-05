@@ -1,8 +1,11 @@
+import json
 import os
 import sys
 import time
 from pathlib import Path
 
+import docx
+import PyPDF2
 import streamlit as st
 import toml
 from dotenv import load_dotenv
@@ -23,7 +26,11 @@ primary_color = config["theme"]["primaryColor"]
 # Import functions directly from core module
 from core import (
     create_retriever,
+    generate_document_summary,
     initialize_rag,
+    initialize_vectorstore_with_metadata,
+    process_uploaded_tc,
+    read_file_content,
     retrieve_context_per_question,
     show_context,
     text_wrap,
@@ -40,6 +47,38 @@ load_dotenv()
 # Get the directory of the current script
 current_dir = Path(__file__).parent
 image_path = current_dir / "assets" / "images" / "logo.jpg"
+data_dir = current_dir / "data"
+metadata_path = data_dir / "metadata.json"
+
+# Create data directory if it doesn't exist
+data_dir.mkdir(exist_ok=True)
+
+# If metadata file doesn't exist, create it with empty list
+if not metadata_path.exists():
+    with open(metadata_path, "w") as f:
+        json.dump([], f)
+
+
+def load_metadata(metadata_path=metadata_path):
+    """
+    Loads metadata from the specified JSON file.
+    """
+    try:
+        # Create data directory if it doesn't exist
+        metadata_path.parent.mkdir(exist_ok=True)
+
+        # If file doesn't exist, create it with empty list
+        if not metadata_path.exists():
+            with open(metadata_path, "w") as f:
+                json.dump([], f)
+
+        # Load metadata
+        with open(metadata_path, "r") as f:
+            metadata = json.load(f)
+        return metadata
+    except Exception as e:
+        print(f"Metadata handling error: {str(e)}")
+        return []
 
 
 def get_base64_image(image_path):
@@ -65,19 +104,19 @@ with col2:
 st.title("Baymax T&C")
 
 # Consolidated API key handling
-st.sidebar.title("OpenAI API Configuration")
+st.sidebar.title("Powered by OpenAI")
 
-# Try to get API key from environment first, then allow user input
+# Try environment variable first, then fall back to sidebar input
 api_key = os.getenv("OPENAI_API_KEY") or st.sidebar.text_input(
     "OpenAI API Key",
     type="password",
     help="Enter your OpenAI API key. This will not be stored permanently.",
 )
 
-# Initialize the OpenAI client only once
+# Initialize the OpenAI client only if we have a key
 if not api_key:
-    st.warning("Please enter your OpenAI API key in the sidebar to continue.")
-    st.stop()  # Stop execution until API key is provided
+    st.warning("Please enter your OpenAI API Key in the sidebar to continue.")
+    st.stop()
 
 # Store API key in session state if it's new or different
 if "api_key" not in st.session_state or st.session_state.api_key != api_key:
@@ -86,8 +125,58 @@ if "api_key" not in st.session_state or st.session_state.api_key != api_key:
     if "retriever" in st.session_state:
         del st.session_state.retriever
 
-client = OpenAI(api_key=api_key)
-st.sidebar.success("API key provided successfully!")
+try:
+    client = OpenAI(api_key=api_key)
+    st.sidebar.success("API key provided successfully!")
+
+    # Add a visual separator
+    st.sidebar.markdown("---")
+
+    # Add file upload section
+    st.sidebar.header("What do you want to analyze?")
+    uploaded_file = st.sidebar.file_uploader(
+        "Upload T&C document",
+        type=["pdf", "docx", "txt"],
+        help="Supported formats: PDF, DOCX, TXT",
+    )
+
+    # Process uploaded file
+    if uploaded_file:
+        try:
+            # Read content
+            content = read_file_content(uploaded_file)
+
+            # Process content and get summary
+            chunks, summary = process_uploaded_tc(content, client)
+
+            # Create embeddings and update vector store
+            embeddings = OpenAIEmbeddings()
+            custom_vectorstore = FAISS.from_texts(
+                chunks,
+                embeddings,
+                metadatas=[{"source": uploaded_file.name, "title": uploaded_file.name}]
+                * len(chunks),
+            )
+
+            # Merge with existing retriever if it exists
+            if "retriever" in st.session_state and st.session_state.retriever:
+                existing_vectorstore = st.session_state.retriever.vectorstore
+                existing_vectorstore.merge_from(custom_vectorstore)
+            else:
+                st.session_state.retriever = create_retriever(custom_vectorstore)
+
+            st.sidebar.success(f"Successfully processed {uploaded_file.name}")
+
+            # Display summary in main area
+            st.markdown("### Document Summary")
+            st.markdown(summary)
+
+        except Exception as e:
+            st.sidebar.error(f"Error processing file: {str(e)}")
+
+except Exception as e:
+    st.error(f"Error initializing OpenAI client: {str(e)}")
+    st.stop()
 
 # Initialize RAG system after API key verification
 if "retriever" not in st.session_state:
@@ -102,11 +191,18 @@ if "retriever" not in st.session_state:
         init_message.error(
             f"Failed to initialize RAG system. Error: {str(e)}\nContinuing without RAG functionality."
         )
-        print(
-            f"RAG initialization error: {str(e)}", file=sys.stderr
-        )  # Detailed logging
-        # Don't stop the app, just continue without RAG
+        print(f"RAG initialization error: {str(e)}", file=sys.stderr)
         st.session_state.retriever = None
+
+# Dropdown to display available T&Cs
+metadata = load_metadata()
+if metadata:
+    titles = ["Browse Companies"] + [meta["title"] for meta in metadata]
+    selected_tc = st.sidebar.selectbox(
+        "Available Terms and Conditions", titles, index=0, key="browse_only"
+    )
+else:
+    st.sidebar.warning("No terms and conditions available.")
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4"
@@ -137,15 +233,17 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # System prompt
-system_prompt = """You are a legal assistant explaining terms and conditions in plain English. 
-Only use information from the provided context when responding. 
-Provide a brief (less than 50 word) summary followed by 3-5 key bullet points that users should know, using everyday language. 
-Explain any complex terms simply. 
-Do not provide legal advice or information beyond what's in the context
-Break down complex topics
-Provide clear explanations
-Use relevant examples
-Maintain a conversational tone:"""
+system_prompt = """You are a helpful assistant with expertise in answering questions and providing insights. 
+When relevant context is provided, prioritize using it to answer the query. 
+If the question is unrelated to the context or no context is provided, respond based on your general knowledge.
+If you do not know the answer, tell the user that their question is outside of your scope and do not lie.      
+
+You can:
+- Answer questions using the provided context.
+- Summarize information from context or general knowledge.
+- Assist with general queries unrelated to the context.
+
+Maintain a conversational and approachable tone. Always aim to provide clear, concise, and accurate answers."""
 
 # Accept user input
 if prompt := st.chat_input("What would you like to know?"):
@@ -154,72 +252,96 @@ if prompt := st.chat_input("What would you like to know?"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # Get relevant context from RAG if available
+    # Initialize variables
     context = ""
+    is_metadata_query = False
+
+    # Check if retriever exists
     if "retriever" in st.session_state and st.session_state.retriever is not None:
         try:
-            context = retrieve_context_per_question(prompt, st.session_state.retriever)
+            # Check if it's a metadata query
+            if any(
+                keyword in prompt.lower()
+                for keyword in [
+                    "terms and conditions",
+                    "available",
+                    "what terms",
+                    "companies",
+                ]
+            ):
+                is_metadata_query = True
+                context = retrieve_context_per_question(
+                    prompt, st.session_state.retriever
+                )
+
+                # Display metadata titles in the chat
+                with st.chat_message("assistant"):
+                    if context:
+                        st.write("### Available Terms and Conditions:")
+                        for title in context:
+                            st.write(f"- {title}")
+                    else:
+                        st.write("No terms and conditions available.")
+
+            # Retrieve context for general queries
+            if not is_metadata_query:
+                context = retrieve_context_per_question(
+                    prompt, st.session_state.retriever
+                )
+
         except Exception as e:
             st.warning(f"RAG retrieval error: {str(e)}")
 
-    start_time = time.time()
-    # Display assistant response
-    with st.chat_message("assistant"):
-        message_placeholder = st.empty()
-        full_response = ""
-        try:
-            # Include context in the prompt if available
-            system_prompt_with_context = system_prompt
-            if context:
-                if isinstance(context, list):
-                    # Join list items with newlines if context is a list
-                    context_str = "\n\n".join(str(item) for item in context)
-                else:
-                    context_str = str(context)
-                system_prompt_with_context = (
-                    f"{system_prompt}\n\nRelevant context:\n{context_str}"
+    # Handle general queries or continue if context exists
+    if not is_metadata_query:
+        with st.chat_message("assistant"):
+            message_placeholder = st.empty()
+            full_response = ""
+
+            try:
+                # Include context in the prompt if available
+                system_prompt_with_context = system_prompt
+                if context:
+                    if isinstance(context, list):
+                        context_str = "\n\n".join(context)
+                    else:
+                        context_str = context
+                    system_prompt_with_context = (
+                        f"{system_prompt}\n\nRelevant context:\n{context_str}"
+                    )
+
+                # Generate assistant response
+                messages = [{"role": "system", "content": system_prompt_with_context}]
+                messages.extend(
+                    [
+                        {"role": str(m["role"]), "content": str(m["content"])}
+                        for m in st.session_state.messages
+                    ]
                 )
 
-            # Create messages with proper formatting
-            messages = [{"role": "system", "content": system_prompt_with_context}]
-            messages.extend(
-                [
-                    {"role": str(m["role"]), "content": str(m["content"])}
-                    for m in st.session_state.messages
-                ]
-            )
+                stream = client.chat.completions.create(
+                    model=st.session_state["openai_model"],
+                    messages=messages,
+                    stream=True,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    top_p=top_p,
+                    presence_penalty=presence_penalty,
+                    frequency_penalty=frequency_penalty,
+                )
 
-            stream = client.chat.completions.create(
-                model=st.session_state["openai_model"],
-                messages=messages,
-                stream=True,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                top_p=top_p,
-                presence_penalty=presence_penalty,
-                frequency_penalty=frequency_penalty,
-            )
+                for chunk in stream:
+                    if chunk.choices[0].delta.content is not None:
+                        full_response += chunk.choices[0].delta.content
+                        message_placeholder.markdown(full_response + "▌")
 
-            # Updated streaming section with proper formatting
-            full_response = ""
-            for chunk in stream:
-                if chunk.choices[0].delta.content is not None:
-                    full_response += chunk.choices[0].delta.content
-                    # Format response while streaming
-                    formatted_response = full_response.replace("\n*", "\n\n*").replace(
-                        "\n-", "\n\n-"
-                    )
-                    message_placeholder.markdown(formatted_response + "▌")
-            # Format final response
-            formatted_response = full_response.replace("\n*", "\n\n*").replace(
-                "\n-", "\n\n-"
-            )
-            message_placeholder.markdown(formatted_response)
+                # Format final response
+                message_placeholder.markdown(full_response)
+            except Exception as e:
+                st.error(f"An error occurred: {str(e)}")
+                full_response = "I apologize, but I encountered an error while processing your request."
 
-        except Exception as e:
-            st.error(f"An error occurred: {str(e)}")
-            full_response = (
-                "I apologize, but I encountered an error while processing your request."
+            # Save assistant response to chat history
+            st.session_state.messages.append(
+                {"role": "assistant", "content": full_response}
             )
-
-    st.session_state.messages.append({"role": "assistant", "content": full_response})
