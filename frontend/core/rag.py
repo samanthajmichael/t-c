@@ -139,17 +139,10 @@ def encode_documents(path, chunk_size=1000, chunk_overlap=200):
     Returns:
         A FAISS vector store containing the encoded content and metadata of the files.
     """
-    # Load metadata file
     metadata_path = os.path.join(path, "metadata.json")
-    try:
-        with open(metadata_path, "r") as meta_file:
-            metadata_list = json.load(meta_file)
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Metadata file not found at: {metadata_path}")
-    except json.JSONDecodeError as e:
-        raise ValueError(f"Error decoding metadata.json: {e}")
+    with open(metadata_path, "r") as meta_file:
+        metadata_list = json.load(meta_file)
 
-    # Initialize text splitter and embeddings
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
     )
@@ -158,50 +151,23 @@ def encode_documents(path, chunk_size=1000, chunk_overlap=200):
     documents_with_metadata = []
 
     for meta in metadata_list:
-        # Validate metadata fields
-        if "filename" not in meta or "title" not in meta:
-            print(f"Error: Missing 'filename' or 'title' in metadata: {meta}")
-            continue
-
         file_path = os.path.join(path, meta["filename"])
-
-        # Check if the file exists
-        if not os.path.exists(file_path):
-            print(f"Error: File {file_path} does not exist for metadata: {meta}")
-            continue
-
-        # Read and process the file
-        try:
+        if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as file:
                 text = file.read()
 
-            # Validate text content
-            if not text.strip():
-                print(f"Warning: File {file_path} is empty. Skipping.")
-                continue
-
-            # Split text into chunks
+            # Split the text into chunks
             chunks = text_splitter.create_documents([text])
 
-            # Check if chunks were created
-            if not chunks:
-                print(f"Warning: No chunks created for file: {file_path}")
-                continue
-
-            # Attach metadata to each chunk
+            # Add metadata to each chunk
             for chunk in chunks:
-                chunk.metadata = meta
+                chunk.metadata = meta  # Attach metadata to each chunk
             documents_with_metadata.extend(chunks)
-
-            print(f"Processed file: {file_path}, Chunks created: {len(chunks)}")
-        except Exception as e:
-            print(f"Error processing file {file_path}: {e}")
-            continue
+        else:
+            print(f"Error: File {file_path} does not exist for metadata: {meta}")
+            raise FileNotFoundError(f"File {file_path} not found.")
 
     # Ensure metadata is stored in vectorstore
-    if not documents_with_metadata:
-        raise ValueError("No documents were processed. Please check your metadata and text files.")
-    
     return FAISS.from_documents(documents_with_metadata, embeddings)
 
 
