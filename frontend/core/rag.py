@@ -64,41 +64,14 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
 
 
 def initialize_vectorstore_with_metadata(metadata_file, data_folder, chunk_size=1000, chunk_overlap=200):
-    """
-    Initialize the FAISS vectorstore with metadata and content chunks.
-
-    Args:
-        metadata_file (str): Path to the metadata.json file.
-        data_folder (str): Path to the folder containing text files.
-        chunk_size (int): Size of each text chunk.
-        chunk_overlap (int): Overlap between text chunks.
-
-    Returns:
-        FAISS: A FAISS vectorstore object with documents and metadata.
-    """
-    # Load metadata
-    with open(metadata_file, "r") as f:
-        metadata_list = json.load(f)
-
-    # Initialize text splitter and embeddings
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
-    )
+    metadata_list = load_metadata(metadata_file)
+    documents = create_documents_with_metadata(metadata_list, data_folder, chunk_size, chunk_overlap)
     embeddings = OpenAIEmbeddings()
 
-    # Create chunks with metadata
-    documents = []
-    for meta in metadata_list:
-        file_path = os.path.join(data_folder, meta["filename"])
-        if os.path.exists(file_path):
-            with open(file_path, "r", encoding="utf-8") as file:
-                text = file.read()
-            chunks = text_splitter.create_documents([text])
-            for chunk in chunks:
-                chunk.metadata = meta  # Attach metadata
-            documents.extend(chunks)
+    # Ensure metadata is being printed for debugging
+    for doc in documents:
+        print(f"Document Metadata: {doc.metadata}")  # Debugging step
 
-    # Create FAISS vectorstore
     return FAISS.from_documents(documents, embeddings)
 
 
