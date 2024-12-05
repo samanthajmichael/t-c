@@ -1,11 +1,12 @@
+import json
 import os
 
 import streamlit as st
-import json
 from dotenv import load_dotenv
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
+from pathlib import Path
 
 
 def setup_environment():
@@ -25,21 +26,16 @@ def create_retriever(vector_store, k=2):
     """Create a retriever from the vector store"""
     return vector_store.as_retriever(search_kwargs={"k": k})
 
-def load_metadata(metadata_file):
-    """
-    Load metadata from a JSON file.
 
-    Args:
-        metadata_file (str): Path to the metadata.json file.
-
-    Returns:
-        list: A list of metadata dictionaries.
-    """
-    with open(metadata_file, "r") as f:
+def load_metadata(metadata_path):
+    """Load metadata from a JSON file."""
+    with open(metadata_path, "r") as f:
         return json.load(f)
 
 
-def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, chunk_overlap=200):
+def create_documents_with_metadata(
+    metadata_list, data_folder, chunk_size=1000, chunk_overlap=200
+):
     """
     Create documents with metadata and content chunks.
     """
@@ -80,9 +76,15 @@ def initialize_vectorstore_with_metadata(metadata_file, data_folder):
 
     return FAISS.from_documents(documents, embeddings)
 
+core_dir = Path(__file__).parent    # Gets the core directory
+frontend_dir = core_dir.parent      # Goes up one level to frontend directory
+data_dir = frontend_dir / "data"    # Points to frontend/data
+metadata_path = data_dir / "metadata.json"
 
-
-def initialize_rag(metadata_file="frontend/data/metadata.json", data_folder="frontend/data/", k=2):
+@st.cache_resource
+def initialize_rag(
+    metadata_file=metadata_path, data_folder=data_dir, k=2
+):
     """
     Initialize the RAG system with metadata.
 
@@ -142,8 +144,6 @@ def encode_documents(path, chunk_size=1000, chunk_overlap=200):
             print(f"Error: File {file_path} does not exist for metadata: {meta}")
             raise FileNotFoundError(f"File {file_path} not found.")
 
-    # Ensure metadata is stored in vectorstore
-    return FAISS.from_documents(documents_with_metadata, embeddings)
-
-
-
+    # Create vector store with embeddings and metadata
+    vectorstore = FAISS.from_documents(documents_with_metadata, embeddings)
+    return vectorstore

@@ -1,5 +1,3 @@
-# Import main RAG functionality
-# Import helper functions
 from .helpers import (
     QuestionAnswerFromContext,
     answer_question_from_context,
@@ -7,12 +5,23 @@ from .helpers import (
     create_question_answer_from_context_chain,
     encode_from_string,
     encode_pdf,
+    generate_document_summary,
+    process_uploaded_tc,
+    read_file_content,
     read_pdf_to_string,
     retrieve_context_per_question,
     show_context,
     text_wrap,
 )
-from .rag import create_retriever, encode_documents, initialize_rag, setup_environment, initialize_vectorstore_with_metadata, load_metadata, create_documents_with_metadata
+from .rag import (
+    create_documents_with_metadata,
+    create_retriever,
+    encode_documents,
+    initialize_rag,
+    initialize_vectorstore_with_metadata,
+    load_metadata,
+    setup_environment,
+)
 
 # Make these functions available when importing from core
 __all__ = [
@@ -23,7 +32,7 @@ __all__ = [
     "setup_environment",
     "initialize_vectorstore_with_metadata",
     "load_metadata",
-    "create_documents_with_metadata"
+    "create_documents_with_metadata",
     # Helper functions
     "text_wrap",
     "show_context",
@@ -35,4 +44,8 @@ __all__ = [
     "QuestionAnswerFromContext",
     "create_question_answer_from_context_chain",
     "answer_question_from_context",
-]  
+    # Document upload functions
+    "read_file_content",
+    "generate_document_summary",
+    "process_uploaded_tc",
+]

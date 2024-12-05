@@ -1,6 +1,10 @@
 [
     {
-        "title": "Samsclub",
+        "title": "FreeTax USA",
+        "filename": "freetaxusa.txt"
+    },
+    {
+        "title": "Sam's Club",
         "filename": "samsclub.txt"
     },
     {
@@ -8,11 +12,11 @@
         "filename": "mettler_toledo.txt"
     },
     {
-        "title": "Bestbuy",
+        "title": "Best Buy",
         "filename": "bestbuy.txt"
     },
     {
-        "title": "Macys",
+        "title": "Macy's",
         "filename": "macys.txt"
     },
     {
@@ -24,7 +28,7 @@
         "filename": "lululemon.txt"
     },
     {
-        "title": "Jcpenny",
+        "title": "JC Penny",
         "filename": "jcpenny.txt"
     },
     {
@@ -36,7 +40,7 @@
         "filename": "samsung.txt"
     },
     {
-        "title": "Officedepot",
+        "title": "Office Depot",
         "filename": "officedepot.txt"
     },
     {
@@ -44,19 +48,19 @@
         "filename": "general motors gm.txt"
     },
     {
-        "title": "Homedepot",
+        "title": "Home Depot",
         "filename": "homedepot.txt"
     },
     {
-        "title": "Tacobell",
+        "title": "Taco Bell",
         "filename": "tacobell.txt"
     },
     {
-        "title": "Googlemaps",
+        "title": "Google Maps",
         "filename": "googlemaps.txt"
     },
     {
-        "title": "Burgerking",
+        "title": "Burger King",
         "filename": "burgerking.txt"
     },
     {
@@ -68,7 +72,7 @@
         "filename": "ford.txt"
     },
     {
-        "title": "Kfc",
+        "title": "KFC",
         "filename": "kfc.txt"
     },
     {
@@ -88,11 +92,11 @@
         "filename": "onstar.txt"
     },
     {
-        "title": "Bmw",
+        "title": "BMW",
         "filename": "bmw.txt"
     },
     {
-        "title": "Mcdonald'S",
+        "title": "McDonald's",
         "filename": "mcdonald's.txt"
     },
     {
@@ -124,11 +128,11 @@
         "filename": "burlington.txt"
     },
     {
-        "title": "Tjmaxx",
+        "title": "TJ Maxx",
         "filename": "tjmaxx.txt"
     },
     {
-        "title": "Dillards",
+        "title": "Dillard's",
         "filename": "dillards.txt"
     },
     {
@@ -136,7 +140,7 @@
         "filename": "costco.txt"
     },
     {
-        "title": "Bjs",
+        "title": "BJ's",
         "filename": "bjs.txt"
     },
     {
@@ -164,7 +168,7 @@
         "filename": "slack.txt"
     },
     {
-        "title": "Dunkindonuts",
+        "title": "Dunkin Donuts",
         "filename": "dunkindonuts.txt"
     }
 ]
