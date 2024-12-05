@@ -40,9 +40,6 @@ def load_metadata(metadata_file):
 
 
 def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, chunk_overlap=200):
-    """
-    Create documents with metadata and content chunks.
-    """
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size, chunk_overlap=chunk_overlap, length_function=len
     )
@@ -57,6 +54,7 @@ def create_documents_with_metadata(metadata_list, data_folder, chunk_size=1000, 
                 for chunk in chunks:
                     chunk.metadata = meta  # Attach metadata
                 documents.extend(chunks)
+            print(f"Document '{meta['title']}' split into {len(chunks)} chunks.")
         else:
             print(f"Error: File {file_path} does not exist for metadata: {meta}")
             raise FileNotFoundError(f"File {file_path} not found.")

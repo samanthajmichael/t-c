@@ -129,19 +129,20 @@ def encode_from_string(content, chunk_size=1000, chunk_overlap=200):
 
 def retrieve_all_metadata(vectorstore):
     """
-    Retrieve all metadata titles from the vector store.
+    Retrieve all unique metadata titles from the vectorstore.
 
     Args:
-        vectorstore: A FAISS vector store object.
+        vectorstore: The vectorstore containing documents and metadata.
 
     Returns:
-        list: A list of metadata titles.
+        list: A list of unique document titles.
     """
     try:
-        # Check if the vectorstore contains documents with metadata
         if hasattr(vectorstore, "documents"):
-            return [doc.metadata.get("title", "Unknown") for doc in vectorstore.documents]
-        raise ValueError("Vectorstore does not contain documents with metadata.")
+            titles = {doc.metadata.get("title", "Unknown") for doc in vectorstore.documents}
+            return sorted(titles)
+        else:
+            raise ValueError("Vectorstore does not have a 'documents' attribute.")
     except Exception as e:
         raise ValueError(f"Metadata retrieval error: {e}")
 
@@ -169,7 +170,6 @@ def retrieve_context_per_question(question, retriever):
         return [doc.page_content for doc in results] if results else ["No relevant context found."]
     except Exception as e:
         raise ValueError(f"Error retrieving context: {e}")
-
 
 
 class QuestionAnswerFromContext(BaseModel):
