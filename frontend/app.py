@@ -171,7 +171,6 @@ try:
             # Process content and get summary
             chunks, summary = process_uploaded_tc(content, client, st.session_state)
 
-
             # Create embeddings and update vector store
             embeddings = OpenAIEmbeddings()
             custom_vectorstore = FAISS.from_texts(
