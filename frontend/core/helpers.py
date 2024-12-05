@@ -132,17 +132,18 @@ def retrieve_all_metadata(vectorstore):
     Retrieve all unique metadata titles from the vectorstore.
 
     Args:
-        vectorstore: The vectorstore containing documents and metadata.
+        vectorstore: The FAISS vectorstore containing documents and metadata.
 
     Returns:
         list: A list of unique document titles.
     """
     try:
-        if hasattr(vectorstore, "documents"):
-            titles = {doc.metadata.get("title", "Unknown") for doc in vectorstore.documents}
+        if hasattr(vectorstore, "docstore") and vectorstore.docstore:
+            documents = vectorstore.docstore._dict.values()  # Access stored documents
+            titles = {doc.metadata.get("title", "Unknown") for doc in documents}
             return sorted(titles)
         else:
-            raise ValueError("Vectorstore does not have a 'documents' attribute.")
+            raise ValueError("Vectorstore does not have a valid 'docstore' or metadata.")
     except Exception as e:
         raise ValueError(f"Metadata retrieval error: {e}")
 
