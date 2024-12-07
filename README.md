@@ -76,6 +76,8 @@ We utilize:
 * **Bandit:** For security analysis.
 * **Pre-commit:** To automate code quality checks before each commit.
 
+## 🦾 What's Under The Hood
+![Screenshot 2024-12-06 192958](https://github.com/user-attachments/assets/5715a14c-aa15-4380-9a02-7decbb7cabf7)
 
 ## 🐍 Setup
 
