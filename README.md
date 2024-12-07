@@ -1,9 +1,6 @@
 
 # Click Here! 👉 [![Streamlit](https://docs.streamlit.io/logo.svg)](https://baymaxtc.streamlit.app/)
 
-
-# Baymax T&C
-
 # 🚀 Baymax T&C: Your Friendly Terms of Service Summarizer
 
 This repository contains the code for Baymax T&C, an LLM application designed to simplify complex Terms of Service (ToS) agreements.  We use Retrieval Augmented Generation (RAG) and large language models (LLMs) to provide clear and concise explanations of legal jargon, making ToS documents easier to understand.
@@ -109,22 +106,16 @@ cd frontend/
 streamlit run app.py
 ```
 
-# Quickstart Guide 🤪
-
-[Navigate to Streamlit](https://share.streamlit.io/)
-
-![image](https://github.com/user-attachments/assets/25b1217d-4778-4790-909f-f2d95ba55822)
+# 🤪 Quickstart Guide
+[<img src="https://github.com/user-attachments/assets/25b1217d-4778-4790-909f-f2d95ba55822" width="200"/>](https://share.streamlit.io/)
 
 ![image](https://github.com/user-attachments/assets/dc17c7b8-7492-426d-8f88-a600737bf6dd)
 
 ![image](https://github.com/user-attachments/assets/438232b2-ce8e-4f6c-9390-183ea72351b3)
 
 
-# 🏃 Usage
-
-▶️ Run the Jupyter Notebook: Execute simple_rag.ipynb. This will load your documents, create the vector database, and run the evaluation.
-
-📊 Review the Results: The notebook will output the evaluation results from evaluate_rag.py, providing metrics for correctness, faithfulness, and relevance.
+# 🤖 Usage
+Ask Away! 
 
 🤝 Contributing
 
