@@ -1,3 +1,7 @@
+
+# Click Here! 👉 [![Streamlit](https://docs.streamlit.io/logo.svg)](https://baymaxtc.streamlit.app/)
+
+
 # Baymax T&C
 
 # 🚀 Baymax T&C: Your Friendly Terms of Service Summarizer
@@ -78,30 +82,56 @@ We utilize:
 
 ## 🐍 Setup
 
+Create a conda environment 
+```
+conda create -n your_env python=3.11
+```
 Before running the code, ensure you have the necessary libraries installed. You can install them using pip:
 
 ```bash
-pip install openai langchain faiss-cpu deepeval python-dotenv
+pip install -r requirements.txt
 ```
+Add secrets.toml file 
+
+![Screenshot 2024-12-06 221129](https://github.com/user-attachments/assets/ba4c491d-2dd0-4672-9a78-59212f56e35e)
+
+![image](https://github.com/user-attachments/assets/c0c2d0f0-a913-43ed-8e68-30079dfd96b3)
 
 You will also need an OpenAI API key. Create a .env file in the root directory and add your key:
 
 ```bash
 OPENAI_API_KEY=your_api_key_here
 ```
+```bash
+cd frontend/
+```
+```
+streamlit run app.py
+```
+
+# Quickstart Guide 🤪
+
+[Navigate to Streamlit](https://share.streamlit.io/)
+
+![image](https://github.com/user-attachments/assets/25b1217d-4778-4790-909f-f2d95ba55822)
+
+![image](https://github.com/user-attachments/assets/dc17c7b8-7492-426d-8f88-a600737bf6dd)
+
+![image](https://github.com/user-attachments/assets/438232b2-ce8e-4f6c-9390-183ea72351b3)
+
 
 # 🏃 Usage
-📂 Prepare your data: Place your PDF documents and text files in the data folder for simple_rag.ipynb. You'll likely need to modify the folders variable in that notebook to match your file structure.
 
 ▶️ Run the Jupyter Notebook: Execute simple_rag.ipynb. This will load your documents, create the vector database, and run the evaluation.
 
 📊 Review the Results: The notebook will output the evaluation results from evaluate_rag.py, providing metrics for correctness, faithfulness, and relevance.
 
 🤝 Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request.
 
 📝 License
 
- Copyrights of the Baymax T&C Team
+Copyrights of the Baymax T&C Team
 
 Happy RAG-ing! 🎉
