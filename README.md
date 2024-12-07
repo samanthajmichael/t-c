@@ -79,7 +79,7 @@ We utilize:
 
 ## 🐍 Setup
 
-Create a conda environment 
+Create a conda environment:
 ```
 conda create -n your_env python=3.11
 ```
@@ -88,7 +88,7 @@ Before running the code, ensure you have the necessary libraries installed. You 
 ```bash
 pip install -r requirements.txt
 ```
-Add secrets.toml file 
+Add secrets.toml file:
 
 ![Screenshot 2024-12-06 221129](https://github.com/user-attachments/assets/ba4c491d-2dd0-4672-9a78-59212f56e35e)
 
@@ -99,6 +99,7 @@ You will also need an OpenAI API key. Create a .env file in the root directory a
 ```bash
 OPENAI_API_KEY=your_api_key_here
 ```
+In the terminal: 
 ```bash
 cd frontend/
 ```
