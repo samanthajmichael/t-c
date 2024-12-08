@@ -36,13 +36,13 @@ This repository contains a comprehensive system for building and evaluating Retr
 
 This project offers a complete workflow for creating a question-answering system that leverages external documents. The key components are:
 
-* **📄 Document Processing (helper_functions.py):**  Handles the ingestion and processing of PDF documents and text files. This includes:
-    * PDF/Text Encoding: Processes both PDFs and text strings.
+* **📄 Document Processing (helper_functions.py):**  Handles the ingestion and processing of text files. This includes:
+    * Text Encoding: Processes both PDFs and text strings.
     * Chunking: Splits text into overlapping chunks for efficient embedding.
     * Embedding: Generates OpenAI embeddings for each chunk.
     * Vector Store: Stores embeddings in a FAISS vector database for fast similarity search.  This allows for efficient retrieval of relevant information.
 
-* **⚙️ RAG Pipeline (simple_rag.ipynb):**  Implements the core RAG pipeline using Langchain and OpenAI:
+* **⚙️ RAG Pipeline (simple_rag.ipynb):**  Implements the core RAG pipeline using OpenAI:
     * Document Loading: Loads documents from specified folders and creates a FAISS index.
     * Retrieval: Uses FAISS for efficient retrieval of relevant document chunks.  Includes a fallback BM25 method.
     * Answer Generation: Uses an OpenAI LLM (specified in the notebook) to generate answers based on the retrieved context.
@@ -58,7 +58,6 @@ This project offers a complete workflow for creating a question-answering system
 This project uses:
 
 * **Python 3.11:** Our runtime environment.
-* **Langchain:** For building the RAG pipeline.
 * **OpenAI API:**  Currently used for LLM processing.
 * **FAISS:** For efficient vector search within the document store.
 * **Deepeval:** For evaluating model performance (using Correctness, Faithfulness, and Contextual Relevancy metrics).
